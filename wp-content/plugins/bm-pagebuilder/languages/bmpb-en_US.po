@@ -1,0 +1,2908 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BM Pagebuilder 1.0\n"
+"POT-Creation-Date: 2015-08-10 16:10+0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: uiueux <uiueux@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_attr__;esc_html_e;esc_html__\n"
+"X-Poedit-Basepath: ./\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../inc_php/ux-pb-ajax.php:4 ../inc_php/ux-pb-modules.php:28
+#: ../inc_php/ux-pb-modules.php:69 ../modules/fullwidth.php:454
+msgid "Fullwidth Wrap"
+msgstr ""
+
+#: ../inc_php/ux-pb-ajax.php:5 ../inc_php/ux-pb-modules.php:70
+msgid "+ Module"
+msgstr ""
+
+#: ../inc_php/ux-pb-ajax.php:6 ../inc_php/ux-pb-modules.php:71
+msgid "Setting"
+msgstr ""
+
+#: ../inc_php/ux-pb-ajax.php:7 ../inc_php/ux-pb-ajax.php:24
+#: ../inc_php/ux-pb-interface.php:184 ../inc_php/ux-pb-modules.php:72
+msgid "Choose Module"
+msgstr ""
+
+#: ../inc_php/ux-pb-ajax.php:23 ../inc_php/ux-pb-ajax.php:79
+#: ../inc_php/ux-pb-ajax.php:92
+msgid "1/1"
+msgstr ""
+
+#: ../inc_php/ux-pb-ajax.php:74 ../inc_php/ux-pb-ajax.php:135
+#: ../inc_php/ux-pb-modules.php:155
+msgid "Edit"
+msgstr ""
+
+#: ../inc_php/ux-pb-ajax.php:221
+msgid "Select Template"
+msgstr ""
+
+#: ../inc_php/ux-pb-ajax.php:264
+msgid "Template Name"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:5 ../inc_php/ux-pb-config.php:100
+msgid "Fade In"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:6
+msgid "Zoom In"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:7
+msgid "Zoom Out"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:8 ../inc_php/ux-pb-config.php:101
+msgid "Fade In Left"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:9 ../inc_php/ux-pb-config.php:102
+msgid "Fade In Right"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:10
+msgid "Fade In Top"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:11
+msgid "Fade In Bottom"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:12 ../inc_php/ux-pb-config.php:105
+msgid "Bounce In Left"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:13 ../inc_php/ux-pb-config.php:106
+msgid "Bounce In Right"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:14
+msgid "Bounce In Top"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:15
+msgid "Bounce In Bottom"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:16 ../inc_php/ux-pb-config.php:109
+msgid "Flip X"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:17 ../inc_php/ux-pb-config.php:110
+msgid "Flip Y"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:18 ../inc_php/ux-pb-config.php:111
+msgid "Rotate In DownLeft"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:19 ../inc_php/ux-pb-config.php:112
+msgid "Rotate In DownRight"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:50
+msgid "Scroll in Animation"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:51
+msgid "enable to select Scroll in animation effect"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:60
+msgid "Scroll in Animation Effect"
+msgstr ""
+
+#: ../inc_php/ux-pb-animation.php:61
+msgid "animation effect when the module enter the scene"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:13 ../modules/blog.php:859
+msgid "Facebook"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:14
+msgid "Visit Facebook page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:15 ../modules/blog.php:860
+#: ../modules/gallery.php:294
+msgid "Twitter"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:16
+msgid "Visit Twitter page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:17
+msgid "Google+"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:18
+msgid "Visit Google Plus page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:19
+msgid "Youtube"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:20
+msgid "Visit Youtube page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:21
+msgid "Vimeo"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:22
+msgid "Visit Vimeo page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:23 ../modules/blog.php:867
+msgid "Tumblr"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:24
+msgid "Visit Tumblr page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:25
+msgid "RSS"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:26
+msgid "Visit Rss"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:27 ../modules/blog.php:862
+msgid "Pinterest"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:28
+msgid "Visit Pinterest page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:29 ../modules/blog.php:865
+msgid "Linkedin"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:30
+msgid "Visit Linkedin page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:31
+msgid "Instagram"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:32
+msgid "Visit Instagram page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:33
+msgid "Github"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:34
+msgid "Visit Github page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:35
+msgid "Xing"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:36
+msgid "Visit Xing page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:37
+msgid "Flickr"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:38
+msgid "Visit Flickr page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:39
+msgid "VK"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:40
+msgid "Visit VK page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:41
+msgid "Weibo"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:42
+msgid "Visit Weibo page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:43
+msgid "Renren"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:44
+msgid "Visit Renren page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:45
+msgid "Bitbucket"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:46
+msgid "Visit Bitbucket page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:47
+msgid "Foursquare"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:48
+msgid "Visit Foursquare page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:49 ../inc_php/ux-pb-config.php:50
+msgid "Skype"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:51
+msgid "Dribbble"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:52
+msgid "Visit Dribbble page"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:62
+msgid "Please Select"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:63 ../modules/accordion-toggle.php:106
+#: ../modules/carousel.php:158 ../modules/carousel.php:164
+#: ../modules/icon-box.php:189 ../modules/image-box.php:137
+#: ../modules/liquid-list.php:541 ../modules/portfolio.php:804
+#: ../modules/price.php:143 ../modules/progress-bar.php:196
+#: ../modules/progress-bar.php:215 ../modules/progress-bar.php:256
+#: ../modules/tabs.php:93
+msgid "Title"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:64 ../modules/blog.php:835
+#: ../modules/blog.php:845 ../modules/blog.php:853
+#: ../modules/count-down.php:84
+msgid "Date"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:65
+msgid "ID"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:66
+msgid "Modified"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:67 ../modules/blog.php:839
+#: ../modules/blog.php:849 ../modules/blog.php:855
+msgid "Author"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:68
+msgid "Comment count"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:72
+msgid "Ascending"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:73
+msgid "Descending"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:77
+msgid "No Margin"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:78 ../modules/divider.php:71
+#: ../modules/gallery.php:268 ../modules/liquid-list.php:522
+#: ../modules/portfolio.php:748
+msgid "20px"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:79 ../modules/divider.php:72
+#: ../modules/liquid-list.php:524
+msgid "40px"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:80 ../modules/divider.php:73
+msgid "60px"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:81 ../modules/divider.php:74
+msgid "80px"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:85 ../inc_php/ux-pb-config.php:94
+msgid "Fade in"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:86
+msgid "Fade in and zoom in"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:87
+msgid "Fade in from left"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:88
+msgid "Fade in from right"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:89
+msgid "Fade in from top"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:90
+msgid "Fade in from bottom"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:103
+msgid "Fade In Up"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:104
+msgid "Fade In Down"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:107
+msgid "Bounce In Up"
+msgstr ""
+
+#: ../inc_php/ux-pb-config.php:108
+msgid "Bounce In Down"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:35
+msgid "Unit:"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:98 ../inc_php/ux-pb-fields.php:649
+#: ../inc_php/ux-pb-fields.php:681
+msgid "Upload Image"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:99 ../inc_php/ux-pb-fields.php:650
+#: ../inc_php/ux-pb-fields.php:682
+msgid "Remove"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:121
+msgid "Tab "
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:124 ../inc_php/ux-pb-fields.php:127
+msgid "Tab 1"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:167
+msgid "Font Awesome"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:169
+msgid "User Uploaded Icons"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:203
+msgid "Add"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:208
+msgid "Check"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:209
+msgid "Arrow"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:210
+msgid "Don't Show Icon"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:229 ../modules/accordion-toggle.php:100
+#: ../modules/price.php:130 ../modules/tabs.php:87 ../modules/text-list.php:57
+msgid "Add Item"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:232
+msgid "New Item"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:264 ../inc_php/ux-pb-fields.php:300
+msgid "Item "
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:376
+msgid "All Categories"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:386
+msgid "No Categories"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:505
+msgid "Select Images"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:633
+#, php-format
+msgid "You Need to install the %s %s"
+msgstr ""
+
+#: ../inc_php/ux-pb-fields.php:633
+msgid ""
+"WordPress plugin and setup your Twitter API before working with this module.!"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:6
+msgid "Switch to Page Builder"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:7
+msgid "Classic Editor"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:70
+msgid "Page Builder"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:157
+msgid "Close"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:158 ../inc_php/ux-pb-interface.php:159
+msgid "Saving..."
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:158
+msgid "Save"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:159
+msgid "Save Item"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:160
+msgid "Loading..."
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:160
+msgid "Load Template"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:161
+msgid "Deleting..."
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:161
+msgid "Delete Template"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:172
+msgid "Wrap"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:174
+msgid "General Wrap"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:175
+msgid "FullWidth Wrap"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:195
+msgid "Template"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:197
+msgid "Save Current Layout as a Template"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:198
+msgid "Load a Template"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:454
+msgid "LOAD MORE ARTICLES"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:465
+msgid "LOAD MORE"
+msgstr ""
+
+#: ../inc_php/ux-pb-interface.php:489 ../modules/liquid-list.php:390
+#: ../modules/portfolio.php:439
+msgid "LEARN MORE"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:5 ../modules/accordion-toggle.php:80
+msgid "Accordion/Toggle"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:6 ../modules/blog.php:880
+msgid "Blog"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:7 ../modules/button.php:119
+msgid "Button"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:8 ../modules/contact-form.php:105
+#: ../modules/contact-form.php:118
+msgid "Contact Form"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:9 ../modules/count-down.php:82
+msgid "Count Down"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:10 ../modules/divider.php:91
+msgid "Divider"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:11 ../modules/gallery.php:306
+msgid "Gallery"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:12 ../modules/google-map.php:84
+msgid "Google Map"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:13 ../modules/icon-box.php:151
+msgid "Icon Box"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:14 ../modules/image-box.php:126
+msgid "Image Box"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:15 ../modules/progress-bar.php:159
+msgid "Info-graphic"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:16
+msgid "Liquid"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:17 ../modules/message-box.php:54
+msgid "Message Box"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:18 ../modules/price.php:112
+#: ../modules/price.php:149
+msgid "Price"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:19 ../modules/promote.php:55
+msgid "Promote"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:20 ../modules/carousel.php:152
+#: ../modules/portfolio.php:823
+msgid "Portfolio"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:21 ../modules/single-image.php:76
+msgid "Single Image"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:22 ../modules/slider.php:161
+msgid "Slider"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:23 ../modules/tabs.php:79
+msgid "Tabs"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:24 ../modules/text-block.php:53
+msgid "Text Block"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:25 ../modules/text-list.php:55
+msgid "Text List"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:26 ../modules/carousel.php:153
+#: ../modules/video.php:73
+msgid "Video"
+msgstr ""
+
+#: ../inc_php/ux-pb-modules.php:27 ../modules/latest-tweets.php:39
+msgid "Latest Tweets"
+msgstr ""
+
+#: ../inc_php/ux-theme-function.php:47 ../inc_php/ux-theme-function.php:199
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: ../inc_php/ux-theme-function.php:149 ../inc_php/ux-theme-function.php:151
+#: ../inc_php/ux-theme-function.php:153 ../inc_php/ux-theme-function.php:155
+#: ../inc_php/ux-theme-function.php:162 ../inc_php/ux-theme-function.php:164
+#: ../inc_php/ux-theme-function.php:166 ../inc_php/ux-theme-function.php:168
+msgid " MIN READ"
+msgstr ""
+
+#: ../inc_php/ux-theme-function.php:177 ../inc_php/ux-theme-function.php:181
+msgid "IN: "
+msgstr ""
+
+#: ../inc_php/ux-theme-function.php:189 ../inc_php/ux-theme-function.php:191
+#: ../inc_php/ux-theme-function.php:193
+msgid "TAGS: "
+msgstr ""
+
+#: ../inc_php/ux-theme-function.php:209 ../inc_php/ux-theme-function.php:211
+#: ../inc_php/ux-theme-function.php:213
+msgid "BY: "
+msgstr ""
+
+#: ../inc_php/ux-theme-function.php:221 ../inc_php/ux-theme-function.php:224
+#: ../inc_php/ux-theme-function.php:227
+msgid "0 COMMENT"
+msgstr ""
+
+#: ../inc_php/ux-theme-function.php:221 ../inc_php/ux-theme-function.php:224
+#: ../inc_php/ux-theme-function.php:227
+msgid "1 COMMENT"
+msgstr ""
+
+#: ../inc_php/ux-theme-function.php:221 ../inc_php/ux-theme-function.php:224
+#: ../inc_php/ux-theme-function.php:227
+msgid "% COMMENTS"
+msgstr ""
+
+#: ../inc_php/ux-theme-function.php:234 ../modules/blog.php:841
+msgid "Continue Reading"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:4 ../modules/team.php:164
+msgid "Team"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:6 ../inc_php/ux-theme-register.php:26
+#: ../inc_php/ux-theme-register.php:47 ../inc_php/ux-theme-register.php:67
+#: ../inc_php/ux-theme-register.php:87
+msgid "Add New"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:7
+msgid "Add New Team Member"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:8
+msgid "Edit Team Member"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:9
+msgid "New Team Member"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:10
+msgid "View Team Member"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:11
+msgid "No Team Member found."
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:12
+msgid "No Team Member found in Trash."
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:13
+msgid "Search Team Member"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:14
+msgid "team_cat"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:15
+msgid "Team Categories"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:17 ../inc_php/ux-theme-register.php:37
+#: ../inc_php/ux-theme-register.php:56 ../inc_php/ux-theme-register.php:58
+#: ../inc_php/ux-theme-register.php:78 ../inc_php/ux-theme-register.php:98
+msgid "Categories"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:24
+msgid "Clients"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:27
+msgid "Add New Client"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:28
+msgid "Edit Client"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:29
+msgid "New Client"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:30
+msgid "View Client"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:31
+msgid "No Client found."
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:32
+msgid "No Client found in Trash."
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:33
+msgid "Search Client"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:34
+msgid "client_cat"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:35
+msgid "Client Categories"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:45 ../modules/testimonials.php:107
+msgid "Testimonials"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:48
+msgid "Add New Testimonial"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:49
+msgid "Edit Testimonial"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:50
+msgid "New Testimonial"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:51
+msgid "View Testimonial"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:52
+msgid "No Testimonial found."
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:53
+msgid "No Testimonial found in Trash."
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:54
+msgid "Search Testimonial"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:55
+msgid "testimonial_cat"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:65 ../modules/jobs.php:68
+msgid "Jobs"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:68
+msgid "Add New Job"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:69
+msgid "Edit Job"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:70
+msgid "New Job"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:71
+msgid "View Job"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:72
+msgid "No Job found."
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:73
+msgid "No Job found in Trash."
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:74
+msgid "Search Job"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:75
+msgid "job_cat"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:76
+msgid "Job Categories"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:85
+msgid "FAQs"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:88
+msgid "Add New Question"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:89
+msgid "Edit Question"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:90
+msgid "New Question"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:91
+msgid "View Question"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:92
+msgid "No Question found."
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:93
+msgid "No Question found in Trash."
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:94
+msgid "Search Question"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:95
+msgid "question_cat"
+msgstr ""
+
+#: ../inc_php/ux-theme-register.php:96
+msgid "Topics"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:63
+msgid "Accordion"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:64
+msgid "Toggle"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:67
+msgid "Style A"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:68
+msgid "Style B"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:82 ../modules/divider.php:93
+#: ../modules/fullwidth.php:461 ../modules/message-box.php:56
+#: ../modules/progress-bar.php:161 ../modules/tabs.php:81
+msgid "Type"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:83
+msgid "Select accordion or toggle"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:88 ../modules/portfolio.php:988
+#: ../modules/progress-bar.php:167 ../modules/single-image.php:83
+#: ../modules/team.php:166
+msgid "Style"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:89
+msgid "Select a style for the module"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:94
+msgid "Open First Item by Default"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:95
+msgid "Enable it the first item would be opened by default"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:101 ../modules/price.php:131
+#: ../modules/tabs.php:88 ../modules/text-list.php:58
+msgid "Press the \"Add\" button to add an item"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:107 ../modules/tabs.php:94
+msgid "Enter the title for this item"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:112 ../modules/icon-box.php:207
+#: ../modules/image-box.php:141 ../modules/message-box.php:62
+#: ../modules/promote.php:57 ../modules/tabs.php:99
+#: ../modules/text-block.php:60 ../modules/text-list.php:69
+msgid "Content"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:113 ../modules/icon-box.php:208
+#: ../modules/tabs.php:100
+msgid "Enter content for this Icon Box"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:118 ../modules/button.php:214
+#: ../modules/contact-form.php:178 ../modules/count-down.php:101
+#: ../modules/divider.php:145 ../modules/faq.php:75
+#: ../modules/fullwidth.php:832 ../modules/gallery.php:393
+#: ../modules/google-map.php:144 ../modules/icon-box.php:212
+#: ../modules/image-box.php:175 ../modules/jobs.php:83
+#: ../modules/latest-tweets.php:59 ../modules/liquid-list.php:667
+#: ../modules/message-box.php:67 ../modules/portfolio.php:1037
+#: ../modules/price.php:173 ../modules/progress-bar.php:339
+#: ../modules/promote.php:79 ../modules/single-image.php:107
+#: ../modules/slider.php:237 ../modules/tabs.php:105 ../modules/team.php:217
+#: ../modules/testimonials.php:146 ../modules/text-block.php:70
+#: ../modules/text-list.php:75
+msgid "Advanced Settings"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:119 ../modules/button.php:215
+#: ../modules/contact-form.php:179 ../modules/count-down.php:102
+#: ../modules/divider.php:146 ../modules/faq.php:76 ../modules/gallery.php:394
+#: ../modules/google-map.php:145 ../modules/icon-box.php:213
+#: ../modules/image-box.php:176 ../modules/jobs.php:84
+#: ../modules/latest-tweets.php:60 ../modules/liquid-list.php:668
+#: ../modules/message-box.php:68 ../modules/portfolio.php:1038
+#: ../modules/price.php:174 ../modules/progress-bar.php:340
+#: ../modules/promote.php:80 ../modules/single-image.php:108
+#: ../modules/slider.php:238 ../modules/tabs.php:106 ../modules/team.php:218
+#: ../modules/testimonials.php:147 ../modules/text-block.php:71
+#: ../modules/text-list.php:76
+msgid "magin and animations"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:124 ../modules/blog.php:997
+#: ../modules/button.php:220 ../modules/carousel.php:245
+#: ../modules/client.php:76 ../modules/contact-form.php:184
+#: ../modules/count-down.php:107 ../modules/divider.php:151
+#: ../modules/faq.php:81 ../modules/gallery.php:399
+#: ../modules/google-map.php:150 ../modules/icon-box.php:219
+#: ../modules/image-box.php:181 ../modules/jobs.php:89
+#: ../modules/latest-tweets.php:65 ../modules/liquid-list.php:673
+#: ../modules/message-box.php:73 ../modules/portfolio.php:1043
+#: ../modules/price.php:179 ../modules/progress-bar.php:345
+#: ../modules/promote.php:85 ../modules/single-image.php:113
+#: ../modules/slider.php:243 ../modules/tabs.php:111 ../modules/team.php:223
+#: ../modules/testimonials.php:152 ../modules/text-block.php:76
+#: ../modules/text-list.php:81
+msgid "Bottom Margin"
+msgstr ""
+
+#: ../modules/accordion-toggle.php:125 ../modules/blog.php:998
+#: ../modules/button.php:221 ../modules/carousel.php:246
+#: ../modules/client.php:77 ../modules/contact-form.php:185
+#: ../modules/count-down.php:108 ../modules/divider.php:152
+#: ../modules/faq.php:82 ../modules/gallery.php:400
+#: ../modules/google-map.php:151 ../modules/icon-box.php:220
+#: ../modules/image-box.php:182 ../modules/jobs.php:90
+#: ../modules/latest-tweets.php:66 ../modules/liquid-list.php:674
+#: ../modules/message-box.php:74 ../modules/portfolio.php:1044
+#: ../modules/price.php:180 ../modules/progress-bar.php:346
+#: ../modules/promote.php:86 ../modules/single-image.php:114
+#: ../modules/slider.php:244 ../modules/tabs.php:112 ../modules/team.php:224
+#: ../modules/testimonials.php:153 ../modules/text-block.php:77
+#: ../modules/text-list.php:82
+msgid "the spacing outside the bottom of module"
+msgstr ""
+
+#: ../modules/blog.php:499
+msgid "Artist:"
+msgstr ""
+
+#: ../modules/blog.php:782
+msgid " min read"
+msgstr ""
+
+#: ../modules/blog.php:820
+msgid "Big Image List"
+msgstr ""
+
+#: ../modules/blog.php:824 ../modules/gallery.php:285
+#: ../modules/gallery.php:292 ../modules/liquid-list.php:546
+#: ../modules/portfolio.php:772 ../modules/portfolio.php:779
+#: ../modules/portfolio.php:798
+msgid "No"
+msgstr ""
+
+#: ../modules/blog.php:825 ../modules/gallery.php:293
+#: ../modules/liquid-list.php:547 ../modules/portfolio.php:799
+msgid "Page Number"
+msgstr ""
+
+#: ../modules/blog.php:826 ../modules/liquid-list.php:548
+#: ../modules/portfolio.php:800
+msgid "Load More"
+msgstr ""
+
+#: ../modules/blog.php:830 ../modules/liquid-list.php:558
+msgid "2 Columns"
+msgstr ""
+
+#: ../modules/blog.php:831 ../modules/liquid-list.php:559
+msgid "3 Columns"
+msgstr ""
+
+#: ../modules/blog.php:836 ../modules/blog.php:846 ../modules/blog.php:854
+msgid "Length"
+msgstr ""
+
+#: ../modules/blog.php:837 ../modules/blog.php:847 ../modules/blog.php:888
+#: ../modules/carousel.php:198 ../modules/gallery.php:314
+#: ../modules/liquid-list.php:616 ../modules/portfolio.php:930
+#: ../modules/portfolio.php:950 ../modules/slider.php:169
+msgid "Category"
+msgstr ""
+
+#: ../modules/blog.php:838 ../modules/blog.php:848
+msgid "Tag"
+msgstr ""
+
+#: ../modules/blog.php:840
+msgid "Comments"
+msgstr ""
+
+#: ../modules/blog.php:861
+msgid "Google Plus"
+msgstr ""
+
+#: ../modules/blog.php:863
+msgid "Digg"
+msgstr ""
+
+#: ../modules/blog.php:864
+msgid "Reddit"
+msgstr ""
+
+#: ../modules/blog.php:866
+msgid "Stumbleupon"
+msgstr ""
+
+#: ../modules/blog.php:868
+msgid "Mail"
+msgstr ""
+
+#: ../modules/blog.php:882 ../modules/portfolio.php:825
+msgid "List Type"
+msgstr ""
+
+#: ../modules/blog.php:889 ../modules/portfolio.php:951
+msgid "The Posts under the category you selected would be shown in this module"
+msgstr ""
+
+#: ../modules/blog.php:894 ../modules/carousel.php:216 ../modules/faq.php:69
+#: ../modules/gallery.php:330 ../modules/jobs.php:77
+#: ../modules/liquid-list.php:623 ../modules/portfolio.php:940
+#: ../modules/slider.php:179 ../modules/team.php:211
+#: ../modules/testimonials.php:116
+msgid "Order by"
+msgstr ""
+
+#: ../modules/blog.php:895
+msgid "select sequence rules for the list"
+msgstr ""
+
+#: ../modules/blog.php:962
+msgid "Number of Featured Post"
+msgstr ""
+
+#: ../modules/blog.php:968
+msgid "Show Meta on Featured Post"
+msgstr ""
+
+#: ../modules/blog.php:974
+msgid "Columns of Grid Post"
+msgstr ""
+
+#: ../modules/blog.php:979
+msgid "Number of Grid Post (3 Columns/2 Columns)"
+msgstr ""
+
+#: ../modules/blog.php:985
+msgid "Show Load More Button"
+msgstr ""
+
+#: ../modules/button.php:88 ../modules/gallery.php:274
+#: ../modules/liquid-list.php:537 ../modules/portfolio.php:754
+msgid "Small"
+msgstr ""
+
+#: ../modules/button.php:89 ../modules/gallery.php:272
+#: ../modules/liquid-list.php:535 ../modules/portfolio.php:752
+msgid "Medium"
+msgstr ""
+
+#: ../modules/button.php:90 ../modules/gallery.php:273
+#: ../modules/liquid-list.php:536 ../modules/portfolio.php:753
+msgid "Large"
+msgstr ""
+
+#: ../modules/button.php:93 ../modules/carousel.php:177
+#: ../modules/divider.php:64 ../modules/fullwidth.php:364
+#: ../modules/gallery.php:287 ../modules/portfolio.php:774
+#: ../modules/portfolio.php:781 ../modules/promote.php:42
+#: ../modules/single-image.php:62
+msgid "Left"
+msgstr ""
+
+#: ../modules/button.php:94 ../modules/carousel.php:178
+#: ../modules/divider.php:65 ../modules/promote.php:43
+#: ../modules/single-image.php:63
+msgid "Center"
+msgstr ""
+
+#: ../modules/button.php:95 ../modules/carousel.php:179
+#: ../modules/divider.php:66 ../modules/fullwidth.php:365
+#: ../modules/gallery.php:288 ../modules/portfolio.php:775
+#: ../modules/portfolio.php:782 ../modules/single-image.php:64
+msgid "Right"
+msgstr ""
+
+#: ../modules/button.php:98
+msgid "Light"
+msgstr ""
+
+#: ../modules/button.php:99
+msgid "Dark"
+msgstr ""
+
+#: ../modules/button.php:102
+msgid "On Left"
+msgstr ""
+
+#: ../modules/button.php:103
+msgid "On Right"
+msgstr ""
+
+#: ../modules/button.php:106
+msgid "Border"
+msgstr ""
+
+#: ../modules/button.php:107 ../modules/carousel.php:151
+#: ../modules/image-box.php:128 ../modules/liquid-list.php:515
+#: ../modules/single-image.php:78
+msgid "Image"
+msgstr ""
+
+#: ../modules/button.php:121
+msgid "Buttons"
+msgstr ""
+
+#: ../modules/button.php:127
+msgid "Button Style"
+msgstr ""
+
+#: ../modules/button.php:133
+msgid "Button Image"
+msgstr ""
+
+#: ../modules/button.php:142 ../modules/carousel.php:233
+#: ../modules/contact-form.php:152 ../modules/price.php:161
+msgid "Button Text"
+msgstr ""
+
+#: ../modules/button.php:147 ../modules/price.php:167
+msgid "Button Link"
+msgstr ""
+
+#: ../modules/button.php:153
+msgid "Show Icon"
+msgstr ""
+
+#: ../modules/button.php:163 ../modules/icon-box.php:153
+#: ../modules/text-list.php:63
+msgid "Select Icon"
+msgstr ""
+
+#: ../modules/button.php:164 ../modules/icon-box.php:154
+#: ../modules/text-list.php:64
+msgid "Choose a icon for this Icon Box"
+msgstr ""
+
+#: ../modules/button.php:173
+msgid "Icon Align"
+msgstr ""
+
+#: ../modules/button.php:183
+msgid "Button Color"
+msgstr ""
+
+#: ../modules/button.php:184
+msgid "Choose a color for the button"
+msgstr ""
+
+#: ../modules/button.php:193
+msgid "Mouseover Color"
+msgstr ""
+
+#: ../modules/button.php:194
+msgid "Choose a color for the button mouseover"
+msgstr ""
+
+#: ../modules/button.php:203
+msgid "Button Size"
+msgstr ""
+
+#: ../modules/button.php:204
+msgid "Choose a size for the button"
+msgstr ""
+
+#: ../modules/button.php:209
+msgid "Buttons Align"
+msgstr ""
+
+#: ../modules/carousel.php:24
+msgid "Read more"
+msgstr ""
+
+#: ../modules/carousel.php:150 ../modules/portfolio.php:787
+#: ../modules/single-image.php:56
+msgid "Standard"
+msgstr ""
+
+#: ../modules/carousel.php:154
+msgid "Audio"
+msgstr ""
+
+#: ../modules/carousel.php:159 ../modules/carousel.php:165
+msgid "Excerpt"
+msgstr ""
+
+#: ../modules/carousel.php:160 ../modules/carousel.php:166
+#: ../modules/liquid-list.php:542
+msgid "Read More Button"
+msgstr ""
+
+#: ../modules/carousel.php:173 ../modules/fullwidth.php:441
+#: ../modules/gallery.php:281 ../modules/liquid-list.php:531
+#: ../modules/portfolio.php:761
+msgid "Auto"
+msgstr ""
+
+#: ../modules/carousel.php:191
+msgid "Carousel"
+msgstr ""
+
+#: ../modules/carousel.php:193
+msgid "Post Type"
+msgstr ""
+
+#: ../modules/carousel.php:194
+msgid "Check on the post types you want to show on this module"
+msgstr ""
+
+#: ../modules/carousel.php:199 ../modules/liquid-list.php:617
+msgid "The posts under the category you selected would be shown in this module"
+msgstr ""
+
+#: ../modules/carousel.php:205 ../modules/latest-tweets.php:49
+msgid "Number of Items"
+msgstr ""
+
+#: ../modules/carousel.php:206
+msgid ""
+"How many items should be displayed in this module, leave it empty to show "
+"all items"
+msgstr ""
+
+#: ../modules/carousel.php:210
+msgid "Ratio of Thumb"
+msgstr ""
+
+#: ../modules/carousel.php:211
+msgid ""
+"The images come from featured image, choose a ratio to show in this module"
+msgstr ""
+
+#: ../modules/carousel.php:217 ../modules/faq.php:70
+#: ../modules/gallery.php:331 ../modules/jobs.php:78
+#: ../modules/liquid-list.php:624 ../modules/portfolio.php:941
+#: ../modules/slider.php:180 ../modules/team.php:212
+#: ../modules/testimonials.php:117
+msgid "Select sequence rules for the list"
+msgstr ""
+
+#: ../modules/carousel.php:222
+msgid "Show"
+msgstr ""
+
+#: ../modules/carousel.php:223
+msgid "Check on the elements you want to show"
+msgstr ""
+
+#: ../modules/carousel.php:227 ../modules/divider.php:108
+msgid "Text Align"
+msgstr ""
+
+#: ../modules/carousel.php:228 ../modules/divider.php:109
+msgid "Select alignment for the text"
+msgstr ""
+
+#: ../modules/carousel.php:234
+msgid "It is a read more button, enter the text you want to show on button"
+msgstr ""
+
+#: ../modules/carousel.php:238
+msgid "Show Navigation Hint"
+msgstr ""
+
+#: ../modules/carousel.php:239
+msgid "Turn on it to show navigation hint"
+msgstr ""
+
+#: ../modules/client.php:56
+msgid "Client"
+msgstr ""
+
+#: ../modules/client.php:58
+msgid "Client Category"
+msgstr ""
+
+#: ../modules/client.php:59
+msgid ""
+"The clients under the category you selected would be shown in this module"
+msgstr ""
+
+#: ../modules/client.php:65 ../modules/progress-bar.php:206
+#: ../modules/progress-bar.php:240
+msgid "Columns"
+msgstr ""
+
+#: ../modules/client.php:66
+msgid "Setup the number of columns you want to show in front end"
+msgstr ""
+
+#: ../modules/contact-form.php:18
+msgid "SEND"
+msgstr ""
+
+#: ../modules/contact-form.php:19
+msgid "YOUR MESSAGE"
+msgstr ""
+
+#: ../modules/contact-form.php:20
+msgid "Message has been sent."
+msgstr ""
+
+#: ../modules/contact-form.php:26
+msgid "Name"
+msgstr ""
+
+#: ../modules/contact-form.php:26 ../modules/contact-form.php:27
+#: ../modules/contact-form.php:28
+msgid "Required"
+msgstr ""
+
+#: ../modules/contact-form.php:27
+msgid "Email"
+msgstr ""
+
+#: ../modules/contact-form.php:27
+msgid "Invalid email"
+msgstr ""
+
+#: ../modules/contact-form.php:29 ../modules/contact-form.php:62
+msgid "Sending"
+msgstr ""
+
+#: ../modules/contact-form.php:29
+msgid "Please Enter Correct Verification Number"
+msgstr ""
+
+#: ../modules/contact-form.php:106
+msgid "Single Field"
+msgstr ""
+
+#: ../modules/contact-form.php:120
+msgid "Form Type"
+msgstr ""
+
+#: ../modules/contact-form.php:125
+msgid "Recipient Email"
+msgstr ""
+
+#: ../modules/contact-form.php:126
+msgid "Enter the email to receive the messages."
+msgstr ""
+
+#: ../modules/contact-form.php:134
+msgid "Field Text"
+msgstr ""
+
+#: ../modules/contact-form.php:142
+msgid "Message Box placeholder"
+msgstr ""
+
+#: ../modules/contact-form.php:153
+msgid "Enter the text you want to show on button."
+msgstr ""
+
+#: ../modules/contact-form.php:161
+msgid "Sent Message"
+msgstr ""
+
+#: ../modules/contact-form.php:162
+msgid ""
+"Enter the inform information you want to show after user send out the "
+"message."
+msgstr ""
+
+#: ../modules/contact-form.php:221
+msgid "Contact Form 7"
+msgstr ""
+
+#: ../modules/contact-form.php:232
+msgid "Contact Form 7 Alias"
+msgstr ""
+
+#: ../modules/count-down.php:56 ../modules/count-down.php:65
+msgid "Years"
+msgstr ""
+
+#: ../modules/count-down.php:57 ../modules/count-down.php:66
+msgid "Months"
+msgstr ""
+
+#: ../modules/count-down.php:58 ../modules/count-down.php:67
+msgid "Days"
+msgstr ""
+
+#: ../modules/count-down.php:59 ../modules/count-down.php:68
+msgid "Hours"
+msgstr ""
+
+#: ../modules/count-down.php:60 ../modules/count-down.php:69
+msgid "Minutes"
+msgstr ""
+
+#: ../modules/count-down.php:61 ../modules/count-down.php:70
+msgid "Seconds"
+msgstr ""
+
+#: ../modules/count-down.php:85
+msgid "Select a deadline for the counter"
+msgstr ""
+
+#: ../modules/count-down.php:89
+msgid "Count Start"
+msgstr ""
+
+#: ../modules/count-down.php:90
+msgid "Choose a start time unit"
+msgstr ""
+
+#: ../modules/count-down.php:95
+msgid "Count To"
+msgstr ""
+
+#: ../modules/count-down.php:96
+msgid "Choose a end time unit"
+msgstr ""
+
+#: ../modules/divider.php:57
+msgid "Single Line"
+msgstr ""
+
+#: ../modules/divider.php:59
+msgid "Text and Line"
+msgstr ""
+
+#: ../modules/divider.php:60
+msgid "Blank Divider"
+msgstr ""
+
+#: ../modules/divider.php:67
+msgid "Above"
+msgstr ""
+
+#: ../modules/divider.php:75
+msgid "100px"
+msgstr ""
+
+#: ../modules/divider.php:76
+msgid "200px"
+msgstr ""
+
+#: ../modules/divider.php:77
+msgid "300px"
+msgstr ""
+
+#: ../modules/divider.php:78
+msgid "400px"
+msgstr ""
+
+#: ../modules/divider.php:94
+msgid "select a type for the Divider module"
+msgstr ""
+
+#: ../modules/divider.php:99
+msgid "Divider Text"
+msgstr ""
+
+#: ../modules/divider.php:100
+msgid ""
+"Enter the text you want to show in the divider, HTML: &lt;span "
+"class=heighlight&gt;Heighlight Text&lt;/span&gt;"
+msgstr ""
+
+#: ../modules/divider.php:118 ../modules/google-map.php:94
+msgid "Height"
+msgstr ""
+
+#: ../modules/divider.php:127 ../modules/price.php:136
+msgid "Color"
+msgstr ""
+
+#: ../modules/divider.php:128
+msgid "Select a color for the divider"
+msgstr ""
+
+#: ../modules/divider.php:136
+msgid "Short Line"
+msgstr ""
+
+#: ../modules/faq.php:60
+msgid "FAQ"
+msgstr ""
+
+#: ../modules/faq.php:62
+msgid "FAQ Category"
+msgstr ""
+
+#: ../modules/faq.php:63
+msgid ""
+"The questions under the category you selected would be shown in this module."
+msgstr ""
+
+#: ../modules/fullwidth.php:369
+msgid "Fill"
+msgstr ""
+
+#: ../modules/fullwidth.php:370
+msgid "Repeat"
+msgstr ""
+
+#: ../modules/fullwidth.php:374
+msgid "Parallax"
+msgstr ""
+
+#: ../modules/fullwidth.php:376
+msgid "Scroll"
+msgstr ""
+
+#: ../modules/fullwidth.php:404
+msgid "Text Shadow"
+msgstr ""
+
+#: ../modules/fullwidth.php:408
+msgid "Standard (Color Background)"
+msgstr ""
+
+#: ../modules/fullwidth.php:409
+msgid "Standard (Image Background)"
+msgstr ""
+
+#: ../modules/fullwidth.php:410
+msgid "Standard (Video Background)"
+msgstr ""
+
+#: ../modules/fullwidth.php:411
+msgid "Half (Image Background)"
+msgstr ""
+
+#: ../modules/fullwidth.php:412
+msgid "Half (Video Background)"
+msgstr ""
+
+#: ../modules/fullwidth.php:413
+msgid "Tab"
+msgstr ""
+
+#: ../modules/fullwidth.php:414
+msgid "Block"
+msgstr ""
+
+#: ../modules/fullwidth.php:418
+msgid "2 Column"
+msgstr ""
+
+#: ../modules/fullwidth.php:419
+msgid "3 Column"
+msgstr ""
+
+#: ../modules/fullwidth.php:423 ../modules/fullwidth.php:429
+#: ../modules/fullwidth.php:435 ../modules/google-map.php:47
+#: ../modules/testimonials.php:86 ../modules/testimonials.php:92
+msgid "1"
+msgstr ""
+
+#: ../modules/fullwidth.php:424 ../modules/fullwidth.php:430
+#: ../modules/fullwidth.php:436 ../modules/google-map.php:48
+#: ../modules/testimonials.php:87 ../modules/testimonials.php:93
+msgid "2"
+msgstr ""
+
+#: ../modules/fullwidth.php:425 ../modules/fullwidth.php:431
+#: ../modules/fullwidth.php:437 ../modules/google-map.php:49
+#: ../modules/testimonials.php:88 ../modules/testimonials.php:94
+msgid "3"
+msgstr ""
+
+#: ../modules/fullwidth.php:442
+msgid "Static Height"
+msgstr ""
+
+#: ../modules/fullwidth.php:443
+msgid "Browser Height"
+msgstr ""
+
+#: ../modules/fullwidth.php:456
+msgid "Anchor Name"
+msgstr ""
+
+#: ../modules/fullwidth.php:457
+msgid ""
+"Please enter the anchor name, please use lowercase letters, do not use "
+"spaces and other characters"
+msgstr ""
+
+#: ../modules/fullwidth.php:468
+msgid "Tab Name"
+msgstr ""
+
+#: ../modules/fullwidth.php:474
+msgid "Block Column"
+msgstr ""
+
+#: ../modules/fullwidth.php:484
+msgid "Block 1"
+msgstr ""
+
+#: ../modules/fullwidth.php:492 ../modules/fullwidth.php:555
+#: ../modules/fullwidth.php:618 ../modules/fullwidth.php:674
+#: ../modules/text-block.php:55
+msgid "Background Color"
+msgstr ""
+
+#: ../modules/fullwidth.php:493 ../modules/fullwidth.php:556
+#: ../modules/fullwidth.php:619 ../modules/fullwidth.php:675
+msgid "Optional, choose a background color for the wrap"
+msgstr ""
+
+#: ../modules/fullwidth.php:519 ../modules/fullwidth.php:582
+#: ../modules/fullwidth.php:645 ../modules/fullwidth.php:758
+msgid "Shift Text Color for Dark Background"
+msgstr ""
+
+#: ../modules/fullwidth.php:547
+msgid "Block 2"
+msgstr ""
+
+#: ../modules/fullwidth.php:610
+msgid "Block 3"
+msgstr ""
+
+#: ../modules/fullwidth.php:688
+msgid "Background Image"
+msgstr ""
+
+#: ../modules/fullwidth.php:696
+msgid "Parallax Ratio"
+msgstr ""
+
+#: ../modules/fullwidth.php:697
+msgid "select a ratio for Parallax effect"
+msgstr ""
+
+#: ../modules/fullwidth.php:706
+msgid "Video Url"
+msgstr ""
+
+#: ../modules/fullwidth.php:707
+msgid "enter the video url into right fields"
+msgstr ""
+
+#: ../modules/fullwidth.php:710
+msgid "enter the webm video url here for firefox/chrome/opera browser"
+msgstr ""
+
+#: ../modules/fullwidth.php:714
+msgid "enter the mp4 or m4v video url here for chrome/ie/safari browser"
+msgstr ""
+
+#: ../modules/fullwidth.php:719
+msgid "enter the ogg or video url here for chrome/firefox  browser"
+msgstr ""
+
+#: ../modules/fullwidth.php:727
+msgid "Alt Image"
+msgstr ""
+
+#: ../modules/fullwidth.php:728
+msgid ""
+"Touch devices and ie 8 do not support video background, you need to select a "
+"image for them "
+msgstr ""
+
+#: ../modules/fullwidth.php:736
+msgid "Content Panel Align"
+msgstr ""
+
+#: ../modules/fullwidth.php:745
+msgid "Foreground Color"
+msgstr ""
+
+#: ../modules/fullwidth.php:769
+msgid "Foreground Image"
+msgstr ""
+
+#: ../modules/fullwidth.php:777
+msgid "Overflow visible"
+msgstr ""
+
+#: ../modules/fullwidth.php:786
+msgid "Height auto"
+msgstr ""
+
+#: ../modules/fullwidth.php:791
+msgid "Insert Height"
+msgstr ""
+
+#: ../modules/fullwidth.php:794
+msgid ""
+"it is recommended to leave it empty to be \"auto\", if you do need a fixed "
+"height, please pay attention to the final effect on mobile devices. e.g. 500"
+msgstr ""
+
+#: ../modules/fullwidth.php:795 ../modules/google-map.php:99
+msgid "px"
+msgstr ""
+
+#: ../modules/fullwidth.php:801
+msgid "Show Shadow"
+msgstr ""
+
+#: ../modules/fullwidth.php:810
+msgid "Fit Content to Fullwidth"
+msgstr ""
+
+#: ../modules/fullwidth.php:811
+msgid ""
+"Content would fit to content container by default, turn on this option the "
+"content would fit to fullwidth of the page"
+msgstr ""
+
+#: ../modules/fullwidth.php:820 ../modules/text-block.php:65
+msgid "Inner Wrap Width"
+msgstr ""
+
+#: ../modules/fullwidth.php:837
+msgid "Enable Top Inner Spacer"
+msgstr ""
+
+#: ../modules/fullwidth.php:847
+msgid "Enable Bottom Inner Spacer"
+msgstr ""
+
+#: ../modules/fullwidth.php:857
+msgid "Enable Top Outer Spacer"
+msgstr ""
+
+#: ../modules/fullwidth.php:867
+msgid "Enable Bottom Outer Spacer"
+msgstr ""
+
+#: ../modules/gallery.php:73 ../modules/portfolio.php:98
+msgid "All"
+msgstr ""
+
+#: ../modules/gallery.php:258
+msgid "Library"
+msgstr ""
+
+#: ../modules/gallery.php:263 ../modules/liquid-list.php:520
+#: ../modules/portfolio.php:743
+msgid "0px"
+msgstr ""
+
+#: ../modules/gallery.php:264 ../modules/portfolio.php:744
+msgid "1px"
+msgstr ""
+
+#: ../modules/gallery.php:265 ../modules/portfolio.php:745
+msgid "2px"
+msgstr ""
+
+#: ../modules/gallery.php:266 ../modules/portfolio.php:746
+msgid "5px"
+msgstr ""
+
+#: ../modules/gallery.php:267 ../modules/liquid-list.php:521
+#: ../modules/portfolio.php:747
+msgid "10px"
+msgstr ""
+
+#: ../modules/gallery.php:286 ../modules/portfolio.php:773
+#: ../modules/portfolio.php:780
+msgid "Top"
+msgstr ""
+
+#: ../modules/gallery.php:308
+msgid "Image Source"
+msgstr ""
+
+#: ../modules/gallery.php:309
+msgid "Select where the images come from"
+msgstr ""
+
+#: ../modules/gallery.php:315
+msgid ""
+"The featured images of the Image Posts under the category you selected would "
+"be shown in this module"
+msgstr ""
+
+#: ../modules/gallery.php:324 ../modules/portfolio.php:831
+msgid "Spacing Between Images"
+msgstr ""
+
+#: ../modules/gallery.php:325 ../modules/portfolio.php:832
+msgid "Choose the spacing between images"
+msgstr ""
+
+#: ../modules/gallery.php:340 ../modules/liquid-list.php:590
+#: ../modules/portfolio.php:841
+msgid "Image Size"
+msgstr ""
+
+#: ../modules/gallery.php:341 ../modules/portfolio.php:842
+msgid "Choose a size for the images"
+msgstr ""
+
+#: ../modules/gallery.php:346 ../modules/portfolio.php:851
+#: ../modules/portfolio.php:861
+msgid "Image Ratio"
+msgstr ""
+
+#: ../modules/gallery.php:347
+msgid ""
+"From portfilio post featured image, recommended size: larger than 600px * "
+"600px"
+msgstr ""
+
+#: ../modules/gallery.php:352 ../modules/portfolio.php:871
+#: ../modules/portfolio.php:997
+msgid "Sortable"
+msgstr ""
+
+#: ../modules/gallery.php:353 ../modules/portfolio.php:872
+msgid "Choose whether you want the list to be sortable or not"
+msgstr ""
+
+#: ../modules/gallery.php:362
+msgid "Double Size First Item"
+msgstr ""
+
+#: ../modules/gallery.php:363
+msgid "Enlarge the first image in the list"
+msgstr ""
+
+#: ../modules/gallery.php:368 ../modules/portfolio.php:1028
+msgid "Hover Effect"
+msgstr ""
+
+#: ../modules/gallery.php:369 ../modules/single-image.php:96
+msgid "Enable the mouseover effect"
+msgstr ""
+
+#: ../modules/gallery.php:374 ../modules/portfolio.php:921
+msgid "Post Number per Page"
+msgstr ""
+
+#: ../modules/gallery.php:375 ../modules/liquid-list.php:636
+#: ../modules/portfolio.php:922
+msgid ""
+"How many items should be displayed per page, leave it empty to show all "
+"items in one page"
+msgstr ""
+
+#: ../modules/gallery.php:379 ../modules/liquid-list.php:629
+#: ../modules/portfolio.php:891
+msgid "Pagination"
+msgstr ""
+
+#: ../modules/gallery.php:380 ../modules/liquid-list.php:630
+#: ../modules/portfolio.php:892
+msgid ""
+"The \"Twitter\" option is to show a \"Load More\" button on the bottom of "
+"the list"
+msgstr ""
+
+#: ../modules/gallery.php:385
+msgid "Choose Image from Library"
+msgstr ""
+
+#: ../modules/google-map.php:50 ../modules/testimonials.php:95
+msgid "4"
+msgstr ""
+
+#: ../modules/google-map.php:51
+msgid "5"
+msgstr ""
+
+#: ../modules/google-map.php:52
+msgid "6"
+msgstr ""
+
+#: ../modules/google-map.php:53
+msgid "7"
+msgstr ""
+
+#: ../modules/google-map.php:54
+msgid "8"
+msgstr ""
+
+#: ../modules/google-map.php:55
+msgid "9"
+msgstr ""
+
+#: ../modules/google-map.php:56
+msgid "10"
+msgstr ""
+
+#: ../modules/google-map.php:57
+msgid "11"
+msgstr ""
+
+#: ../modules/google-map.php:58
+msgid "12"
+msgstr ""
+
+#: ../modules/google-map.php:59
+msgid "13"
+msgstr ""
+
+#: ../modules/google-map.php:60
+msgid "14"
+msgstr ""
+
+#: ../modules/google-map.php:61
+msgid "15"
+msgstr ""
+
+#: ../modules/google-map.php:62
+msgid "16"
+msgstr ""
+
+#: ../modules/google-map.php:63
+msgid "17"
+msgstr ""
+
+#: ../modules/google-map.php:64
+msgid "18"
+msgstr ""
+
+#: ../modules/google-map.php:65
+msgid "19"
+msgstr ""
+
+#: ../modules/google-map.php:66
+msgid "20"
+msgstr ""
+
+#: ../modules/google-map.php:70
+msgid "Map"
+msgstr ""
+
+#: ../modules/google-map.php:71
+msgid "Satellite"
+msgstr ""
+
+#: ../modules/google-map.php:72
+msgid "Map+Terrain"
+msgstr ""
+
+#: ../modules/google-map.php:86
+msgid "Address"
+msgstr ""
+
+#: ../modules/google-map.php:87
+msgid ""
+"Enter the address that you would like to show on the map here, i.e. "
+"\"Sydney, NSW\"."
+msgstr ""
+
+#: ../modules/google-map.php:95
+msgid "Enter the height for your map (e.g. 400)"
+msgstr ""
+
+#: ../modules/google-map.php:101
+msgid "View"
+msgstr ""
+
+#: ../modules/google-map.php:102
+msgid "Select a map view"
+msgstr ""
+
+#: ../modules/google-map.php:107
+msgid "Map Zoom"
+msgstr ""
+
+#: ../modules/google-map.php:108 ../modules/image-box.php:146
+#: ../modules/testimonials.php:123 ../modules/testimonials.php:129
+#: ../modules/testimonials.php:135 ../modules/testimonials.php:141
+msgid "Descriptions"
+msgstr ""
+
+#: ../modules/google-map.php:113
+msgid "Show Map Pin"
+msgstr ""
+
+#: ../modules/google-map.php:125
+msgid "Enable Mouse Scroll Zoom"
+msgstr ""
+
+#: ../modules/google-map.php:130
+msgid "Enable Google Map Style"
+msgstr ""
+
+#: ../modules/google-map.php:137
+msgid ""
+"Edit the style <a href=\"http://gmaps-samples-v3.googlecode.com/svn/trunk/"
+"styledmaps/wizard/index.html?utm_medium=twitter\" target=\"_blank\">here</"
+"a>, or get one in <a href=\"http://snazzymaps.com/\" target=\"_blank"
+"\">snazzymaps</a>"
+msgstr ""
+
+#: ../modules/icon-box.php:122
+msgid "Icon on Left"
+msgstr ""
+
+#: ../modules/icon-box.php:123
+msgid "Icon on Top"
+msgstr ""
+
+#: ../modules/icon-box.php:124
+msgid "Icon on Right"
+msgstr ""
+
+#: ../modules/icon-box.php:129
+msgid "Full Rotate"
+msgstr ""
+
+#: ../modules/icon-box.php:130 ../modules/portfolio.php:793
+msgid "Flip"
+msgstr ""
+
+#: ../modules/icon-box.php:131
+msgid "Scale"
+msgstr ""
+
+#: ../modules/icon-box.php:135 ../modules/image-box.php:110
+msgid "Circle"
+msgstr ""
+
+#: ../modules/icon-box.php:136 ../modules/image-box.php:111
+msgid "Triangle"
+msgstr ""
+
+#: ../modules/icon-box.php:137 ../modules/image-box.php:112
+msgid "Rounded Square"
+msgstr ""
+
+#: ../modules/icon-box.php:138 ../modules/image-box.php:113
+msgid "Diamond"
+msgstr ""
+
+#: ../modules/icon-box.php:139 ../modules/image-box.php:114
+msgid "Star"
+msgstr ""
+
+#: ../modules/icon-box.php:158
+msgid "Layout"
+msgstr ""
+
+#: ../modules/icon-box.php:159
+msgid "Place the Icon on left or top"
+msgstr ""
+
+#: ../modules/icon-box.php:164
+msgid "Icon Mask"
+msgstr ""
+
+#: ../modules/icon-box.php:172
+msgid "Mask Color"
+msgstr ""
+
+#: ../modules/icon-box.php:180
+msgid "Hover Animation"
+msgstr ""
+
+#: ../modules/icon-box.php:190
+msgid "Enter a title for this Icon Box"
+msgstr ""
+
+#: ../modules/icon-box.php:194 ../modules/image-box.php:145
+#: ../modules/promote.php:70
+msgid "Link"
+msgstr ""
+
+#: ../modules/icon-box.php:198 ../modules/image-box.php:151
+msgid "Url"
+msgstr ""
+
+#: ../modules/icon-box.php:199
+msgid "Paste a url for the icon"
+msgstr ""
+
+#: ../modules/image-box.php:129 ../modules/single-image.php:79
+msgid "Select image"
+msgstr ""
+
+#: ../modules/image-box.php:133
+msgid "Image Mask"
+msgstr ""
+
+#: ../modules/image-box.php:152
+msgid "Paste a url for the image"
+msgstr ""
+
+#: ../modules/image-box.php:161
+msgid "Show Social Icons"
+msgstr ""
+
+#: ../modules/image-box.php:167
+msgid "Social Medias"
+msgstr ""
+
+#: ../modules/jobs.php:47
+msgid "Location:"
+msgstr ""
+
+#: ../modules/jobs.php:47
+msgid "Number:"
+msgstr ""
+
+#: ../modules/jobs.php:70
+msgid "Jobs Category"
+msgstr ""
+
+#: ../modules/jobs.php:71
+msgid "The jobs under the category you selected would be shown in this module"
+msgstr ""
+
+#: ../modules/latest-tweets.php:44
+msgid "Twitter User Name"
+msgstr ""
+
+#: ../modules/latest-tweets.php:54 ../modules/testimonials.php:140
+msgid "Show Navigation Buttons"
+msgstr ""
+
+#: ../modules/liquid-list.php:499 ../modules/liquid-list.php:501
+msgid "Share"
+msgstr ""
+
+#: ../modules/liquid-list.php:500
+msgid "Tweet"
+msgstr ""
+
+#: ../modules/liquid-list.php:502
+msgid "Pin it"
+msgstr ""
+
+#: ../modules/liquid-list.php:523
+msgid "30px"
+msgstr ""
+
+#: ../modules/liquid-list.php:552
+msgid "Post Featured Color"
+msgstr ""
+
+#: ../modules/liquid-list.php:553 ../modules/portfolio.php:788
+#: ../modules/single-image.php:58
+msgid "Grey"
+msgstr ""
+
+#: ../modules/liquid-list.php:554
+msgid "White"
+msgstr ""
+
+#: ../modules/liquid-list.php:560
+msgid "4 Columns"
+msgstr ""
+
+#: ../modules/liquid-list.php:572
+msgid "Liquid list"
+msgstr ""
+
+#: ../modules/liquid-list.php:574
+msgid "Style by Default"
+msgstr ""
+
+#: ../modules/liquid-list.php:575
+msgid "Choose a style for the Liquid List"
+msgstr ""
+
+#: ../modules/liquid-list.php:580
+msgid "Enable Mouseover Effect"
+msgstr ""
+
+#: ../modules/liquid-list.php:581
+msgid "Turn on it to enable mouseover effect"
+msgstr ""
+
+#: ../modules/liquid-list.php:591
+msgid "Choose a size for the images under image style"
+msgstr ""
+
+#: ../modules/liquid-list.php:600
+msgid "Block Ratio"
+msgstr ""
+
+#: ../modules/liquid-list.php:601
+msgid ""
+"The images come from featured image, a image larger than 600*600px would be "
+"recommended"
+msgstr ""
+
+#: ../modules/liquid-list.php:610
+msgid "Spacing Between Blocks"
+msgstr ""
+
+#: ../modules/liquid-list.php:611
+msgid "The size of gaps between post blocks"
+msgstr ""
+
+#: ../modules/liquid-list.php:635
+msgid "Number per Page"
+msgstr ""
+
+#: ../modules/liquid-list.php:640
+msgid "Loading Block Color"
+msgstr ""
+
+#: ../modules/liquid-list.php:641
+msgid "The panel color for the loading status after you click on it"
+msgstr ""
+
+#: ../modules/liquid-list.php:650
+msgid "Expanded Block Width"
+msgstr ""
+
+#: ../modules/liquid-list.php:651
+msgid "The width after a block is expanded"
+msgstr ""
+
+#: ../modules/liquid-list.php:656
+msgid "Expanded Block Words Numbers"
+msgstr ""
+
+#: ../modules/liquid-list.php:657
+msgid "How many descrptions should be showed for a expanded block"
+msgstr ""
+
+#: ../modules/liquid-list.php:661
+msgid "Show Social Medias on Expanded Block"
+msgstr ""
+
+#: ../modules/liquid-list.php:662
+msgid "Enable it to show Social Medias links on expanded block"
+msgstr ""
+
+#: ../modules/message-box.php:39
+msgid "Success"
+msgstr ""
+
+#: ../modules/message-box.php:40
+msgid "Warning"
+msgstr ""
+
+#: ../modules/message-box.php:41
+msgid "Error"
+msgstr ""
+
+#: ../modules/message-box.php:42
+msgid "Information"
+msgstr ""
+
+#: ../modules/message-box.php:57
+msgid "Select your message type"
+msgstr ""
+
+#: ../modules/message-box.php:63
+msgid "Enter content for this Message Box"
+msgstr ""
+
+#: ../modules/portfolio.php:404
+msgid "PREVIEW"
+msgstr ""
+
+#: ../modules/portfolio.php:405
+msgid "READMORE"
+msgstr ""
+
+#: ../modules/portfolio.php:462
+msgid "In "
+msgstr ""
+
+#: ../modules/portfolio.php:735
+msgid "Standard List"
+msgstr ""
+
+#: ../modules/portfolio.php:736
+msgid "Grid List"
+msgstr ""
+
+#: ../modules/portfolio.php:737
+msgid "Custom Grid"
+msgstr ""
+
+#: ../modules/portfolio.php:738
+msgid "Interlock List"
+msgstr ""
+
+#: ../modules/portfolio.php:783
+msgid "Floating"
+msgstr ""
+
+#: ../modules/portfolio.php:792
+msgid "Folding"
+msgstr ""
+
+#: ../modules/portfolio.php:794
+msgid "Mask"
+msgstr ""
+
+#: ../modules/portfolio.php:809
+msgid "col1"
+msgstr ""
+
+#: ../modules/portfolio.php:810
+msgid "col2"
+msgstr ""
+
+#: ../modules/portfolio.php:811
+msgid "col3"
+msgstr ""
+
+#: ../modules/portfolio.php:852 ../modules/portfolio.php:862
+msgid ""
+"From portfilio post featured image, recommended size: larger than 800px * "
+"800px"
+msgstr ""
+
+#: ../modules/portfolio.php:881
+msgid "Show Tags"
+msgstr ""
+
+#: ../modules/portfolio.php:931
+msgid ""
+"The featured images of the Portfolio posts under the category you selected "
+"would be shown in this module"
+msgstr ""
+
+#: ../modules/portfolio.php:960
+msgid "List Layout Builder"
+msgstr ""
+
+#: ../modules/portfolio.php:978
+msgid "Enable Post Meta"
+msgstr ""
+
+#: ../modules/portfolio.php:979
+msgid "Turn on it to enable post meta information"
+msgstr ""
+
+#: ../modules/portfolio.php:1006
+msgid "Filter Fixed"
+msgstr ""
+
+#: ../modules/portfolio.php:1015
+msgid "Show On Hover Status"
+msgstr ""
+
+#: ../modules/price.php:53
+msgid "Buy Now"
+msgstr ""
+
+#: ../modules/price.php:100
+msgid "Hide Runtime"
+msgstr ""
+
+#: ../modules/price.php:114
+msgid "Currency"
+msgstr ""
+
+#: ../modules/price.php:115
+msgid "Enter the Currency Symbol"
+msgstr ""
+
+#: ../modules/price.php:118
+msgid "$"
+msgstr ""
+
+#: ../modules/price.php:120
+msgid "Runtime"
+msgstr ""
+
+#: ../modules/price.php:121
+msgid "Enter the runtime, e.g. per month"
+msgstr ""
+
+#: ../modules/price.php:137
+msgid "Select a color for the price card"
+msgstr ""
+
+#: ../modules/price.php:144
+msgid ""
+"Enter the name of this product, it would be placed on the top of the card."
+msgstr ""
+
+#: ../modules/price.php:150
+msgid "Enter the price of this product."
+msgstr ""
+
+#: ../modules/price.php:155
+msgid "Details"
+msgstr ""
+
+#: ../modules/price.php:156
+msgid "EPress \"Add\" button to add detail items"
+msgstr ""
+
+#: ../modules/price.php:162
+msgid "Enter the text you want to show on button, e.g. Buy Now!"
+msgstr ""
+
+#: ../modules/price.php:168
+msgid "Enter the link for this button"
+msgstr ""
+
+#: ../modules/progress-bar.php:138
+msgid "Bar"
+msgstr ""
+
+#: ../modules/progress-bar.php:139
+msgid "Column"
+msgstr ""
+
+#: ../modules/progress-bar.php:140
+msgid "Pie"
+msgstr ""
+
+#: ../modules/progress-bar.php:141
+msgid "Pictorial"
+msgstr ""
+
+#: ../modules/progress-bar.php:142
+msgid "Big Number"
+msgstr ""
+
+#: ../modules/progress-bar.php:146
+msgid "Doughnut"
+msgstr ""
+
+#: ../modules/progress-bar.php:162
+msgid "Choose a info-graphic type"
+msgstr ""
+
+#: ../modules/progress-bar.php:168
+msgid "Choose a style for the pie"
+msgstr ""
+
+#: ../modules/progress-bar.php:177
+msgid "Digit"
+msgstr ""
+
+#: ../modules/progress-bar.php:178
+msgid "Enter the number"
+msgstr ""
+
+#: ../modules/progress-bar.php:186 ../modules/progress-bar.php:225
+#: ../modules/progress-bar.php:249
+msgid "Percent"
+msgstr ""
+
+#: ../modules/progress-bar.php:187 ../modules/progress-bar.php:226
+#: ../modules/progress-bar.php:250
+msgid "Enter the percentage data for this item."
+msgstr ""
+
+#: ../modules/progress-bar.php:190 ../modules/progress-bar.php:229
+#: ../modules/progress-bar.php:253
+msgid "%"
+msgstr ""
+
+#: ../modules/progress-bar.php:197 ../modules/progress-bar.php:216
+#: ../modules/progress-bar.php:257
+msgid "Title for this item"
+msgstr ""
+
+#: ../modules/progress-bar.php:232 ../modules/progress-bar.php:262
+msgid "Column Percentage Color"
+msgstr ""
+
+#: ../modules/progress-bar.php:233 ../modules/progress-bar.php:263
+#: ../modules/progress-bar.php:304 ../modules/progress-bar.php:312
+#: ../modules/progress-bar.php:321
+msgid "Color for activated part"
+msgstr ""
+
+#: ../modules/progress-bar.php:268
+msgid "Subtitle"
+msgstr ""
+
+#: ../modules/progress-bar.php:269
+msgid "Subtitle for this item"
+msgstr ""
+
+#: ../modules/progress-bar.php:277
+msgid "Icon"
+msgstr ""
+
+#: ../modules/progress-bar.php:285
+msgid "Number of Icons"
+msgstr ""
+
+#: ../modules/progress-bar.php:286
+msgid "How many icons you want to show in this module"
+msgstr ""
+
+#: ../modules/progress-bar.php:294
+msgid "Number of Active Icons"
+msgstr ""
+
+#: ../modules/progress-bar.php:295
+msgid "How many icons should be highlighted"
+msgstr ""
+
+#: ../modules/progress-bar.php:303
+msgid "Percentage Color"
+msgstr ""
+
+#: ../modules/progress-bar.php:311
+msgid "Active Icons Color"
+msgstr ""
+
+#: ../modules/progress-bar.php:320
+msgid "Number Color"
+msgstr ""
+
+#: ../modules/progress-bar.php:329
+msgid "Show Background Color"
+msgstr ""
+
+#: ../modules/progress-bar.php:330
+msgid "Enable it to show background color"
+msgstr ""
+
+#: ../modules/promote.php:58
+msgid "Enter the text you want to show in a largger size."
+msgstr ""
+
+#: ../modules/promote.php:62
+msgid "Background Color By Default"
+msgstr ""
+
+#: ../modules/promote.php:66
+msgid "Background Color Mouseover"
+msgstr ""
+
+#: ../modules/promote.php:74
+msgid "Open Link in New Tab"
+msgstr ""
+
+#: ../modules/single-image.php:57
+msgid "Shadow"
+msgstr ""
+
+#: ../modules/single-image.php:84
+msgid "Select a style for the image"
+msgstr ""
+
+#: ../modules/single-image.php:89
+msgid "Algin"
+msgstr ""
+
+#: ../modules/single-image.php:95
+msgid "Mouseover Effect"
+msgstr ""
+
+#: ../modules/single-image.php:101
+msgid "Lightbox"
+msgstr ""
+
+#: ../modules/single-image.php:102
+msgid "Enable the Lightbox"
+msgstr ""
+
+#: ../modules/slider.php:142
+msgid "Fade"
+msgstr ""
+
+#: ../modules/slider.php:143
+msgid "Slide"
+msgstr ""
+
+#: ../modules/slider.php:147
+msgid "Content Slider"
+msgstr ""
+
+#: ../modules/slider.php:148
+msgid "Flex Slider"
+msgstr ""
+
+#: ../modules/slider.php:163
+msgid "Slider Type"
+msgstr ""
+
+#: ../modules/slider.php:164
+msgid "Select the slider type"
+msgstr ""
+
+#: ../modules/slider.php:170
+msgid "The post under the category you selected would be shown in this slider."
+msgstr ""
+
+#: ../modules/slider.php:189
+msgid "Number to Show"
+msgstr ""
+
+#: ../modules/slider.php:190
+msgid "How many posts(slides) you want to show in the slider."
+msgstr ""
+
+#: ../modules/slider.php:198
+msgid "Animation"
+msgstr ""
+
+#: ../modules/slider.php:199
+msgid "Choose an animation effect for the slider"
+msgstr ""
+
+#: ../modules/slider.php:208
+msgid "Show Navigation Hint(dot)"
+msgstr ""
+
+#: ../modules/slider.php:209
+msgid "Turn on if you want to show the Nav Hint"
+msgstr ""
+
+#: ../modules/slider.php:218
+msgid "Show Previous/Next Button"
+msgstr ""
+
+#: ../modules/slider.php:219
+msgid "Turn on if you want to show the Nav Button"
+msgstr ""
+
+#: ../modules/slider.php:228
+msgid "Speed (second)"
+msgstr ""
+
+#: ../modules/slider.php:229
+msgid "Enter a speed for the animation"
+msgstr ""
+
+#: ../modules/slider.php:284
+msgid "LayerSlider"
+msgstr ""
+
+#: ../modules/slider.php:295
+msgid "LayerSlider Alias"
+msgstr ""
+
+#: ../modules/slider.php:296
+msgid ""
+"The right hand dropdown menu would be enabled after you have create at least "
+"1 slider by LayerSlider plugin."
+msgstr ""
+
+#: ../modules/slider.php:332
+msgid "Revolution Slider"
+msgstr ""
+
+#: ../modules/slider.php:343
+msgid "Revolution Slider Alias"
+msgstr ""
+
+#: ../modules/tabs.php:66
+msgid "Horizontal Tabs"
+msgstr ""
+
+#: ../modules/tabs.php:67
+msgid "Vertical Tabs"
+msgstr ""
+
+#: ../modules/tabs.php:82
+msgid "Select a layout for the Tabs module"
+msgstr ""
+
+#: ../modules/team.php:150
+msgid "Large Image"
+msgstr ""
+
+#: ../modules/team.php:151
+msgid "Medium Image"
+msgstr ""
+
+#: ../modules/team.php:152
+msgid "Small Image"
+msgstr ""
+
+#: ../modules/team.php:171
+msgid "Spacer Between Items"
+msgstr ""
+
+#: ../modules/team.php:176 ../modules/testimonials.php:128
+msgid "Show Position"
+msgstr ""
+
+#: ../modules/team.php:177
+msgid "Show the team number's position in the module"
+msgstr ""
+
+#: ../modules/team.php:182
+msgid "Show Email"
+msgstr ""
+
+#: ../modules/team.php:183
+msgid "Show the team number's email in the module"
+msgstr ""
+
+#: ../modules/team.php:188
+msgid "Show Phone Number"
+msgstr ""
+
+#: ../modules/team.php:189
+msgid "Show the team number's phone number in the module"
+msgstr ""
+
+#: ../modules/team.php:194
+msgid "Show Social Network"
+msgstr ""
+
+#: ../modules/team.php:195
+msgid "show the team number's social medias in the module"
+msgstr ""
+
+#: ../modules/team.php:200
+msgid "Number"
+msgstr ""
+
+#: ../modules/team.php:201
+msgid ""
+"How many items should be displayed in this module, leave it empty to show "
+"all items."
+msgstr ""
+
+#: ../modules/team.php:205
+msgid "Team Category"
+msgstr ""
+
+#: ../modules/testimonials.php:109
+msgid "Testimonials Category"
+msgstr ""
+
+#: ../modules/testimonials.php:110
+msgid ""
+"The testimonials under the category you selected would be shown in this "
+"module"
+msgstr ""
+
+#: ../modules/testimonials.php:122
+msgid "Show Avatar"
+msgstr ""
+
+#: ../modules/testimonials.php:134
+msgid "Show Link"
+msgstr ""
+
+#: ../modules/text-block.php:56
+msgid "Select the Background Color for Text Block."
+msgstr ""
+
+#: ../modules/text-block.php:61
+msgid "Enter some content for this Text Block."
+msgstr ""
+
+#: ../modules/text-list.php:70
+msgid "Enter content for this Text List"
+msgstr ""
+
+#: ../modules/video.php:59
+msgid "4:3"
+msgstr ""
+
+#: ../modules/video.php:60
+msgid "16:9"
+msgstr ""
+
+#: ../modules/video.php:61
+msgid "Custom"
+msgstr ""
+
+#: ../modules/video.php:75
+msgid "Embed Code"
+msgstr ""
+
+#: ../modules/video.php:76
+msgid "You could find the embed code on the source video page"
+msgstr ""
+
+#: ../modules/video.php:80
+msgid "Ratio"
+msgstr ""
+
+#: ../modules/video.php:81
+msgid "Set the appropriate ratio can remove the black border of the video"
+msgstr ""
+
+#: ../modules/video.php:93
+msgid "Cover for Video"
+msgstr ""
+
+#: ../ux-pagebuilder.php:114
+msgid "Modules (PageBuilder)"
+msgstr ""
+
+#: ../ux-pagebuilder.php:115
+msgid "Module Template (PageBuilder)"
+msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "The timing function of the animation to manipualte the layer's movement. "
+#~ "Click on the link next to this field to open easings.net for examples and "
+#~ "more information"
+#~ msgstr ""
+#~ "The timing function of the animation. With this function you can "
+#~ "manipualte the movement of the animated object. Please click on the link "
+#~ "next to this select field to open easings.net for more information and "
+#~ "real-time examples."

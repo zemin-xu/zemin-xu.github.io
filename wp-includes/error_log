@@ -1,0 +1,4 @@
+[25-Apr-2019 09:33:35 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home/zeminrme/zemin-xu.com/wp-includes/locale.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/zeminrme/zemin-xu.com/wp-includes/locale.php on line 10

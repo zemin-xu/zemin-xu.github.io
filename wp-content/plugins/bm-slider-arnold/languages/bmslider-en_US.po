@@ -1,0 +1,225 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BM Slider for ZA theme 1.0\n"
+"POT-Creation-Date: 2015-07-23 11:22+0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: uiueux <uiueux@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_attr__;esc_html_e;esc_html__\n"
+"X-Poedit-Basepath: ./\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../bm-slider-za.php:15
+msgid "BM Slider"
+msgstr ""
+
+#: ../bm-slider-za.php:17
+msgid "Add New"
+msgstr ""
+
+#: ../bm-slider-za.php:18
+msgid "Add New Slider"
+msgstr ""
+
+#: ../bm-slider-za.php:19
+msgid "Edit Slider"
+msgstr ""
+
+#: ../bm-slider-za.php:20
+msgid "New Slider"
+msgstr ""
+
+#: ../bm-slider-za.php:21
+msgid "View Slider"
+msgstr ""
+
+#: ../bm-slider-za.php:22
+msgid "No Slider found."
+msgstr ""
+
+#: ../bm-slider-za.php:23
+msgid "No Slider found in Trash."
+msgstr ""
+
+#: ../bm-slider-za.php:24
+msgid "Search Slider"
+msgstr ""
+
+#: ../bm-slider-za.php:26
+msgid "Categories"
+msgstr ""
+
+#: ../bm-slider-za.php:30
+msgid "Type your slider name here"
+msgstr ""
+
+#: ../bm-slider-za.php:42
+msgid "Standard Slide"
+msgstr ""
+
+#: ../bm-slider-za.php:47
+msgid "Please Select"
+msgstr ""
+
+#: ../bm-slider-za.php:48
+msgid "Title"
+msgstr ""
+
+#: ../bm-slider-za.php:49
+msgid "Date"
+msgstr ""
+
+#: ../bm-slider-za.php:50
+msgid "ID"
+msgstr ""
+
+#: ../bm-slider-za.php:51
+msgid "Modified"
+msgstr ""
+
+#: ../bm-slider-za.php:52
+msgid "Author"
+msgstr ""
+
+#: ../bm-slider-za.php:53
+msgid "Comment count"
+msgstr ""
+
+#: ../bm-slider-za.php:77
+msgid "Slider Settings"
+msgstr ""
+
+#: ../bm-slider-za.php:82
+msgid "Slider Type"
+msgstr ""
+
+#: ../bm-slider-za.php:95
+msgid "Category"
+msgstr ""
+
+#: ../bm-slider-za.php:101
+msgid "Order"
+msgstr ""
+
+#: ../bm-slider-za.php:109
+msgid "Number to List"
+msgstr ""
+
+#: ../bm-slider-za.php:166 ../bm-slider-za.php:285 ../bm-slider-za.php:645
+msgid "Image"
+msgstr ""
+
+#: ../bm-slider-za.php:167 ../bm-slider-za.php:260 ../bm-slider-za.php:286
+#: ../bm-slider-za.php:646 ../bm-slider-za.php:763
+msgid "Text"
+msgstr ""
+
+#: ../bm-slider-za.php:168 ../bm-slider-za.php:287 ../bm-slider-za.php:647
+msgid "Button"
+msgstr ""
+
+#: ../bm-slider-za.php:169 ../bm-slider-za.php:288 ../bm-slider-za.php:648
+msgid "Divider"
+msgstr ""
+
+#: ../bm-slider-za.php:170 ../bm-slider-za.php:289 ../bm-slider-za.php:649
+msgid "Blur Text"
+msgstr ""
+
+#: ../bm-slider-za.php:194 ../bm-slider-za.php:300 ../bm-slider-za.php:669
+#: ../bm-slider-za.php:695
+msgid "Upload Image"
+msgstr ""
+
+#: ../bm-slider-za.php:194 ../bm-slider-za.php:300 ../bm-slider-za.php:669
+#: ../bm-slider-za.php:695
+msgid "Upload"
+msgstr ""
+
+#: ../bm-slider-za.php:195 ../bm-slider-za.php:301 ../bm-slider-za.php:670
+#: ../bm-slider-za.php:696
+msgid "Remove"
+msgstr ""
+
+#: ../bm-slider-za.php:208 ../bm-slider-za.php:237 ../bm-slider-za.php:709
+#: ../bm-slider-za.php:740
+msgid "Enter your text here"
+msgstr ""
+
+#: ../bm-slider-za.php:212 ../bm-slider-za.php:241 ../bm-slider-za.php:713
+#: ../bm-slider-za.php:744
+msgid "Heading 1"
+msgstr ""
+
+#: ../bm-slider-za.php:213 ../bm-slider-za.php:242 ../bm-slider-za.php:714
+#: ../bm-slider-za.php:745
+msgid "Heading 2"
+msgstr ""
+
+#: ../bm-slider-za.php:214 ../bm-slider-za.php:243 ../bm-slider-za.php:715
+#: ../bm-slider-za.php:746
+msgid "Heading 3"
+msgstr ""
+
+#: ../bm-slider-za.php:215 ../bm-slider-za.php:244 ../bm-slider-za.php:716
+#: ../bm-slider-za.php:747
+msgid "Heading 4"
+msgstr ""
+
+#: ../bm-slider-za.php:216 ../bm-slider-za.php:245 ../bm-slider-za.php:717
+#: ../bm-slider-za.php:748
+msgid "Heading 5"
+msgstr ""
+
+#: ../bm-slider-za.php:217 ../bm-slider-za.php:246 ../bm-slider-za.php:718
+#: ../bm-slider-za.php:749
+msgid "Heading 6"
+msgstr ""
+
+#: ../bm-slider-za.php:222 ../bm-slider-za.php:723
+msgid "Decoration"
+msgstr ""
+
+#: ../bm-slider-za.php:223 ../bm-slider-za.php:724
+msgid "Line on Both Sides"
+msgstr ""
+
+#: ../bm-slider-za.php:224 ../bm-slider-za.php:725
+msgid "Underline & Overline"
+msgstr ""
+
+#: ../bm-slider-za.php:225 ../bm-slider-za.php:726
+msgid "Border"
+msgstr ""
+
+#: ../bm-slider-za.php:263 ../bm-slider-za.php:766
+msgid "URL"
+msgstr ""
+
+#: ../bm-slider-za.php:267 ../bm-slider-za.php:770
+msgid "Large"
+msgstr ""
+
+#: ../bm-slider-za.php:268 ../bm-slider-za.php:771
+msgid "Medium"
+msgstr ""
+
+#: ../bm-slider-za.php:269 ../bm-slider-za.php:772
+msgid "Small"
+msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "The timing function of the animation to manipualte the layer's movement. "
+#~ "Click on the link next to this field to open easings.net for examples and "
+#~ "more information"
+#~ msgstr ""
+#~ "The timing function of the animation. With this function you can "
+#~ "manipualte the movement of the animated object. Please click on the link "
+#~ "next to this select field to open easings.net for more information and "
+#~ "real-time examples."
