@@ -1,1 +1,0 @@
-<?php arnold_interface_blog_show_meta('category', 'single'); ?> <?php arnold_interface_blog_show_meta('date', 'single'); ?>  <?php arnold_interface_blog_show_meta('author', 'single'); ?> <?php arnold_interface_blog_show_meta('length', 'single'); ?> <?php arnold_interface_blog_show_meta('comments', 'single'); edit_post_link('(Edit)'); ?>
