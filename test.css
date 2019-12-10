@@ -1,0 +1,16 @@
+/* by default a block level element's content are as tall as their content */
+/* inline element are as tall as content, cannot set its width or height */
+
+/* Normal layout flow */
+
+/* flex layout */
+/* flex container */
+/* 2 axes : flex and cross */
+
+#test {
+    display: flex;
+    display: inline;
+    display: block;
+    display: inline-block;
+    display: none;
+}
