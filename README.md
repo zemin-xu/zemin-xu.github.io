@@ -1,7 +1,7 @@
 ---
 title: Home 
 layout: home
-permalink: Zemin XU
+permalink: /index.html
 ---
 
 # First ipsum
