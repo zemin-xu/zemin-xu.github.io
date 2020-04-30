@@ -1,5 +1,5 @@
 ---
-title: Zemin XU homepage 
+title: Home 
 layout: home
 permalink: Zemin XU
 ---

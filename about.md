@@ -1,6 +1,6 @@
 ---
-title: Zemin XU about page 
-layout: About me 
+title: About
+layout: home 
 permalink: Zemin XU
 ---
 
