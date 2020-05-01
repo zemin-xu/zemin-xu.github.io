@@ -2,10 +2,12 @@ header_pages:
   - index.md
   - about.md
 
-footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
+footer: '
+  Know more about me on <a href="https://zemin-xu.github.com/">Github</a><&nbsp>
+        '
 
-style: light # dark (default) or light
-listen_for_clients_preferred_style: true # true or false (default)
+style: dark # dark (default) or light
+listen_for_clients_preferred_style: false # true or false (default)
 
 plugins:
   - jekyll-seo-tag
