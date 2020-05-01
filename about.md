@@ -32,3 +32,5 @@ programming, including memory management, algorithms, usage of data type, implem
 
 under construction.
 under construction.
+
+#### Skills
