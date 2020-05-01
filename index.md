@@ -1,7 +1,7 @@
 ---
 title: Home 
 layout: home
-permalink: /index.html
+permalink: /
 ---
 
 # Change First page
