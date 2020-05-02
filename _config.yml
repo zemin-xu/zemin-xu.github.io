@@ -3,7 +3,9 @@ header_pages:
   - about.md
 
 footer: '
-  Know more about me on <a href="https://zemin-xu.github.com/">Github</a><&nbsp>
+  Know more about me on <a href="https://www.linkedin.com/in/zemin-xu/">LinkedIn</a> 
+  <a href="https://zemin-xu.github.com/">GitHub</a> 
+  
         '
 
 style: dark # dark (default) or light
