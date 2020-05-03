@@ -3,7 +3,7 @@ layout: post
 author: zemin 
 category: VR
 demo: true
-demo_link: save_the_rabbit.mp4
+demo_link: protect_the_rabbit.mp4
 ---
 
 # Protect the rabbit
