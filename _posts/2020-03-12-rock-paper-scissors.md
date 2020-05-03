@@ -6,28 +6,31 @@ demo: true
 demo_link: rock_paper_scissors.mp4
 ---
 
-# Rock Paper Scissors Game in AR
+# Rock Paper Scissors Game in workshop AR
 
-Tower Defense is my two-month Unity course assignment, which aims to improve my game design ability and development ability by adapting a classic tower defense gameplay and implementing the adaptation.
+*Rock Paper Scissors* is an one-week project realized by me with three classmates. The purpose of this workshop is to develop an app emphasizing augmented reality technology, using *Unity* and *Vuforia* framework.
+&nbsp;
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rock_paper_scissors_hand.jpg "tattoo on back of a hand")
 
-Consideration
-Before starting production, I thought about what I could change with the classic tower defense gameplay. A classic tower defense gameplay is where the player places defensive items in a fixed area while waves of attacking enemies arrive along a fixed path. I asked myself, would it be more interesting if the towers could be moved, or the towers could interact with each other?
+## Concept
 
-Gameplay
-Based on the gameplay of classic tower defense, I've added a special tower that can move and strike to the nearest enemy base automatically. In addition, there is a cooperative mode between towers, that is, when the player selects two towers, they form a boundary between them which will make a greater damage to enemies. In this case, the player can be flexible to change his strategy according to the location of the enemy. In addition, the enemies in this game arrive endlessly, and the goal of the game is to survive as long as possible. In the intense phase of the game, the strength of the enemy will be more powerful and their speed will be faster, so it is also a test on player's agility.
+The idea is simple: augmented reality with tattoo as marker. Here, tattoo serves as the marker. The concept is afterwards developed by combining with the [Rock Paper Scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors).
 
-Visuals
-After the gameplay was fixed, I imagined a story for this game, which takes place in ancient times, where a big flood brought the monster of the sea to the mountain. In order to protect their homes, the animals in the mountain went to fight spontaneously.
-	
-Phoenix
-Phoenix is different from other animals because it is react quickly and can fly to chase his enemy. According to legend, when two phoenixes are combined, they form a wall of fire which creates a greater power.
+## Gameplay
 
-Rabbit King
-The rabbit king has keen eyesight and explosive power. His carrots could be shooted out of the mountain.
+A player will have a main marker on the back of his hand as well as two secondary markers on two fingers. When diplaying the main marker without secondary one, the player results in getting a Rock in app. A main marker with one secondary one equals to scissors. All marker displayed means paper. When players are ready, one of them should click on Run button and display their marker(s) under camera. Corresponding animation will be trigger when the two icons are close enough.
 
-Rabbit Queen
-The rabbit queen has lots of carrots and can shoot many at once but not very far.
+## Experiments
 
-Game Experience
-Based on the gameplay of classic tower defense, I've added a special tower that can move and strike to the nearest enemy base automatically. In addition, there is a cooperative mode between towers, that is, when the player selects two towers, they form a boundary between them which will make a greater damage to enemies. In this case, the player can be flexible to change his strategy according to the location of the enemy. In addition, the enemies in this game arrive endlessly, and the goal of the game is to survive as long as possible. In the intense phase of the game, the strength of the enemy will be more powerful and their speed will be faster, so it is also a test on player's agility.
-
+The first problem we encountered was that the recognition of tattoo on skin was not as good as we imagined.
+&nbsp;
+At that moment, we used illustrations on cartons as an alternative way. At the same time, we did furthur experiments on recogition of tattoo. We firstly tested tattoo on forearm because the skin there is flatter.
+&nbsp;
+We applied the technique of stencil as well. The pattern on stencil was successfully recognized, but the tattoo itself was not. After that, we captured a photo of an existant tattoo and uploaded it into database of *Vuforia*. The problem existed. Therefore, we drew a conclusion that *Vuforia* is suitable for markers on plane.
+&nbsp;
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rock_paper_scissors_forearm_stencil.jpg "tattoo on back of a hand")
+&nbsp;
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rock_paper_scissors_forearm.jpg "tattoo on back of a hand")
+&nbsp;
+Partners: [E.Meurice](https://www.linkedin.com/in/eva-meurice/), [A.Mougin](https://www.linkedin.com/in/arthur-mougin/), [J.Pigrée](https://www.linkedin.com/in/jean-baptiste-pigrée-876087110/)
+&nbsp;
