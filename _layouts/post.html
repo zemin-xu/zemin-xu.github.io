@@ -6,6 +6,12 @@ layout: default
 
 {{ content }}
 
+
+
+{%- if page.demo == true -%}
+
 <video id="player" playsinline controls data-poster="/path/to/poster.jpg" style="width: 100%">
-    <source src="https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/videos/save_the_rabbit.mp4" type="video/mp4" />
+    <source src="https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/videos/{{page.demo_link}}"  type="video/mp4" />
 </video>
+ 
+{%- endif -%}

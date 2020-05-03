@@ -1,9 +1,12 @@
 ---
 layout: post
 author: zemin 
+category: Unity 
+demo: false 
 ---
 
 # Tower defense
+
 / Game Design / Development / Modeling
 Tower Defense is my two-month Unity course assignment, which aims to improve my game design ability and development ability by adapting a classic tower defense gameplay and implementing the adaptation.
 

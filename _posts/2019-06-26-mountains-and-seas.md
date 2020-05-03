@@ -1,9 +1,11 @@
 ---
 layout: post
 author: zemin 
+category: Unity
 ---
 
 # Mountains & seas
+
 / Game Design / Development / Modeling
 «Mountains and Seas» is my eight-month graduation project in which we should developed in spare time and have three classes to discuss it with tutor. In this project, I started with a topic that I was interested in, found out some limitations of this theme in today's society through investigation, and put forward an idea related to game design. Finally, I completed the implementation of the core gameplay in the prototype stage.
 

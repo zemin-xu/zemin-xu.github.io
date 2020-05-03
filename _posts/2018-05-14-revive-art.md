@@ -1,6 +1,7 @@
 ---
 layout: post
 author: zemin 
+category: VR
 ---
 
 # Revive art
