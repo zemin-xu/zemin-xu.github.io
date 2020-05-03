@@ -3,7 +3,7 @@ layout: post
 author: zemin 
 category: AR
 demo: true
-demo_link: ar_rock_paper_scissors.mp4
+demo_link: rock_paper_scissors.mp4
 ---
 
 # Rock Paper Scissors Game in AR
