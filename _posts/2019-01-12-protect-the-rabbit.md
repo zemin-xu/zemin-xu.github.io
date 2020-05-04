@@ -26,3 +26,4 @@ In terms of game art, the environment mainly refers to the 2D cardboard style of
 
 This game is a simple application of VR technology, in which the interactive actions are not complex, and such cartoon style is suitable for the beginners of VR games. The final effect of this game reached our expectations, and most of the test feedback is positive. However, we also found from the feedback that the task of the game is slightly monotonous. If more factors can be added, such that the rabbit can walk around and the player needs to pay attention to the hunter beside him at any time, I think this improvement can greatly increase the challenge and playability of the game.
 &nbsp;
+Partner: [H.Guibert](https://www.linkedin.com/in/hélènedeguibert/), [B.Guerin](https://www.linkedin.com/in/baptiste-guérin-2021b9187/), Y.Makhzoumi, [B.Trichereau](https://www.linkedin.com/in/bastien-trichereau-98437814b/)

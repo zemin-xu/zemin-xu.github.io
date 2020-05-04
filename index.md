@@ -6,4 +6,4 @@ permalink: /
 
 #### Intro
 
-Hello, my name’s Zemin. With more than 2 years of experience in Game Design and development, I am passionate about games because of fantastic experience it provides, in which our emotions tremble by interacting.
+Hello, my name’s Zemin. Here you can find projects I participated related to VR, AR and interactive experience.
