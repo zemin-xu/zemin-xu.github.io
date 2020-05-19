@@ -20,13 +20,21 @@ The *neuron* is the smallest element and that the number in a neuron is called i
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/neuron_network_activation_first_layer.png "neuron at first layer"){:width="100%"}
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/neuron_network_activation_last_layer.png "neuron at last layer"){:width="100%"}
 
+## Layer
 
-## Layers
+According to the system, there may be different solutions of analysing a model from an input to an output, and *layer* here means the component of one solution. For example, the solution is using the different components in a number to know whether it corresponds. For example, a _9_ can be represented using a upper top and a line on the right. Recognizing a visual part can also be seperated by several sub-components which consist of the following layers.
 
-### Why the layers
+## Weight
 
-Hidden layers
+From the second layer, we will connect it with each of the previous layer, and we assign a weight for each of them. For a neuron in the second layer, the *weight* here represents the influence of the value in such neuron of first layer to itself. The value useful is the sum of product of each activation with its weight. The *sigmoid* function is used when converting this sum into a range of 0 and 1.
 
-The way the network operates activations in one layer determine the activation of the next layers.
+## Cost
 
-# Machine Learning
+The sum of squares of difference of the activation of an neuron and the result it should be. When computer behaves well, the cost should be quite small.
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/neuron_network_activation_cost.png "a pretty correct training cost"){:width="100%"}
+
+## Gradient descent
+
+**Gradient**, the direction of steepest increase. **Gradient descent** is the process of repeatedly nudging an input of a function by some multiple negative gradient.
+
+[Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com)
