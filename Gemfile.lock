@@ -72,6 +72,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
+  jekyll
   jekyll-seo-tag
   jekyll-theme-console!
   rake
