@@ -136,7 +136,7 @@ public class HummingbirdAgent : Agent
         smoothYawChange = Mathf.MoveTowards(smoothYawChange, yawChange, 2f * Time.fixedDeltaTime);
 
         // Calculate new pitch and yaw based on smoothed values
-        // Clamp  pitch to avoid flipping upside down
+        // Clamp pitch to avoid flipping upside down
         float pitch = rotationVector.x + smoothPitchChange * Time.fixedDeltaTime * pitchSpeed;
         if (pitch > 180f) pitch -= 360f;
         pitch = Mathf.Clamp(pitch, -MaxPitchAngle, MaxPitchAngle);
