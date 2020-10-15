@@ -14,9 +14,13 @@ You can reach me out by [email](mailto:zemin.xu@yahoo.com).
 
 #### Education
 
+##### [Virtual & Augmented Reality](https://artsetmetiers.fr/fr/node/871)
+
+###### *Institut Polytechnique Paris*　　09/2020 – present Paris, France
+
 ##### [Master Management of 3D interactive technology](https://artsetmetiers.fr/fr/node/871)
 
-###### *Arts et Métiers ParisTech*　　09/2019 – present　　Laval, France
+###### *Arts et Métiers ParisTech*　　09/2019 – 06/2020 Laval, France
 
 ##### [Infomation Technology Self Education](https://www.42.us.org/innovation/program-design/)
 
