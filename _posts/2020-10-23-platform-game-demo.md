@@ -9,7 +9,7 @@ demo_link: platform_game.mp4
 
 #### Character
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/platform/character.png ""){:width="100%"}
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/platform/character.png "character"){:width="100%"}
 
 #### Animation
 
