@@ -7,23 +7,23 @@ demo_link: platform_game.mp4
 ---
 # Platform Game
 
-## Character
+#### Character
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/platform/character.png ""){:width="100%"}
 
-## Animation
+#### Animation
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/platform/mixamo.png "animation"){:width="100%"}
 
-## Animator
+#### Animator
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/platform/animator.png "animator"){:width="100%"}
 
-## UI
+#### UI
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/platform/ui.png "ui"){:width="100%"}
 
-## ChangeColorBlock script
+#### ChangeColorBlock script
 
 ``` c#
  private IEnumerator ChangeColor()
