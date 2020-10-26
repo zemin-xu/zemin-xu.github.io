@@ -13,15 +13,15 @@ demo_link: platform_game.mp4
 
 ## Animation
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/platform/mixamo.png ""){:width="100%"}
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/platform/mixamo.png "animation"){:width="100%"}
 
 ## Animator
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/platform/animator.png ""){:width="100%"}
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/platform/animator.png "animator"){:width="100%"}
 
 ## UI
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/platform/ui.png ""){:width="100%"}
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/platform/ui.png "ui"){:width="100%"}
 
 ## ChangeColorBlock script
 
@@ -60,3 +60,4 @@ demo_link: platform_game.mp4
     }
 ```
 
+&nbsp;
