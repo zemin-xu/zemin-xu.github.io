@@ -58,6 +58,18 @@ demo_link: platform_game.mp4
             yield return new WaitForSeconds(t);
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (renderer.material.color == Color.green)
+        {
+            IncreaseEnergy();
+        }
+        else if (renderer.material.color == Color.yellow)
+        {
+            DecreaseEnergy();
+        }
+    }
 ```
 
 &nbsp;
