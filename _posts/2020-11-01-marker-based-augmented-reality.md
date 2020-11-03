@@ -61,19 +61,33 @@ The first experiment is to test the calculation time of detection for each featu
 
 &nbsp;
 
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_kp_less_light.png " "){:width="100%"}
+###### SIFT keypoints with simple detail sample under light environment
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_kp_rich_light.png " "){:width="100%"}
+###### SIFT keypoints with rich detail sample under light environment
+
+&nbsp;
+
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_sample_rich_dark_kp.png " "){:width="100%"}
+###### performance comparison with rich detail sample under dark environment
 
 &nbsp;
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_sample_simple_dark_kp.png " "){:width="100%"}
+###### performance comparison with simple detail sample under dark environment
 
 &nbsp;
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_sample_rich_light_kp.png " "){:width="100%"}
+###### performance comparison with rich detail sample under light environment
 
 &nbsp;
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_sample_simple_light_kp.png " "){:width="100%"}
+###### performance comparison with simple detail sample under light environment
 
 &nbsp;
 
