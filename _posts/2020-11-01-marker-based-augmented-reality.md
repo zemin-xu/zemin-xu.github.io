@@ -57,7 +57,7 @@ To have a optimal solution, I firstly evaluate the time for detection and matchi
 
 ### performance
 
-The first experiment is to test the calculation time of detection for each feature extractor. My CPU is Intel i5-9300H with clockspeed of 2.40 GHz. The calculation time of **detect()** function is tested. In source code you can find the **KPTest()** code implementation. For this test, the variable is the sample image differentiated in lighting and texture(detail).
+The first experiment is to test the **computational time** of detection for each feature extractor. My CPU is Intel i5-9300H with clockspeed of 2.40 GHz. The calculation time of **detect()** function is tested. In source code you can find the **KPTest()** code implementation. For this test, the variable is the sample image differentiated in lighting and texture(detail).
 
 &nbsp;
 
@@ -70,7 +70,6 @@ The first experiment is to test the calculation time of detection for each featu
 ###### SIFT keypoints with rich detail sample under light environment
 
 &nbsp;
-
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_sample_rich_dark_kp.png " "){:width="100%"}
 ###### performance comparison with rich detail sample under dark environment
 
@@ -91,9 +90,47 @@ The first experiment is to test the calculation time of detection for each featu
 
 &nbsp;
 
+From the test above, we can find that the detection time of **SURF**, **ORB** and **BRISK** are at the same level of speed and are much faster than **SIFT** and **AKAZE**. Another observation is that **SURF** find the most keypoints among them.
+
+&nbsp;
+
+The second test is on matching. For binary string-based feature extractors(ORB, BRISK and AKAZE) I used **BruteForce-Hamming** matcher, and for floating-point ones I used **FLANN** matcher, because it is supposed to be faster than Brute Force based matcher for big dataset. The sample image is the one with simple detail under light environment.
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_match_akaze_light.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_match_brisk_light.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_match_orb_light.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_match_sift_light.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_match_surf_light.png " "){:width="100%"}
+
+&nbsp;
+
+From this test we can find that binary string-based feature extractors match faster than that of floating-point ones. From observation, I found that **SIFT** and **SURF** will influence the fluency of webcam streaming. However, the matching quality is also better. For binary string-based extractors, the **BRISK** and **AKAZE** are equally better than **ORB** in terms of stability. With **ORB**, the matching output will jitter even I hold the book in hand without motion. From this experiment, I decide:
+
+1. abandon **ORB** because of jittering.
+
+2. test with parameters of **SIFT** and **SURF** to make the amount of matching less, in order to have less calculation time.
+
+
+
+
+
+
 ### limitations
 
 ### advices
+
 add limitation part
 do video with quick zoom and slow zoom
 test impact of preprocessing

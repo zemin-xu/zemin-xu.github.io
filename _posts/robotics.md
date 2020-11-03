@@ -20,3 +20,5 @@ research mainly in: improved control schemes, AI methods, new sensors and actuat
 design of social robots acting in human centered environments
 
 automata
+
+uncanny valley
