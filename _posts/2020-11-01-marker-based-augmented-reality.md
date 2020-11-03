@@ -17,7 +17,7 @@ This factor is the most curcial one because in the solution, the detection and m
 The minimum value should be 30 frames per second so that the streaming is fluent enough, that's is to say, the maximum computation time should be less than 0.03 second for each frame.
 2. **Rotation & Scale Invariance**
 It is normal that the instance in webcam will be rotated or shown in different size. Therefore, a feature detector that has rotational variance or scale variance should not be considered.
-3. **Light Condition & Motion Blur**
+3. **Light Condition**
 Sometimes the situation that the lighting is not ideal will happen, no matter for sample image or for webcam usage.
 4. **Motion Blur**
 A common situation for webcam is that the object will move slowly or fastly sometimes. The quality of detection should be considered even the object is moving.
@@ -116,14 +116,57 @@ The second test is on matching. For binary string-based feature extractors(ORB, 
 
 &nbsp;
 
-From this test we can find that binary string-based feature extractors match faster than that of floating-point ones. From observation, I found that **SIFT** and **SURF** will influence the fluency of webcam streaming. However, the matching quality is also better. For binary string-based extractors, the **BRISK** and **AKAZE** are equally better than **ORB** in terms of stability. With **ORB**, the matching output will jitter even I hold the book in hand without motion. From this experiment, I decide:
+From this test we can find that binary string-based descriptors match much faster than that of floating-point-based ones. From observation, I found that **SIFT** and **SURF** will influence the fluency of webcam streaming. However, the matching quality(matching rate) is also better. For binary string-based extractors, the **BRISK** and **AKAZE** are equally better than **ORB** in terms of stability. They all have the problem of jittering when moving the instance quickly. With **ORB**, the matching output will jitter even I hold the book in hand without motion. After this experiment, I decide:
 
-1. abandon **ORB** because of jittering.
+1. Abandon **ORB** because of jittering.
 
-2. test with parameters of **SIFT** and **SURF** to make the amount of matching less, in order to have less calculation time.
+2. Test with parameters of **SIFT** and **SURF** to make the amount of matching less, in order to have less calculation time. According to theory, **SURF** should be three times faster than **SIFT**.
+
+3. Try to improve the matching quality to make sure that when I hold nothing, it will not do wrong matching.
+
+### Rotation & scale
+
+The next experiment is about rotational invariance and scale invariance. At a closer distance, the rotation will not influence much the result of all the descriptors. However, when I move the object away, their behaviour differs. For **SIFT** it is almost the same, but for **SURF** it is not as robust as before, with some jittering and unmatching. **BRISK** and **AZAKE** is not as good as before. But **BRISK** is more robust than **AKAZE** without unmatching.
+
+### Varying parameters of descriptors
+
+At this stage, I have a general idea of the characteristics of each descriptor. I divide them in to two group:
+
+1. SIFT and SURF
+2. BRISK and AKAZE
+
+For the 1st group, I try varying their parameters to limit the calculation time to an acceptable value(0.16s). At the same time, they should have similar quality of matching without too much jittering.
+
+I test with **SURF** by varying the value of **hessianThreshold**, ,**nOctaves** and **nOctaveLayers**.
+By observation, the augmentation of **hessianThreshold** can be useful to augment the matching rate and performance time. However, it suffers from the jittering problem even the object is stable. What's worse is that it cannot detect object, if the object is not faced to camera.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/surf_500_4_3.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/surf_800_4_3.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/surf_1200_4_3.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/surf_1200_4_2.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/surf_1200_3_3.png " "){:width="100%"}
+
+&nbsp;
 
 
 
+### Lighting
+
+The next experiment is
 
 
 
