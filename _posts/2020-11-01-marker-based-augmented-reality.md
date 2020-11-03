@@ -18,19 +18,21 @@ The minimum value should be 30 frames per second so that the streaming is fluent
 2. **Rotation & Scale Invariance**
 It is normal that the instance in webcam will be rotated or shown in different size. Therefore, a feature detector that has rotational variance or scale variance should not be considered.
 3. **Light Condition & Motion Blur**
-Sometimes the situation that the lighting is not ideal will happen or the instance is moving in front of camera. These factors should be also considered.
-4. **Distinctiveness**
+Sometimes the situation that the lighting is not ideal will happen, no matter for sample image or for webcam usage.
+4. **Motion Blur**
+A common situation for webcam is that the object will move slowly or fastly sometimes. The quality of detection should be considered even the object is moving.
 5. **Robustness**
+For me, a robust solution is that the detecting and matching result is generally good for any kind of image inputs, even under bad situation such as lighting.
 
 In this project, I choose a hard book cover with rich details and another with much less interest points as objects to test.
 I choose **SIFT**, **SURF**, **ORB**, **AKAZE** and **BRISK** as the feature detectors and carry out the experiments.
 The **Harris Corner Detector**[1] and **Shi-Tomasi Corner Detector**[2] is eliminated because of their scale-variant feature.
 
-## feature descriptors theory
+## Theoretical study
 
 ### SIFT(Scale Invariant Feature Transform)
 
-SIFT[3] is scale-invariant, which is also good at handling illumination change as well. It uses DoG as an approximation of LoG to calculate local extrema(potential keypoint) over scale[4]. SIFT provides distinctiveness, robustness and invariance to common image transformations such as rotation and scale[5]. It is widely accepted as one of highest quality options currently available, promising distinctiveness and invariance to a variety of common image transformations – however, at the expense of computational cost.[6]
+SIFT[3] is scale-invariant, which is also good at handling illumination change as well. It uses DoG as an approximation of LoG to calculate local extrema(potential keypoint) over scale[4]. SIFT provides distinctiveness, robustness and invariance to common image transformations such as rotation and scale[5]. It is widely accepted as one of highest quality options currently available, promising distinctiveness and invariance to a variety of common image transformations – however, at the expense of computational cost[6].
 
 ### SURF(Speeded-Up Robust Features)
 
@@ -55,14 +57,25 @@ To have a optimal solution, I firstly evaluate the time for detection and matchi
 
 ### performance
 
+The first experiment is to test the calculation time of detection for each feature extractor. My CPU is Intel i5-9300H with clockspeed of 2.40 GHz. The calculation time of **detect()** function is tested. In source code you can find the **KPTest()** code implementation. For this test, the variable is the sample image differentiated in lighting and texture(detail).
 
-### questions
+&nbsp;
 
-1. how to do the final augmentation step ? (warp, binary operation)
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_sample_rich_dark_kp.png " "){:width="100%"}
 
-2. shall we do the pre-processing like denoising of frame ?
+&nbsp;
 
-3. how to evaluate the perf & robustness of a solution
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_sample_simple_dark_kp.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_sample_rich_light_kp.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_sample_simple_light_kp.png " "){:width="100%"}
+
+&nbsp;
 
 ### limitations
 
@@ -70,6 +83,7 @@ To have a optimal solution, I firstly evaluate the time for detection and matchi
 add limitation part
 do video with quick zoom and slow zoom
 test impact of preprocessing
+test preprocessing like denoising
 robustness(rotation, motion, lighting, background texture influence, marker itself)
 give the install file zip
 ## References
