@@ -142,6 +142,11 @@ By observation, the augmentation of **hessianThreshold** can be useful to augmen
 
 &nbsp;
 
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/surf_default_100_4_3.png " "){:width="100%"}
+###### SURF defaut parameters
+
+&nbsp;
+
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/surf_500_4_3.png " "){:width="100%"}
 
 &nbsp;
@@ -162,6 +167,22 @@ By observation, the augmentation of **hessianThreshold** can be useful to augmen
 
 &nbsp;
 
+For **SIFT** descriptor, I use **Brute Force L2** matcher because I find that it is faster. There are several parameters for **SIFT**: **nfeatures**, **nOctaveLayers**, **contrastThreshold**, **edgeThreshold** and **sigma**. By varying them I find that the default value is the most robust choice. The change of threshold will make it a bit faster, but it starts suffering jittering.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_default_0_3_4_10_16.png " "){:width="100%"}
+###### SIFT defaut parameters
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_0_3_4_10_12.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_0_3_8_10_16.png " "){:width="100%"}
+
+By observation, I find that the computation time of **SIFT** is similar to **SURF**, while with a better quality, so I decide to abandon **SURF** for the solution.
 
 
 ### Lighting
