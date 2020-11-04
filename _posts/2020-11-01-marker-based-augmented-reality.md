@@ -108,7 +108,15 @@ The second test is on matching. For binary string-based feature extractors(ORB, 
 
 &nbsp;
 
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/BRISK.gif " "){:width="100%"}
+
+&nbsp;
+
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_match_orb_light.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/ORB.gif " "){:width="100%"}
 
 &nbsp;
 
@@ -116,7 +124,15 @@ The second test is on matching. For binary string-based feature extractors(ORB, 
 
 &nbsp;
 
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/SIFT.gif " "){:width="100%"}
+
+&nbsp;
+
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_match_surf_light.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/SURF.gif " "){:width="100%"}
 
 &nbsp;
 
