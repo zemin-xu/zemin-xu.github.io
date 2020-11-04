@@ -100,6 +100,10 @@ The second test is on matching. For binary string-based feature extractors(ORB, 
 
 &nbsp;
 
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/AKAZE.gif " "){:width="100%"}
+
+&nbsp;
+
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_match_brisk_light.png " "){:width="100%"}
 
 &nbsp;
@@ -182,8 +186,30 @@ For **SIFT** descriptor, I use **Brute Force L2** matcher because I find that it
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_0_3_8_10_16.png " "){:width="100%"}
 
+&nbsp;
+
 By observation, I find that the computation time of **SIFT** is similar to **SURF**, while with a better quality, so I decide to abandon **SURF** for the solution.
 
+&nbsp;
+
+For the second group of **BRISK** and **AZAKE**, I try improving their detection and matching quality by varying their parameters.
+
+&nbsp;
+
+For **BRISK**, its parameters are **threshold**, **octaves** and **patternScale**.
+
+
+
+
+&nbsp;
+
+descriptor_type	Type of the extracted descriptor: DESCRIPTOR_KAZE, DESCRIPTOR_KAZE_UPRIGHT, DESCRIPTOR_MLDB or DESCRIPTOR_MLDB_UPRIGHT.
+descriptor_size	Size of the descriptor in bits. 0 -> Full size
+descriptor_channels	Number of channels in the descriptor (1, 2, 3)
+threshold	Detector response threshold to accept point
+nOctaves	Maximum octave evolution of the image
+nOctaveLayers	Default number of sublevels per scale level
+diffusivity	Diffusivity type. DIFF_PM_G1, DIFF_PM_G2, DIFF_WEICKERT or DIFF_CHARBONNIER
 
 ### Lighting
 
