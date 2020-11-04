@@ -221,7 +221,7 @@ For the second group of **BRISK** and **AZAKE**, I try improving their detection
 &nbsp;
 
 For **BRISK**, its parameters are **threshold**, **octaves** and **patternScale**.
-
+While decreasing the threshold, the quality of matching improves a bit.
 
 
 
