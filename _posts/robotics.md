@@ -22,3 +22,6 @@ design of social robots acting in human centered environments
 automata
 
 uncanny valley
+
+# Human needs
+home device controling - alexia
