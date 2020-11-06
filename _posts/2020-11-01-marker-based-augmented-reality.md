@@ -162,7 +162,7 @@ From this test we can find that binary string-based descriptors match much faste
 
 ### Rotation & scale
 
-The next experiment is about rotational invariance and scale invariance. At a closer distance, the rotation will not influence much the result of all the descriptors. However, when I move the object away, their behaviour differs. For **SIFT** it is almost the same, but for **SURF** it is not as robust as before, with some jittering and unmatching. **BRISK** and **AZAKE** is not as good as before. But **BRISK** is more robust than **AKAZE** without unmatching.
+The next experiment is about rotational invariance and scale invariance. At a closer distance, the rotation will not influence much the result of all the descriptors. However, when I move the object away, their behavior differs. For **SIFT** it is almost the same, but for **SURF** it is not as robust as before, with some jittering and wrong matching. **BRISK** and **AZAKE** is not as good as before. But **BRISK** is more robust than **AKAZE** without much wrong matching.
 
 ### Varying parameters of descriptors
 
@@ -201,10 +201,10 @@ By observation, the augmentation of **hessianThreshold** can be useful to augmen
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/SURF_jittering.gif " "){:width="100%"}
 ###### hessianThreshold: 1200, nOctaves: 3, nOctaveLayers: 3
+
 &nbsp;
 
-
-For **SIFT** descriptor, I use **Brute Force L2** matcher because I find that it is faster. There are several parameters for **SIFT**: **nfeatures**, **nOctaveLayers**, **contrastThreshold**, **edgeThreshold** and **sigma**. By varying them I find that the default value is the most robust choice. The change of threshold will make it a bit faster, but it starts suffering jittering.
+For **SIFT** descriptor, I use **Brute Force L2** matcher because I find that it is faster. There are several parameters for **SIFT**: **nFeatures**, **nOctaveLayers**, **contrastThreshold**, **edgeThreshold** and **sigma**. By varying them I find that the default value is the most robust choice. The change of threshold will make it a bit faster, but it starts suffering jittering.
 
 &nbsp;
 
@@ -234,7 +234,7 @@ For the second group of **BRISK** and **AZAKE**, I try improving their detection
 &nbsp;
 
 For **BRISK**, its parameters are **threshold**, **octaves** and **patternScale**.
-While decreasing **threshold** or increasing **octaves**, the keypoints detected increase which make the matching quality better. Even though the computation time increase to about 0.1s, but for experience it is unrecongnisable. With modified parameters, **BRISK** can achieve a stable matching even though the object is not faced to camera at all.
+While decreasing **threshold** or increasing **octaves**, the keypoints detected increase which make the matching quality better. Even though the computation time increase to about 0.1s, but for experience it is unrecognizable. With modified parameters, **BRISK** can achieve a stable matching even though the object is not faced to camera at all.
 
 &nbsp;
 
@@ -255,7 +255,7 @@ While decreasing **threshold** or increasing **octaves**, the keypoints detected
 
 &nbsp;
 
-The jittering problem of **AKAZE** is much wroser than **BRISK**, after doing test. Therefore, I will not go in deeper for **AKAZE** in the following experiments.
+The jittering problem of **AKAZE** is much worser than **BRISK**, which is proved by tests above. Therefore, I will not go in deeper for **AKAZE** in the following experiments.
 
 ### Descriptor Matchers & Matching filters
 
@@ -263,7 +263,66 @@ When doing experiments above, I used Brute-Force Hamming descriptor matcher, so 
 
 The performance of **BF-L2** and **FLANN** is also related to the matching methods and matching filters. Each descriptor matcher has **match()** function and **knnMatch()** function, which correspond to best matching and k-nearest-neighbor matching respectively. To filter out the bad matching, they can chooses **Score filtering** and **Ratio filtering** respectively.
 
-Here I would like to compare the performance with differents matchers without filtering methods for **SIFT** and **BRISK**.
+Here I would like to compare the performance with different matchers without filtering methods for **SIFT** and **BRISK** firstly.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_flann.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_bfl2_false.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_bfl2_true.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/brisk_bfl2_false.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/brisk_bfhamming_false.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/brisk_bfhamming_true.png " "){:width="100%"}
+
+&nbsp;
+
+The result shows that the computation time of **FLANN** and **BF-L2** for **SIFT** is similar, for this sample image. However, with **crossCheck** activated, the matching quality is much better. For **BRISK**, **BF-Hamming** is more quickly than **BF-L2**.
+
+The next step is to combine match functions as well as match filtering to compare.
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_bfl2_score.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_bfl2_knn.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_flann_score.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/sift_flann_knn.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/brisk_bfhamming_score.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/brisk_bfhamming_knn.png " "){:width="100%"}
+
+&nbsp;
+
+
+
+
+
 
 ### limitations
 
@@ -310,7 +369,6 @@ give the install file zip
 16. [OPENCV -- Feature Matching](https://docs.opencv.org/master/dc/dc3/tutorial_py_matcher.html)
 
 100. E. Bostanci, "Is Hamming distance only way for matching binary image feature descriptors?", Electronics Letters, vol. 50, no. 11, pp. 806-808, May 2014.
-
 
 # how to run the project
 
