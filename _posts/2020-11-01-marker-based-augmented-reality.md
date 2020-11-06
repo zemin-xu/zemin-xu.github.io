@@ -319,7 +319,7 @@ The next step is to combine match functions as well as match filtering to compar
 
 &nbsp;
 
-
+When setting ratio to be 0.7, the computation time is similar between four combinations for **SIFT**, which are generally 1 times slower than that of **BRISK**. In this case, I will provide **BRISK** as the feature descriptor the final solution
 
 
 
