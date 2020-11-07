@@ -3,10 +3,15 @@ layout: post
 author: zemin 
 category: CV
 demo: false 
-demo_link: vr_roll_a_ball.mp4 
+demo_link: BRISK_final.mp4 
 ---
 
 # Marker-based Augmented Reality model report
+
+## How to run the project
+
+This project use **opencv-4.4.0** and **opencv_contrib-4.4.0** to execute it. In order to build it, you should modify the corresponding option of project's property.
+
 
 ## Problem statement
 
@@ -269,7 +274,7 @@ The jittering problem of **AKAZE** is much worser than **BRISK**, which is prove
 
 ### Descriptor Matchers & Matching filters
 
-When doing experiments above, I used Brute-Force Hamming descriptor matcher, so whether it is possible to use other metrics to get a significant improvement ? The answer is no[100]. But for **SIFT** descriptor, there are options like **FLANN** and **Brute-Force**. The normType **BF-L2** are also suitable for **SIFT**.
+When doing experiments above, I used Brute-Force Hamming descriptor matcher, so whether it is possible to use other metrics to get a significant improvement ? The answer is no[20]. But for **SIFT** descriptor, there are options like **FLANN** and **Brute-Force**. The normType **BF-L2** are also suitable for **SIFT**.
 
 The performance of **BF-L2** and **FLANN** is also related to the matching methods and matching filters. Each descriptor matcher has **match()** function and **knnMatch()** function, which correspond to best matching and k-nearest-neighbor matching respectively. To filter out the bad matching, they can chooses **Score filtering** and **Ratio filtering** respectively.
 
@@ -399,8 +404,6 @@ without target, still try to match
 
 ### advices
 
-test impact of preprocessing
-test preprocessing like denoising
 give the install file zip
 
 ## References
@@ -443,9 +446,4 @@ give the install file zip
 
 19. [Camera Calibration and 3D Reconstruction](https://docs.opencv.org/3.4/d9/d0c/group__calib3d.html#ga4abc2ece9fab9398f2e560d53c8c9780)
 
-100. E. Bostanci, "Is Hamming distance only way for matching binary image feature descriptors?", Electronics Letters, vol. 50, no. 11, pp. 806-808, May 2014.
-
-# how to run the project
-
-This project use opencv 4.4.0 version with opencv_contrib 4.4.0 version.
-
+20. E. Bostanci, "Is Hamming distance only way for matching binary image feature descriptors?", Electronics Letters, vol. 50, no. 11, pp. 806-808, May 2014.
