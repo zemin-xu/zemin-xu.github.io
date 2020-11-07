@@ -12,6 +12,12 @@ demo_link: BRISK_final.mp4
 
 This project use **opencv-4.4.0** and **opencv_contrib-4.4.0** to execute it. In order to build it, you should modify the corresponding option of project's property.
 
+An optimal solution executable is ready, in order to run it:
+1. go to the **Release** folder: cd MarkerBasedAugmentedReality/x64/Release
+2. put into this folder the sample image and target image
+3. run with following syntax: ./MarkerBasedAugmentedReality.exe -i [sample_image_name] -i [target_image_name]
+
+If you want to build the solution with full parameters with possibility of changing the feature descriptor with trackbar, you need to switch on the **TEST_MODE** in code and build it. In this case, the program may crash down because some descriptors are not working with some matchers.
 
 ## Problem statement
 
@@ -375,6 +381,7 @@ With 180 degree of rotation along the normal direction, the safe distance is abo
 At a distance of 25cm from camera, if the object is rotated along the normal direction to the ground, within 45 degree it is matched successfully without too much jittering. From 45 to 50 degree, it will become unrecognizable.
 
 ### Motion Blur
+
 With quick motion, the matching will not be successful but will be done once the object becomes stable. With slow motion, the matching will not be interrupted.
 
 &nbsp;
@@ -397,14 +404,14 @@ The lighting situation will not influence too much but will result in certain ji
 
 With comparison of putting many objects on background, the matching speed and quality will not be influenced.
 
+### Sample Images variation
+
+The sample image will influence the performance. By applying an cover with many details, the computation time will even be doubled but the matching quality is still robust.
+
 ### limitations
 
-computation time vary according to image
-without target, still try to match
-
-### advices
-
-give the install file zip
+The first limitation is that, when there is no correct target in scene, the solution will still try matching.
+The second limitation is that, the computation time will vary according to sample image. However, this can be improved by increasing the threshold to make detected keypoints less.
 
 ## References
 
