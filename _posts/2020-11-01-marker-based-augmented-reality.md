@@ -13,7 +13,7 @@ demo_link: vr_roll_a_ball.mp4
 In this project, I need to design and implement an OpenCV solution. The solution relies on keypoint-based image descriptor to match between the image of a structured planar marker and its instance in webcam stream. In order to have a optimal solution under webcam stream utilization, there are several factors to consider about.
 
 1. **Computation Time**
-This factor is the most curcial one because in the solution, the detection and matching task should be finished less than 1 frame.
+This factor is the most important one because in the solution, the detection and matching task should be finished less than 1 frame.
 The minimum value should be 30 frames per second so that the streaming is fluent enough, that's is to say, the maximum computation time should be less than 0.03 second for each frame.
 2. **Robustness**
 A robust solution is that the detecting and matching result is generally good for any kind of image inputs. In this project, a robust solution should not have much jittering when the instance is stable.
@@ -22,7 +22,7 @@ It is normal that the instance in webcam will be rotated or shown in different s
 4. **Light Condition**
 Sometimes the situation that the lighting is not ideal will happen, no matter for sample image or for webcam usage.
 5. **Motion Blur**
-A common situation for webcam is that the object will move slowly or fastly sometimes. The quality of detection should be considered even the object is moving.
+A common situation for webcam is that the object will move slowly or fast sometimes. The quality of detection should be considered even the object is moving.
 In this project, I choose a hard book cover with rich details and another with much less interest points as objects to test.
 
 I choose **SIFT**, **SURF**, **ORB**, **AKAZE** and **BRISK** as the feature detectors and carry out the experiments.
@@ -34,33 +34,43 @@ The **Harris Corner Detector**[1] and **Shi-Tomasi Corner Detector**[2] is elimi
 
 SIFT[3] is scale-invariant, which is also good at handling illumination change as well. It uses DoG as an approximation of LoG to calculate local extrema(potential keypoint) over scale[4]. SIFT provides distinctiveness, robustness and invariance to common image transformations such as rotation and scale[5]. It is widely accepted as one of highest quality options currently available, promising distinctiveness and invariance to a variety of common image transformations – however, at the expense of computational cost[6].
 
+The parameters contain **nfeatures** which is the number of best features to retain, **nOctaveLayer** which is the number of layers in each octave, **contrastThreshold** that is used to filter out weak features, **edgeThreshold** that filters out edge-like features, and **sigma** that denotes the sigma of the Gaussian applied to the input image. Lowe has given the optimal value for these values in his paper.
+
 ### SURF(Speeded-Up Robust Features)
 
-SURF[7] approximates LoG with Box Filter convolution calculation, which is faster and is suitable for real-time detecting task. SURF is good at handling images with blurring and rotation, but not good at handling viewpoint change and illumination change.[8] Its implementation is in opencv_contrib repository.
+SURF[7] approximates LoG with Box Filter convolution calculation, which is faster and is suitable for real-time detecting task. SURF is good at handling images with blurring and rotation, but not good at handling viewpoint change and illumination change.[8] Its implementation is in opencv_contrib repository, in non-free part. Its parameters contain **hessianThreshold** that denotes the threshold for hessian keypoint detector used in SURF, **nOctaves** and **nOctaveLayers** like that of **SIFT**, as well as two flag **extended** and **upright** which denote using extended descriptor and up-right or rotated features respectively.
 
 ### ORB(Oriented FAST and Rotated BRIEF)
 
 ORB[9] is a binary feature descriptor that came from *OpenCV Lab* and is basically a fusion of FAST[10] keypoint detector and BRIEF[11] descriptor with many modifications to enhance the performance and scale as well as rotational invariance[12]. It employs the efficient Hamming distance metric for matching and these features make it suitable for real-time feature detection and description.
+
 One of its parameters is *nFeatures* which denotes maximum number of features to be retained.
 
 ### AKAZE
 
-AKAZE[13] is the accelerated version of KAZE[14] which uses non-linear scale space to find features. It uses a binary descriptor that exploits gradient infomation. It is proved to be an improvement in repeatability and distinctiviness compared to previous algorithms.
+AKAZE[13] is the accelerated version of KAZE[14] which uses non-linear scale space to find features. It uses a binary descriptor that exploits gradient information. It is proved to be an improvement in repeatability and distinctiveness compared to previous algorithms.
 
 ### BRISK
 
-BRISK[6]
+BRISK[6] is another binary feature descriptor. It is different from the descriptors like BRIEF and ORB, by having a hand-crafted sampling pattern. BRISK sampling pattern is composed out of concentric rings. In sampling pattern, long pairs are used in BRISK to determine orientation and short pairs are used for the intensity comparisons that build the descriptor, as in BRIEF and ORB[15]. The parameters contains **thresh** which is **AGAST** detection threshold score, **octaves** that is detection octaves and **patternScale**.
 
 ### Brute Force Matcher
 
-Brute-Force matcher takes the descriptor of one feature in first set and is matched with all other features in second set using some distance calculation. And the closest one is returned[15]. The two parameters possible when creating pointer is **normType**, which defines the computation space.  The second parameter, **crossCheck**, is a boolean and its default value is false. If set true, it will check if the pairs in each detector is the same keypoint.
+Brute-Force matcher takes the descriptor of one feature in first set and is matched with all other features in second set using some distance calculation. And the closest one is returned[16]. The two parameters possible when creating pointer is **normType**, which defines the computation space.  The second parameter, **crossCheck**, is a boolean and its default value is false. If set true, it will check if the pairs in each detector is the same point.
 
 ### FLANN-based Matcher
 
-FLANN stands for Fast Library for Approximate Nearest Neighbors. It contains a collection of algorithms optimized for fast nearest neighbor search in large datasets and for high dimensional features. It works faster than BFMatcher for large datasets[16].
+FLANN stands for Fast Library for Approximate Nearest Neighbors. It contains a collection of algorithms optimized for fast nearest neighbor search in large datasets and for high dimensional features. It works faster than BFMatcher for large datasets[17].
 
-### Matching methods and filtering methods
-knn, best, ratio filtering, score filtering
+### Matching methods & filtering methods
+
+Each matcher has **match()** and **knnMatch()** to do keypoint matching. The former will find the best match for each descriptor from a query set or the sample image. **knnMatch()** will return the best k matches for each descriptor.
+
+There will be false matching and the next step is to filter the matches. For **knnMatch()**, Lowe proposed in his paper[3] to use a distance ratio test to try to eliminate false matches. The distance ratio between the two nearest matches of a considered keypoint is computed and it is a good match when this value is below a threshold, and this value is recommended to be 0.7[18]. For **match()** we can sort with scores and filter those with lower scores by applying a ratio of matches to retain.
+
+### Alignment & Augmentation
+
+In order to replace the matched image with target image, the perspective transformation of matched image in frame image should be found. In OpenCV, the routine **findHomography()** will compute and return the perspective transformation H between them. We can specify in this method the **RANSAC** robust algorithm to try different random subset in order to estimate the homography matrix[19]. The **warpPerspective()** applies a perspective transformation to an image. By putting the destination image with target image, this can perform image morphing.
 
 ## Experiment
 
@@ -319,20 +329,78 @@ The next step is to combine match functions as well as match filtering to compar
 
 &nbsp;
 
-When setting ratio to be 0.7, the computation time is similar between four combinations for **SIFT**, which are generally 1 times slower than that of **BRISK**. In this case, I will provide **BRISK** as the feature descriptor the final solution
+When setting ratio to be 0.7, the computation time is similar between four combinations for **SIFT**, which are generally 1 times slower than that of **BRISK**. In this case, I will provide **BRISK** as the feature descriptor for the final solution, based on the fact that it is faster than **SIFT** and that its robustness is similar or even better than **SIFT**.
 
+&nbsp;
 
+## Final solution
 
+As final solution, I set **BRISK** as feature descriptor and **BF-Hamming** as descriptor matcher. The parameters are the creation option for pointer to **BRISK** and **Matcher filter** as well as augmentation effect's opacity. 
+
+&nbsp;
+
+At this moment I would like to do an evaluation for its performance with response to different situations. The default parameters are following which is the optimal parameters that I conclude after several tests:
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/final_default_parameters.png " "){:width="100%"}
+
+&nbsp;
+
+The experiment under normal situation will be also recorded and provided as video at the end of this document.
+
+### Calculation Time
+
+When holding a book without movement, the calculation time is from 80ms to 90ms for my computer with CPU Intel i5-9300H with clockspeed of 2.40 GHz, under a good lighting situation and a simple sample as well as an simple background.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/final_computation_time.png " "){:width="100%"}
+
+&nbsp;
+
+### Rotation & Scale
+
+Without rotation, the safe distance from object to camera is about 50cm. From 50 to 70cm, there will be visible jittering. After that the object cannot be matched successfully.
+
+&nbsp;
+
+With 180 degree of rotation along the normal direction, the safe distance is about 40cm. From 40 to 80cm, there will be visible jittering. After that the object cannot be matched successfully.
+
+&nbsp;
+
+At a distance of 25cm from camera, if the object is rotated along the normal direction to the ground, within 45 degree it is matched successfully without too much jittering. From 45 to 50 degree, it will become unrecognizable.
+
+### Motion Blur
+With quick motion, the matching will not be successful but will be done once the object becomes stable. With slow motion, the matching will not be interrupted.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/BRISK_motion.gif " "){:width="100%"}
+
+&nbsp;
+
+### Lighting
+
+The lighting situation will not influence too much but will result in certain jittering, even there is no light in room, with only screen's light. It also depends on the object itself. If it is black with many details, the matching will be greatly influenced, but is still can be identified.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/BRISK_motion.gif " "){:width="100%"}
+
+&nbsp;
+
+### Background Complexity
+
+With comparison of putting many objects on background, the matching speed and quality will not be influenced.
 
 ### limitations
 
+computation time vary according to image
+without target, still try to match
+
 ### advices
 
-add limitation part
-do video with quick zoom and slow zoom
 test impact of preprocessing
 test preprocessing like denoising
-robustness(rotation, motion, lighting, background texture influence, marker itself)
 give the install file zip
 
 ## References
@@ -364,9 +432,16 @@ give the install file zip
 13. KAZE Features. Pablo F. Alcantarilla, Adrien Bartoli and Andrew J. Davison. In European Conference on Computer Vision (ECCV), Fiorenze, Italy, October 2012. bibtex
 
 14. Fast Explicit Diffusion for Accelerated Features in Nonlinear Scale Spaces. Pablo F. Alcantarilla, Jesús Nuevo and Adrien Bartoli. In British Machine Vision Conference (BMVC), Bristol, UK, September 2013. bibtex
-15. [OPENCV -- Feature Matching](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_matcher/py_matcher.html#:~:text=Brute%2DForce%20matcher%20is%20simple,the%20BFMatcher%20object%20using%20cv2.)
 
-16. [OPENCV -- Feature Matching](https://docs.opencv.org/master/dc/dc3/tutorial_py_matcher.html)
+15. [A tutorial on binary descriptors – part 4 – The BRISK descriptor](https://gilscvblog.com/2013/11/08/a-tutorial-on-binary-descriptors-part-4-the-brisk-descriptor/)
+
+16. [OPENCV -- Feature Matching](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_matcher/py_matcher.html#:~:text=Brute%2DForce%20matcher%20is%20simple,the%20BFMatcher%20object%20using%20cv2.)
+
+17. [OPENCV -- Feature Matching](https://docs.opencv.org/master/dc/dc3/tutorial_py_matcher.html)
+
+18. [OPENCV -- Feature Matching with FLANN](https://docs.opencv.org/3.4/d5/d6f/tutorial_feature_flann_matcher.html)
+
+19. [Camera Calibration and 3D Reconstruction](https://docs.opencv.org/3.4/d9/d0c/group__calib3d.html#ga4abc2ece9fab9398f2e560d53c8c9780)
 
 100. E. Bostanci, "Is Hamming distance only way for matching binary image feature descriptors?", Electronics Letters, vol. 50, no. 11, pp. 806-808, May 2014.
 
