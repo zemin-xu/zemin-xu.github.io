@@ -13,6 +13,7 @@ demo_link: BRISK_final.mp4
 This project use **opencv-4.4.0** and **opencv_contrib-4.4.0** to execute it. In order to build it, you should modify the corresponding option of project's property.
 
 An optimal solution executable is ready, in order to run it:
+
 1. go to the **Release** folder: cd MarkerBasedAugmentedReality/x64/Release
 2. put into this folder the sample image and target image
 3. run with following syntax: ./MarkerBasedAugmentedReality.exe -i [sample_image_name] -i [target_image_name]
@@ -396,7 +397,7 @@ The lighting situation will not influence too much but will result in certain ji
 
 &nbsp;
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/BRISK_motion.gif " "){:width="100%"}
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/BRISK_light.gif " "){:width="100%"}
 
 &nbsp;
 
