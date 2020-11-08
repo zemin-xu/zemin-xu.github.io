@@ -18,6 +18,8 @@ An optimal solution executable is ready, in order to run it:
 2. put into this folder the sample image and target image
 3. run with following syntax: ./MarkerBasedAugmentedReality.exe -i [sample_image_name] -i [target_image_name]
 
+&nbsp;
+
 There are several trackbars for the optimal solution:
 
 1. **Has Prep**: whether to do sample image preprocessing(CLAHE)
@@ -53,6 +55,8 @@ Sometimes the situation that the lighting is not ideal will happen, no matter fo
 5. **Motion Blur**
 A common situation for webcam is that the object will move slowly or fast sometimes. The quality of detection should be considered even the object is moving.
 In this project, I choose a hard book cover with rich details and another with much less interest points as objects to test.
+
+&nbsp;
 
 I choose **SIFT**, **SURF**, **ORB**, **AKAZE** and **BRISK** as the feature detectors and carry out the experiments.
 The **Harris Corner Detector**[1] and **Shi-Tomasi Corner Detector**[2] is eliminated because of their scale-variant feature.
@@ -359,13 +363,13 @@ The next step is to combine match functions as well as match filtering to compar
 
 &nbsp;
 
-When setting ratio to be 0.7, the computation time is similar between four combinations for **SIFT**, which are generally 1 times slower than that of **BRISK**. In this case, I will provide **BRISK** as the feature descriptor for the final solution, based on the fact that it is faster than **SIFT** and that its robustness is similar or even better than **SIFT**.
+When setting ratio to be 0.7, the computation time is similar between four combinations for **SIFT**, which are generally 1 times slower than that of **BRISK**. In this case, I will provide **BRISK** as the feature descriptor for the final solution, based on the fact that it is faster than **SIFT** and that its robustness is similar or even better than **SIFT**. Another fact is that user can still use this solution by adjusting the threshold even they have no a good machine.
 
 &nbsp;
 
 ## Final solution
 
-As final solution, I set **BRISK** as feature descriptor and **BF-Hamming** as descriptor matcher. The parameters are the creation option for pointer to **BRISK** and **Matcher filter** as well as augmentation effect's opacity. 
+As final solution, I set **BRISK** as feature descriptor and **BF-Hamming** as descriptor matcher. The parameters are the creation option for pointer to **BRISK** and **Matcher filter** as well as augmentation effect's opacity.
 
 &nbsp;
 
