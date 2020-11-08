@@ -18,7 +18,24 @@ An optimal solution executable is ready, in order to run it:
 2. put into this folder the sample image and target image
 3. run with following syntax: ./MarkerBasedAugmentedReality.exe -i [sample_image_name] -i [target_image_name]
 
-If you want to build the solution with full parameters with possibility of changing the feature descriptor with trackbar, you need to switch on the **TEST_MODE** in code and build it. In this case, the program may crash down because some descriptors are not working with some matchers.
+There are several trackbars for the optimal solution:
+
+1. **Has Prep**: whether to do sample image preprocessing(CLAHE)
+2. **CLAHE Size**: CLAHE tile grid size, should be greater than 1
+3. **Threshold**: BRISK's threshold for keypoints's detection
+4. **Octaves**: BRISK's octaves number
+5. **Pattern**: BRISK's pattern scale, should be greater than 1
+6. **Filter**: 0 for **Score Matching**, 1 for **KNN Matching**
+7. **Ratio**: ratio for matching filter
+8. **Opacity**: augmentation effect's opacity
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/trackbars.png " "){:width="100%"}
+
+&nbsp;
+
+If you want to build the solution with full parameters with possibility of changing the feature descriptor with trackbars, you need to switch on the **TEST_MODE** in code and build it. In this case, the program may crash down because some descriptors are not working with some matchers.
 
 ## Problem statement
 
@@ -103,6 +120,7 @@ The first experiment is to test the **computational time** of detection for each
 ###### SIFT keypoints with rich detail sample under light environment
 
 &nbsp;
+
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/perf_sample_rich_dark_kp.png " "){:width="100%"}
 ###### performance comparison with rich detail sample under dark environment
 
@@ -425,13 +443,12 @@ Some sample images need to be preprocessed, so I add **CLAHE** pipeline to adjus
 
 &nbsp;
 
-I have tested gaussian blurring as preprocessing but it will not help the detecting and matching. So I commented it.
+I have tested gaussian blurring as preprocessing but it will not help the detecting and matching. In most cases, it will erase the details and make the keypoints much less than original image. So I do not use it for final solution.
 
 ### limitations
 
 The first limitation is that, when there is no correct target in scene, the solution will still try matching.
 The second limitation is that, the computation time will vary according to sample image. However, this can be improved by increasing the threshold to make detected keypoints less.
-
 
 ## Conclusion
 
