@@ -409,6 +409,24 @@ With comparison of putting many objects on background, the matching speed and qu
 
 The sample image will influence the performance. By applying an cover with many details, the computation time will even be doubled but the matching quality is still robust.
 
+### Preprocessing
+
+Some sample images need to be preprocessed, so I add **CLAHE** pipeline to adjust the contrast of luminosity of image.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/without_prep.png " "){:width="100%"}
+###### without CLAHE preprocessing
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/mbar/with_prep.png " "){:width="100%"}
+###### with CLAHE preprocessing
+
+&nbsp;
+
+I have tested gaussian blurring as preprocessing but it will not help the detecting and matching. So I commented it.
+
 ### limitations
 
 The first limitation is that, when there is no correct target in scene, the solution will still try matching.
