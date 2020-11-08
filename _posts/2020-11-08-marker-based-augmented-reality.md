@@ -2,7 +2,7 @@
 layout: post
 author: zemin 
 category: CV
-demo: false 
+demo: true 
 demo_link: BRISK_final.mp4 
 ---
 
@@ -62,7 +62,7 @@ One of its parameters is *nFeatures* which denotes maximum number of features to
 
 AKAZE[13] is the accelerated version of KAZE[14] which uses non-linear scale space to find features. It uses a binary descriptor that exploits gradient information. It is proved to be an improvement in repeatability and distinctiveness compared to previous algorithms.
 
-### BRISK
+### BRISK(Binary Robust Invariant Scalable Keypoints)
 
 BRISK[6] is another binary feature descriptor. It is different from the descriptors like BRIEF and ORB, by having a hand-crafted sampling pattern. BRISK sampling pattern is composed out of concentric rings. In sampling pattern, long pairs are used in BRISK to determine orientation and short pairs are used for the intensity comparisons that build the descriptor, as in BRIEF and ORB[15]. The parameters contains **thresh** which is **AGAST** detection threshold score, **octaves** that is detection octaves and **patternScale**.
 
@@ -413,6 +413,11 @@ The sample image will influence the performance. By applying an cover with many 
 
 The first limitation is that, when there is no correct target in scene, the solution will still try matching.
 The second limitation is that, the computation time will vary according to sample image. However, this can be improved by increasing the threshold to make detected keypoints less.
+
+
+## Conclusion
+
+After doing this project, I have gained a better understanding on state-of-the-art descriptors theoretically and practically. I also learned a basic way to carry out a scientific and quantitative way to do benchmark test of algorithms and the way to document it. Finally, I learned how to evaluate a solution's performance.
 
 ## References
 
