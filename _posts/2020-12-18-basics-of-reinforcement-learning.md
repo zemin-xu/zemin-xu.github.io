@@ -9,11 +9,6 @@ demo: false
 
 Compared to supervised learning with features and label, reinforcement learning is an approach unsupervised based on that it does not rely on a set of labelled training data. However, we still want to guide the model by maximizing the reward. In this sense, it is not exactly unsupervised. It is the way resembling how human learns things. For example, when touching the fire, the hurt (negative reward) will make us learn not touch fire. In this post I will explain some fundamental concepts of reinforcement learning.
 
-## Markov Decision Process
-
-> Markov Decision Process is a formulation of sequential interaction between agent and environment.[1]
-
-Before talking about MDP, we need to know some terms.
 
 ##### Environment
 
@@ -41,7 +36,14 @@ Imagine that at the beginning of an experience, we(the trainer) have a goal for 
 
 &nbsp;
 
+## Markov Decision Process
+
+### Markov Process
+Imagine that we have a system that we can observe, all the states form a **state space**. If this space is finite, we can call this sequence of states as a **Markov Chain**. Several chains forms **history**. In order that the system to be a **Markov Process**, it should satisfy **Markov Property**, which states that *the future system dynamic from any state have to depend only on that state*[2].
+
+In this context, all the states form a **state space** 
 
 # References
 
-[Markov Decision Process](https://towardsdatascience.com/the-fundamentals-of-reinforcement-learning-177dd8626042)
+[1].[Markov Decision Process](https://towardsdatascience.com/the-fundamentals-of-reinforcement-learning-177dd8626042)
+[2].[Markov Process & Markov Property Introduction](https://towardsdatascience.com/the-fundamentals-of-reinforcement-learning-177dd8626042)
