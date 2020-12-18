@@ -9,7 +9,6 @@ demo: false
 
 Compared to supervised learning with features and label, reinforcement learning is an approach unsupervised based on that it does not rely on a set of labelled training data. However, we still want to guide the model by maximizing the reward. In this sense, it is not exactly unsupervised. It is the way resembling how human learns things. For example, when touching the fire, the hurt (negative reward) will make us learn not touch fire. In this post I will explain some fundamental concepts of reinforcement learning.
 
-
 ##### Environment
 
 Environment is the world that an agent interact with.
@@ -57,9 +56,22 @@ At this stage, we may think about how to express the influence of an action at a
 ## Policy
 
 Now that we know the goal of agent is to maximize the cumulative reward, the next problematic is the action to choose in a given state, in order to have a high reward. We will have another term called **policy** denoted as *π*. *π* can be interpreted as the strategy that that agent takes. A good policy will yield high reward, which a bad policy will not. We denote π* as the policy that maximize the reward. It is also called optimal policy.
- 
+
+## Value Function
+
+For every state *s*, the value function Vπ(s) quantifies the amount of reward an agent is expected to receive starting in *s* and following *π*. In other words, it is the expected return if we start at this state and act according to this policy forever after[4]. We can see that Value Function(V-Function) here evaluates the value of each state. In order to do so, we need to have a model of environment.
+
+## Q-Function
+
+Different from value function, the Q-Function evaluates the effectiveness of each action. Compared to V-Function, Q-Function is used more because the actual environment is always complicated.
+
+## On-Policy / Off-Policy
+
+In order to learn, the agent need to explore to find new better policies, however, the learning is done when all the actions chosen are optimal. This is a dilemma. To treat it there are two solutions. The first one is to use a behavior policy to explore and improve the target policy, which is the one with optimal actions. This is called **Off-Policy**. **Q-Learning** is an algorithm that is of Off-Policy, in which the the behavior policy is different from target policy. Another solution is to improve the policy that the agent knows already. This is called **On-Policy**. **SARSA**, which stands for state-action-reward, state'-action', is of On-Policy, because the behavior policy and target policy are the same.
+
 # References
 
 [1].[Markov Decision Process](https://towardsdatascience.com/the-fundamentals-of-reinforcement-learning-177dd8626042)
 [2].[Markov Process & Markov Property Introduction](https://towardsdatascience.com/the-fundamentals-of-reinforcement-learning-177dd8626042)
 [3].[Discounted cumulative expected reward equation](https://www.freecodecamp.org/news/an-introduction-to-reinforcement-learning-4339519de419/)
+[4].[Value Function](https://spinningup.openai.com/en/latest/spinningup/rl_intro.html)
