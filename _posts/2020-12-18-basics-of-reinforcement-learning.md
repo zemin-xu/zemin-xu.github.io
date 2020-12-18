@@ -39,11 +39,22 @@ Imagine that at the beginning of an experience, we(the trainer) have a goal for 
 ## Markov Decision Process
 
 ### Markov Process
-Imagine that we have a system that we can observe, all the states form a **state space**. If this space is finite, we can call this sequence of states as a **Markov Chain**. Several chains forms **history**. In order that the system to be a **Markov Process**, it should satisfy **Markov Property**, which states that *the future system dynamic from any state have to depend only on that state*[2].
 
-In this context, all the states form a **state space** 
+Imagine that we have a system that we can observe, all the states form a **state space**. If this space is finite, we can call this sequence of states as a **Markov Chain**. Several chains forms **history**. In order that the system to be a **Markov Process**, it should satisfy **Markov Property**, which states that *the future system dynamic from any state have to depend only on that state*[2]. Take a example[2] to clarify it. The weather of each day in a city form a system. If today's sunny weather will not influence the probability of raining weather of tomorrow, then we can regard it as a Markov Process.
+
+### Markov Reward Process
+
+In this context, if we go from transition *i* to transition *j*, we can have a reward to specify its effect to achieve to goal. In this case, we can have a matrix in which each cell(*i*, *j*) represents a reward.
+
+### Discounted Rate
+
+At this stage, we may think about how to express the influence of an action at a certain state for the whole system. We may doubt: perhaps what we behave at the beginning will not influence the result. It is reasonable. We need to find a way to differ the weights of each transition. So we have the **discounted rate** denoted as *γ*. As in this post[2] said, "the discount represent the **foresigntedness** of the agent.
+
+## Policy
+
 
 # References
 
 [1].[Markov Decision Process](https://towardsdatascience.com/the-fundamentals-of-reinforcement-learning-177dd8626042)
 [2].[Markov Process & Markov Property Introduction](https://towardsdatascience.com/the-fundamentals-of-reinforcement-learning-177dd8626042)
+[3].[Discounted cumulative expected reward equation](https://www.freecodecamp.org/news/an-introduction-to-reinforcement-learning-4339519de419/)
