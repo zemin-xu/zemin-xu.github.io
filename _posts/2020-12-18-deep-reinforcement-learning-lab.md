@@ -14,7 +14,7 @@ Before doing this lab, I make an [introductory post](https://zeminxu.me/ai/2020/
 
 ## Deep Network
 
-In classic reinforcement learning, we use a table for agent to note the value (V value or Q value) for a pair of state and action. When the agent explore it, the value will be updated at the cell. In DRL, the value function will be replaced by a neural network. To specify, the V Neural Network will take a **state vector** as input, while the Q Neural Network will take a **state-action vector** as input.
+In classic reinforcement learning, we use a table for agent to note the value (V value or Q value) for a pair of state and action. The tabular method is not useful for this problem because the input is not discrete. When the agent explore it, the value will be updated at the cell. In DRL, the value function will be replaced by a neural network. To specify, the V Neural Network will take a **state vector** as input, while the Q Neural Network will take a **state-action vector** as input.
 
 ## Problem statement
 
@@ -25,6 +25,25 @@ For this lab, we use the **Cart Pole** problem as demonstration. The black part 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/cart_pole.png " "){:width="100%"}
 
 &nbsp;
+
+## Code
+
+The [implementation notebook](https://colab.research.google.com/drive/1mc5tdDF5WkBYcp_LP0JWEyAryXH9tdDS?usp=sharing) will be worked on Google Colab, with running on GPU. The environment is simulated by using *gym* package. The detail can be found [here](https://gym.openai.com/envs/CartPole-v1/).
+
+### QNetwork
+
+The **QNetwork** class defines the Q-value function network with the constructor taking stateSpace, actionSpace, width of network and dropoutRate of neural network as inputs.
+
+```python
+class QNetwork(torch.nn.Module):
+    def __init__(self, stateSpace, actionSpace, width=64, dropoutRate=0.5):
+```
+
+It also defines function Q which will return the Q-value of a specific action, or all values for all possible actions.
+
+## Parameters
+activation function
+
 
 ## ER
 Replay dataset. Record play and store buffer, learn from it.
