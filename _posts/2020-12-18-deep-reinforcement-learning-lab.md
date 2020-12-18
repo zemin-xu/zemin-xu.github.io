@@ -41,7 +41,15 @@ class QNetwork(torch.nn.Module):
 
 It also defines function Q which will return the Q-value of a specific action, or all values for all possible actions.
 
-## Parameters
+### Doer
+
+The **Doer** class defines how agent acts. The constructor will take the model, stateSpace, actionSpace and epsilon as parameters. The epsilon is the probability of doing random exploration. For example here epsilon=0.1, about 10% of time the agent will explore by acting randomly, and for other time it will evaluate the collected data to find optimal action.
+
+### Experience Replay
+
+Briefly speaking, **experience replay** is to record how an agent behaves in a buffer and later evaluate with the data. One of the advantage of it is that we can use efficiently the previous experience, which is useful when the experience gaining is expensive or hard.
+
+## Key parameters
 activation function
 
 
