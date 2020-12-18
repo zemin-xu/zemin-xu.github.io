@@ -45,17 +45,28 @@ It also defines function Q which will return the Q-value of a specific action, o
 
 The **Doer** class defines how agent acts. The constructor will take the model, stateSpace, actionSpace and epsilon as parameters. The epsilon is the probability of doing random exploration. For example here epsilon=0.1, about 10% of time the agent will explore by acting randomly, and for other time it will evaluate the collected data to find optimal action.
 
+```python
+class Doer():
+  def __init__(self, model, stateSpace, actionSpace, epsilon=0.1):
+```
+
 ### Experience Replay
 
-Briefly speaking, **experience replay** is to record how an agent behaves in a buffer and later evaluate with the data. One of the advantage of it is that we can use efficiently the previous experience, which is useful when the experience gaining is expensive or hard.
+Briefly speaking, **experience replay** is to record how an agent behaves in a buffer and later evaluate with the data. One of the advantage of it is that we can use efficiently the previous experience, which is useful when the experience gaining is expensive or hard. In code, a **Transition** class is defined to record the state, action, reward, nextState and nextAction. **Relevance** denotes the usefulness of a transition object for training the network. The more useful, the more it is relevant.
+
+```python
+class Transition():
+  def __init__(self, St, At, Rt, Stp, Atp, isTerminal=False, ID=None, relevance=None, birthdate=-1):
+```
+
+The **ExperienceReplay** class defines the transition storage and usage. The **weightedBatches** denotes if we use the different weights on transitions based on their relevance. When the **sortTransition** is activated and when the buffer is full, this class will delete those with least relevance.
+
+```python
+class ExperienceReplay():
+  def __init__(self, bufferSize=1000, batchSize=256, weightedBatches=True, sortTransition=False):
+```
 
 ## Key parameters
 activation function
-
-
-## ER
-Replay dataset. Record play and store buffer, learn from it.
-
-
 
 # References
