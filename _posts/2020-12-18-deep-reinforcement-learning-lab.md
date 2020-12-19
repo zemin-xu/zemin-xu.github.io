@@ -116,17 +116,33 @@ After an episode is finished, all the transitions' relevance will be updated acc
 
 ### Training loop
 
-The training loop is where training happens. The code are divided into two parts: initialization and looping.
+The training loop is where training happens. The code are divided into two parts: initialization and looping. As for initialization, we need to create the instance of all building blocks mentioned before. This is where we tune for experimenting. The training loop will continue training if we do not stop it manually. Each 100 iteration, the exploration rate **epsilon** will change and the frozenTarget will be updated. Once and episode is done, the environment will be reset. 
 
 &nbsp;
 
-As for initialization, we need to create the instance of all building blocks mentioned before. This is where we tune for experimenting. The key parameters are following:
+One thing to note is that we can have several ERs here, and in this case the loss will be the average of them. The loss will be noisy because the data will keep changing.
 
-###### doer
+### Evaluation
+
+The evaluation code is divided by the graph part and the log of transition data in an episode. For the graph, the reward and score are plotted. For the log, what interests us will be the rightmost part, where we can see the reward it should have by taking left or taking right.
+
+&nbsp;
+
+```python
+transition + qValues : [Transition] St: [-0.03888473  0.04604334 -0.01238872 -0.03465939] | At: None | Rt: 1.0 | St+1: [-0.03796386 -0.14889879 -0.01308191  0.25408916] | At+1: 0 | isTerminal: False | ID: None | relevance: None | birthdate: 99 		tensor([[6.4874, 7.1039]], grad_fn=<PermuteBackward>)
+transition + qValues : [Transition] St: [-0.03796386 -0.14889879 -0.01308191  0.25408916] | At: 0 | Rt: 1.0 | St+1: [-0.04094184  0.04640749 -0.00800013 -0.04269116] | At+1: 1 | isTerminal: False | ID: None | relevance: None | birthdate: 99 		tensor([[6.5085, 7.1262]], grad_fn=<PermuteBackward>)
+transition + qValues : [Transition] St: [-0.04094184  0.04640749 -0.00800013 -0.04269116] | At: 1 | Rt: 1.0 | St+1: [-0.04001369 -0.14859884 -0.00885395  0.24745696] | At+1: 0 | isTerminal: False | ID: None | relevance: None | birthdate: 99 		tensor([[6.4920, 7.1068]], grad_fn=<PermuteBackward>)
+transition + qValues : [Transition] St: [-0.04001369 -0.14859884 -0.00885395  0.24745696] | At: 0 | Rt: 1.0 | St+1: [-0.04298567  0.04664844 -0.00390481 -0.0480055 ] | At+1: 1 | isTerminal: False | ID: None | relevance: None | birthdate: 99 		tensor([[6.5087, 7.1265]], grad_fn=<PermuteBackward>)
+```
+
+&nbsp;
+
+### Key parameters
+
+#####
+
+##### doer
 
 By setting a doer as random, it will go left or right with one half chance.
 
 &nbsp;
-
-
-# References
