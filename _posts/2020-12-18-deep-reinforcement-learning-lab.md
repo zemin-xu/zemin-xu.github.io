@@ -128,31 +128,5 @@ By setting a doer as random, it will go left or right with one half chance.
 
 &nbsp;
 
-```python
-""" Initialise training """
-
-qNetwork = QNetwork(env.observation_space, env.action_space, width=16, dropoutRate=0.2)
-doer = Doer(qNetwork, env.observation_space, env.action_space, epsilon=0.3)
-#doer = Doer_Random(model, env.observation_space, env.action_space, epsilon=1) # Random agent. How well does it perform ?
-learner = Learner(qNetwork, env.observation_space, env.action_space, gamma=0.95, algorithm="SARSA") # "SARSA" or "QLEARNING"
-ERs = []
-# ERs.append(ExperienceReplay(bufferSize=256, batchSize=16, sortTransition=False, weightedBatches=True))
-ERs.append(ExperienceReplay(bufferSize=256, batchSize=16, sortTransition=False, weightedBatches=False))
-# ERs.append(ExperienceReplay(bufferSize=256, batchSize=16, sortTransition=True, weightedBatches=True))
-# ERs.append(ExperienceReplay(bufferSize=256, batchSize=16, sortTransition=True, weightedBatches=False))
-
-state = env.reset()
-action = None
-
-episodeStartDate = 0
-theta = 0.98 # Filter
-score = None
-epRewards = []
-scores = []
-iteration = 0
-```
-
-## Key parameters
-activation function
 
 # References
