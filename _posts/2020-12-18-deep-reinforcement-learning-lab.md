@@ -124,7 +124,7 @@ One thing to note is that we can have several ERs here, and in this case the los
 
 ### Evaluation
 
-The evaluation code is divided by the graph part and the log of transition data in an episode. For the graph, the reward and score are plotted. For the log, what interests us will be the rightmost part, where we can see the reward it should have by taking left or taking right.
+The evaluation code is divided by the graph part and the log of transition data in an episode. For the graph, the reward and score are plotted. The goal of this lab is to modify the parameters and make the score as high as possible. For the log, what interests us will be the rightmost part, where we can see the reward it should have by taking left or taking right.
 
 &nbsp;
 
@@ -139,10 +139,57 @@ transition + qValues : [Transition] St: [-0.04001369 -0.14859884 -0.00885395  0.
 
 ### Key parameters
 
-#####
+##### width
+
+width of neural network. Normally a more complex(big) neural network is suitable for handling complex problem.
+
+##### optimizer
+
+SGD or Adam
+
+##### algorithm
+
+sarsa or q-learning
+
+##### gamma
+
+discounted rate
+
+##### epsilon
+
+rate for exploring, if set as 1, then it will do randomly
+
+##### bufferSize
+
+how many transitions can be stored in ER
+
+##### batchSize
+
+how many transitions will be trained
+
+##### ER combination
+
+by setting sortTransition and weightedBatches true or false, there will be four combinations and we can use only one or even four together
 
 ##### doer
 
-By setting a doer as random, it will go left or right with one half chance.
+By setting a doer as random, it will go left or right with one half chance. However, for training, it is not useful because it learns nothing.
 
 &nbsp;
+
+### Experiments
+
+The first thing I do is try to make the epsilon upper platform value to be 0.3, to explore more in other words. Compared to the case of 0.1, it does more randomly and can rapidly get a score of 25. However it drops rapidly later, because of this random exploration. I reset it as 0.05 and it is close to 10 as score.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/epsilon_03.png " "){:width="100%"}
+###### score of epsilon at 0.3
+&nbsp;
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/epsilon_005.png " "){:width="100%"}
+###### score of epsilon at 0.05
+&nbsp;
+
