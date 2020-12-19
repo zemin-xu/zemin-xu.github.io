@@ -209,3 +209,26 @@ The next experiment is to add the size so that the complexity of network and buf
 &nbsp;
 
 The first part with high epsilon rate results in around 25 as score after 10,000 iteration. However, changing it into 0.1 will not help it advance.
+
+&nbsp;
+
+The next thing I examine is the gamma, the discounted factor. I change it to be 0.8. The reward gets higher but the scores remain the same, under 20.
+
+&nbsp;
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/gamma_08.png " "){:width="100%"}
+###### gamma at 0.8
+&nbsp;
+
+Another test is trying to make the size of buffer and width of network. But the result does not improve too much.
+
+&nbsp;
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/big_buffer_size_width.png " "){:width="100%"}
+###### big size in width and bufferSize
+&nbsp;
+
+The next experiment is to activate four ERs so that each kind of experience will be tested at the same time. The result is at 20 in average.
+
+&nbsp;
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/er_4.png " "){:width="100%"}
+###### four experience replays
+&nbsp;
