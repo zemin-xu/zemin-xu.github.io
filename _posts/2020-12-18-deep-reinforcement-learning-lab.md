@@ -179,17 +179,23 @@ By setting a doer as random, it will go left or right with one half chance. Howe
 
 ### Experiments
 
-The first thing I do is try to make the epsilon upper platform value to be 0.3, to explore more in other words. Compared to the case of 0.1, it does more randomly and can rapidly get a score of 25. However it drops rapidly later, because of this random exploration. I reset it as 0.05 and it is close to 10 as score.
+The first thing I do is try to make the epsilon lower platform value to be 0.3, to explore more in other words. Compared to the case of 0.1, it does more randomly and can rapidly get a score of 25. However it drops rapidly later, because of this random exploration. I reset it as 0.05 and it is close to 10 as score.
 
 &nbsp;
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/epsilon_03.png " "){:width="100%"}
-###### score of epsilon at 0.3
+###### epsilon at 0.3
 &nbsp;
 
 &nbsp;
-
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/epsilon_005.png " "){:width="100%"}
-###### score of epsilon at 0.05
+###### epsilon at 0.05
+&nbsp;
+
+This give me an inspiration to do a high epsilon for the beginning and let cache memorize them by using the relevant sorting and weighted batches. So I set for the first 10,000 iteration a epsilon as 0.5, and after that change it to 0.1. The result is encouraging because the highest score can be 45, with other parameters as default.
+
+&nbsp;
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/epsilon_03_01_true_true.png " "){:width="100%"}
+###### q-Learning, epsilon at 0.5 and later 0.1, with relevanceSorting and weightedBatches true
 &nbsp;
 
