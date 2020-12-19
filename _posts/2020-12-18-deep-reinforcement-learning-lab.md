@@ -86,8 +86,6 @@ class ExperienceReplay():
 
 The class **Learner** defines the optimal policy algorithm like **SARSA** and **Q-Learning**. One of the parameters here, **gamma**, denotes the discounted factor.
 
-Basically, the 
-
 The difference between **SARSA** and **QLEARNING** is the part of target value: **SARSA** takes the next transition which **QLEARNING** take the max of internal target values. The two algorithms try to make the internal target value equals to the Q-value of current transition.  
 
 &nbsp;
