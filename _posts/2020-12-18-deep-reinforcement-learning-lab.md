@@ -232,3 +232,16 @@ The next experiment is to activate four ERs so that each kind of experience will
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/er_4.png " "){:width="100%"}
 ###### four experience replays
 &nbsp;
+
+The last experiment is to change the update rate for frozen network, so that a target will change not frequently. From the graph below, it do improve a bit, ranges at 10 to 30.
+
+&nbsp;
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/frozen_network_bigsize.png " "){:width="100%"}
+###### frozen network update after 1000 iteractions, big size of width and buffer size
+&nbsp;
+
+## Conclusion
+
+The theory part of reinforcement learning is interesting, especially the thought of using neural network to replace the table matrix. By imitating the way a human learns thing, RL is very powerful in AI implementation in game. Unlike supervised learning, the unlabelled data makes it harder to train. Understanding the meaning of parameters will help in tuning system. However it is still difficult to connect one observation with the change of a parameter in experiments. What makes this harder is the influence of random seed at initialization.
+
+
