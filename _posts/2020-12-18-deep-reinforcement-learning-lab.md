@@ -124,6 +124,8 @@ As for initialization, we need to create the instance of all building blocks men
 
 ###### doer
 
+By setting a doer as random, it will go left or right with one half chance.
+
 &nbsp;
 
 ```python
