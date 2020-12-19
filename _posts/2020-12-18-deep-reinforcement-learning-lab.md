@@ -199,3 +199,13 @@ This give me an inspiration to do a high epsilon for the beginning and let cache
 ###### q-Learning, epsilon at 0.5 and later 0.1, with relevanceSorting and weightedBatches true
 &nbsp;
 
+The next experiment is to add the size so that the complexity of network and buffer size is enough, even it takes longer.
+
+&nbsp;
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/epsilon_05_01_true_true_4096_1024_128.png " "){:width="100%"}
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/epsilon_05_01_true_true_4096_1024_128_second.png " "){:width="100%"}
+###### q-Learning, epsilon at 0.5 and later 0.1, with relevanceSorting and weightedBatches true, bufferSize=4096, batchSize=1024, width = 128
+&nbsp;
+
+The first part with high epsilon rate results in around 25 as score after 10,000 iteration. However, changing it into 0.1 will not help it advance.
