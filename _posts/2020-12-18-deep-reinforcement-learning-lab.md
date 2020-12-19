@@ -86,7 +86,21 @@ class ExperienceReplay():
 
 The class **Learner** defines the optimal policy algorithm like **SARSA** and **Q-Learning**. One of the parameters here, **gamma**, denotes the discounted factor.
 
-The difference between **SARSA** and **QLEARNING** is the part of target value: **SARSA** takes the next transition which **QLEARNING** take the max of internal target values. The two algorithms try to make the internal target value equals to the Q-value of current transition.  
+&nbsp;
+
+Firstly, we will have two network, target and frozenTarget, and the latter is a copy of the first one. We will update target and compare it to frozenTarget later.
+
+&nbsp;
+
+The difference between **SARSA** and **QLEARNING** is the part of target value: **SARSA** takes directly some next action while **QLEARNING** takes the optimal action by calculating the maximum size of Q-value. Step by step, the two algorithms try to make the internal target value equals to the Q-value of current transition, by shortening the losses. Once this is done, an episode containing several steps is finished.
+
+&nbsp;
+
+An loss value is defined by using MSE method, to know the difference of target value and Q-value of current transition.
+
+&nbsp;
+
+After an episode is finished, all the transitions' relevance will be updated according to the losses calculated before, so that next time, we can use the one with most loss(most relevance) firstly.
 
 &nbsp;
 
@@ -99,6 +113,42 @@ The difference between **SARSA** and **QLEARNING** is the part of target value: 
 ```
 
 &nbsp;
+
+### Training loop
+
+The training loop is where training happens. The code are divided into two parts: initialization and looping.
+
+&nbsp;
+
+As for initialization, we need to create the instance of all building blocks mentioned before. This is where we tune for experimenting. The key parameters are following:
+
+###### doer
+
+&nbsp;
+
+```python
+""" Initialise training """
+
+qNetwork = QNetwork(env.observation_space, env.action_space, width=16, dropoutRate=0.2)
+doer = Doer(qNetwork, env.observation_space, env.action_space, epsilon=0.3)
+#doer = Doer_Random(model, env.observation_space, env.action_space, epsilon=1) # Random agent. How well does it perform ?
+learner = Learner(qNetwork, env.observation_space, env.action_space, gamma=0.95, algorithm="SARSA") # "SARSA" or "QLEARNING"
+ERs = []
+# ERs.append(ExperienceReplay(bufferSize=256, batchSize=16, sortTransition=False, weightedBatches=True))
+ERs.append(ExperienceReplay(bufferSize=256, batchSize=16, sortTransition=False, weightedBatches=False))
+# ERs.append(ExperienceReplay(bufferSize=256, batchSize=16, sortTransition=True, weightedBatches=True))
+# ERs.append(ExperienceReplay(bufferSize=256, batchSize=16, sortTransition=True, weightedBatches=False))
+
+state = env.reset()
+action = None
+
+episodeStartDate = 0
+theta = 0.98 # Filter
+score = None
+epRewards = []
+scores = []
+iteration = 0
+```
 
 ## Key parameters
 activation function
