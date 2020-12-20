@@ -103,7 +103,7 @@ to decide how much to write to current cell, which can be considered as a sub-ga
 
 #### Output gate
 
-to control the Output to cell state 
+to control the Output to cell state
 
 &nbsp;
 
