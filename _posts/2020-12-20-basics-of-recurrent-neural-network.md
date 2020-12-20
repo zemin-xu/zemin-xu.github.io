@@ -42,6 +42,12 @@ In real life we will meet some other modeling problem which are more difficult f
 &nbsp;
 
 
+&nbsp;
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/rnn_graph.png " "){:width="100%"}
+###### https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recurrent-neural-network/recurrent_neural_networks#:~:text=Recurrent%20neural%20network%20is%20a,vanilla%20feed%2Dforward%20neural%20networks.
+&nbsp;
+
+
 
 
 
