@@ -41,14 +41,18 @@ In real life we will meet some other modeling problem which are more difficult f
 ###### [different types of problems](https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recurrent-neural-network/recurrent_neural_networks#:~:text=Recurrent%20neural%20network%20is%20a,vanilla%20feed%2Dforward%20neural%20networks.)
 &nbsp;
 
-## Vanilla Recurrent Neural Network (RNN)
+## Vanilla Recurrent Neural Network
 
 &nbsp;
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/rnn_graph.png " "){:width="100%"}
 ###### [vanilla RNN](https://towardsdatascience.com/introduction-to-recurrent-neural-network-27202c3945f3)
 &nbsp;
 
+The graph above is an abstract representaion of vanilla RNN. The mathmatical formulation is as below:
 
+&nbsp;
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/rnn_formula.png " "){:width="100%"}
+&nbsp;
 
 ## RNN cell architectures
 ## RNN applications
@@ -57,3 +61,4 @@ In real life we will meet some other modeling problem which are more difficult f
 # References
 
 [1].[Vanilla Recurrent Neural Network](https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recurrent-neural-network/recurrent_neural_networks#:~:text=Recurrent%20neural%20network%20is%20a,vanilla%20feed%2Dforward%20neural%20networks.)
+[2].[](https://towardsdatascience.com/introduction-to-recurrent-neural-network-27202c3945f3)
