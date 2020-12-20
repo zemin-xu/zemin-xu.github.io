@@ -66,6 +66,12 @@ Second, the function and its parameters remain the same at every time step.
 
 We can view its unfolded presentation in which the function is tanh, to better understand how the data is processed.
 
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/rnn_unfolded.png " "){:width="100%"}
+
+&nbsp;
+
 ### Vanishing Gradients and Exploding Gradients
 
 As we know, the way in CNN to update the weights is back propagation. Back propagation is a way to use gradient descent to update the weights, so that the loss can go down. In RNN we use a method called **back propagation through time** which will multiply the same factor when computing gradients. If this factor is smaller than 1, the value will come to 0; if greater than 1, this value will become big. That's why vanilla RNN cannot preserve long-term dependencies and why it is not considered in real problem.
@@ -83,7 +89,7 @@ As we know, the way in CNN to update the weights is back propagation. Back propa
 
 &nbsp;
 
-The additional elements in LSTM, compared to vanilla RNN, are four gates and the core cell state. This cell state, as shown on the graph below, is designed to fight vanishing gradient problem and to track long-term dependencies like the **memory**. The hidden state that is used to make decision over short-term infomation is the same as in vanilla RNN.
+The additional elements in LSTM, compared to vanilla RNN, are four gates and the core cell state. This cell state, as shown on the graph below, is designed to fight vanishing gradient problem and to track long-term dependencies like the **memory**. The hidden state that is used to make decision over short-term information is the same as in vanilla RNN.
 
 &nbsp;
 
@@ -113,10 +119,50 @@ to control the Output to cell state
 &nbsp;
 
 ### Response to vanishing gradient
-LSTM use BFTT method and the gradient of core cell state to update weights. However, the gradient value can be constrained by the forget gate and by the addition operation in calculation. This [post](https://medium.com/datadriveninvestor/how-do-lstm-networks-solve-the-problem-of-vanishing-gradients-a6784971a577#:~:text=LSTMs%20solve%20the%20problem%20using,step%20of%20the%20learning%20process.) have a detailed explanation how it is realized. Like what the author says, "It is the presence of the forget gate’s vector of activations in the gradient term along with additive structure which allows the LSTM to find such a parameter update at any time step"[4].
+
+LSTM use BFTT method and the gradient of core cell state to update weights. However, the gradient value can be constrained by the forget gate and by the addition operation in calculation. This [post](https://medium.com/datadriveninvestor/how-do-lstm-networks-solve-the-problem-of-vanishing-gradients-a6784971a577#:~:text=LSTMs%20solve%20the%20problem%20using,step%20of%20the%20learning%20process.) have a detailed explanation how it is realized. Like what the author says, "It is the presence of the forget gate’s vector of activations in the gradient term along with additive structure which allows the LSTM to find such a parameter update at any time step[4]".
 
 ## RNN applications
+
+RNN has various application especially in language. The tasks include text generation, machine translation etc. In the domain of image, it has application in image captioning, visual question answer, etc.
+
 ## Attention in RNN
+
+By definition, attention is the ability to decide what to focus on, to be selective about what you are looking at or thinking about. Attention is particularly useful when learning.
+
+&nbsp;
+
+A natural question is: an we deploy similar attention mechanisms to help RNN to focus on specific parts of data ?
+
+### implicit attention & explicit attention
+
+Implicit attention is quantifying what is the sensitivity of an output to inputs. DNN are huge parametric system so they all have implicit attention by nature. To assess it, we can use sequential Jacobian.
+
+&nbsp;
+
+However, we need to model an attention mechanism that is more close to human's attention, which is called explicit attention. Its advantages is that the computation time will be reduced, that the sequence will be simplified and that we can understand what RNN is concentrating on.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/attention_model.png " "){:width="100%"}
+
+&nbsp;
+
+An attention mechanism can be integrated into Deep Neural Network as the graph above. Attention models are defined by a probability distribution over glimpses: P(g|a). According to the function defining the probability distribution, attention models can be divided into two groups: hard attention models(by RL) and soft attention models(by gradient descent).
+
+### application
+
+Attention mechanism can be applied in many field including images and language processing. Let us take example in image captioning. In the image below, we can use attention to gain intuition of what model sees.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/attention_application.png " "){:width="100%"}
+
+&nbsp;
+
+## Lab
+
+
 
 # References
 
