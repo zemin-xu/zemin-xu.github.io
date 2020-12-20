@@ -8,7 +8,7 @@ demo: false
 # Basics of Recurrent Neural Network
 
 Recurrent neural network is a type of network architecture that accepts variable inputs and variable outputs[1].
-In this post I will talk about the fundamental concepts of RNN and its variations like LSTM. This post is my note after course given by Hugo DURCHON in Telecom-SudParis, at ARTEMIS research group.
+In this post I will talk about the fundamental concepts of RNN and its variations like LSTM. This post is my note after course given by Hugo DURCHON in Telecom-SudParis, at ARTEMIS research group. Some of the graphs in this post are from his presentation.
 
 ## Sequence
 
@@ -64,13 +64,59 @@ Second, the function and its parameters remain the same at every time step.
 
 &nbsp;
 
+We can view its unfolded presentation in which the function is tanh, to better understand how the data is processed.
 
+### Vanishing Gradients and Exploding Gradients
 
-## RNN cell architectures
+As we know, the way in CNN to update the weights is back propagation. Back propagation is a way to use gradient descent to update the weights, so that the loss can go down. In RNN we use a method called **back propagation through time** which will multiply the same factor when computing gradients. If this factor is smaller than 1, the value will come to 0; if greater than 1, this value will become big. That's why vanilla RNN cannot preserve long-term dependencies and why it is not considered in real problem.
+
+&nbsp;
+
+## LSTM
+
+**Long Short Term Memory** is special kind of RNN, which is capable of learning long-term dependencies. They have the same chain-like structure like vanilla RNN and it is to change the way RNN cells managing information and gradient flow to avoid vanishing gradient problem.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/lstm_structure.png " "){:width="100%"}
+###### [LSTM structure](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+
+&nbsp;
+
+The additional elements in LSTM, compared to vanilla RNN, are four gates and the core cell state. This cell state, as shown on the graph below, is designed to fight vanishing gradient problem and to track long-term dependencies like the **memory**. The hidden state that is used to make decision over short-term infomation is the same as in vanilla RNN.
+
+&nbsp;
+
+The four yellow rectangles are the four gates to filter information for the cell state. They are:
+
+#### Forget gate
+
+to decide what information should we forget or keep from previous states
+
+#### Input gate
+
+to control which values will be written to current cell
+
+#### Input modulation gate
+
+to decide how much to write to current cell, which can be considered as a sub-gate of input gate 
+
+#### Output gate
+
+to control the Output to cell state 
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/lstm_cell.png " "){:width="100%"}
+###### [LSTM structure](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+
+&nbsp;
+
 ## RNN applications
 ## Attention in RNN
 
 # References
 
 [1].[Vanilla Recurrent Neural Network](https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recurrent-neural-network/recurrent_neural_networks#:~:text=Recurrent%20neural%20network%20is%20a,vanilla%20feed%2Dforward%20neural%20networks.)
-[2].[](https://towardsdatascience.com/introduction-to-recurrent-neural-network-27202c3945f3)
+[2].[introduction to RNN](https://towardsdatascience.com/introduction-to-recurrent-neural-network-27202c3945f3)
+[3].[LSTM introduction](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
