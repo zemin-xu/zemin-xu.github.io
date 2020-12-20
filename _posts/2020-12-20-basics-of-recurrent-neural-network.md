@@ -32,13 +32,13 @@ Even though we take a several-words size window, we will lose the generalization
 
 &nbsp;
 
-## Sequence Modeling Problem
+## Sequence Modeling Problems
 
 In real life we will meet some other modeling problem which are more difficult for FFNN. We can conclude them as four types with the graph below.
 
 &nbsp;
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/different_types.png " "){:width="100%"}
-###### https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recurrent-neural-network/recurrent_neural_networks#:~:text=Recurrent%20neural%20network%20is%20a,vanilla%20feed%2Dforward%20neural%20networks.
+###### [different types of problems](https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recurrent-neural-network/recurrent_neural_networks#:~:text=Recurrent%20neural%20network%20is%20a,vanilla%20feed%2Dforward%20neural%20networks.)
 &nbsp;
 
 
