@@ -112,6 +112,9 @@ to control the Output to cell state
 
 &nbsp;
 
+### Response to vanishing gradient
+LSTM use BFTT method and the gradient of core cell state to update weights. However, the gradient value can be constrained by the forget gate and by the addition operation in calculation. This [post](https://medium.com/datadriveninvestor/how-do-lstm-networks-solve-the-problem-of-vanishing-gradients-a6784971a577#:~:text=LSTMs%20solve%20the%20problem%20using,step%20of%20the%20learning%20process.) have a detailed explanation how it is realized. Like what the author says, "It is the presence of the forget gate’s vector of activations in the gradient term along with additive structure which allows the LSTM to find such a parameter update at any time step"[4].
+
 ## RNN applications
 ## Attention in RNN
 
@@ -120,3 +123,4 @@ to control the Output to cell state
 [1].[Vanilla Recurrent Neural Network](https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recurrent-neural-network/recurrent_neural_networks#:~:text=Recurrent%20neural%20network%20is%20a,vanilla%20feed%2Dforward%20neural%20networks.)
 [2].[introduction to RNN](https://towardsdatascience.com/introduction-to-recurrent-neural-network-27202c3945f3)
 [3].[LSTM introduction](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+[4].[How LSTM networks solve the problem of vanishing gradients](https://medium.com/datadriveninvestor/how-do-lstm-networks-solve-the-problem-of-vanishing-gradients-a6784971a577#:~:text=LSTMs%20solve%20the%20problem%20using,step%20of%20the%20learning%20process.)
