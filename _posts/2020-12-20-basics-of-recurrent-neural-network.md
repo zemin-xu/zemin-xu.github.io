@@ -34,24 +34,20 @@ Even though we take a several-words size window, we will lose the generalization
 
 ## Sequence Modeling Problems
 
-In real life we will meet some other modeling problem which are more difficult for FFNN. We can conclude them as four types with the graph below.
+In real life we will meet some other modeling problem which are more difficult for FFNN. We can conclude them as four types with the graph below, according to the variables of input and output. For each of the models, we can find a corresponding case in real life. For example, **image captioning** is the case for **one-to-many** model. 
 
 &nbsp;
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/different_types.png " "){:width="100%"}
 ###### [different types of problems](https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recurrent-neural-network/recurrent_neural_networks#:~:text=Recurrent%20neural%20network%20is%20a,vanilla%20feed%2Dforward%20neural%20networks.)
 &nbsp;
 
+## Vanilla Recurrent Neural Network (RNN)
 
 &nbsp;
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/rnn_graph.png " "){:width="100%"}
-###### https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recurrent-neural-network/recurrent_neural_networks#:~:text=Recurrent%20neural%20network%20is%20a,vanilla%20feed%2Dforward%20neural%20networks.
+###### [vanilla RNN](https://towardsdatascience.com/introduction-to-recurrent-neural-network-27202c3945f3)
 &nbsp;
 
-
-
-
-
-## Vanilla Recurrent Neural Network (RNN)
 
 
 ## RNN cell architectures
