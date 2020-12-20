@@ -8,7 +8,7 @@ demo: false
 # Basics of Recurrent Neural Network
 
 Recurrent neural network is a type of network architecture that accepts variable inputs and variable outputs[1].
-In this post I will talk about the fundamental concepts of RNN and its variations like LSTM.
+In this post I will talk about the fundamental concepts of RNN and its variations like LSTM. This post is my note after course given by Hugo DURCHON in Telecom-SudParis, at ARTEMIS research group.
 
 ## Sequence
 
@@ -48,11 +48,23 @@ In real life we will meet some other modeling problem which are more difficult f
 ###### [vanilla RNN](https://towardsdatascience.com/introduction-to-recurrent-neural-network-27202c3945f3)
 &nbsp;
 
-The graph above is an abstract representaion of vanilla RNN. The mathmatical formulation is as below:
+The graph above is an abstract representation of vanilla RNN. The formula is as below:
 
 &nbsp;
+
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/rnn_formula.png " "){:width="100%"}
+
 &nbsp;
+
+Two notes are important there. First, the hidden layer called RNN cell has several cell state, denoted by h, and the current cell state depends on the last cell state and the input at that current time step. In other words, the hidden layer involves a loop whose current input are last output and current time step.
+
+&nbsp;
+
+Second, the function and its parameters remain the same at every time step.
+
+&nbsp;
+
+
 
 ## RNN cell architectures
 ## RNN applications
