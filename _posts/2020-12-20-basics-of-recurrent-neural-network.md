@@ -162,7 +162,96 @@ Attention mechanism can be applied in many field including images and language p
 
 ## Lab
 
+The objective of this laboratory is to implement a model for image captioning, with teacher's guide. We use the subset of dataset Common Object in COntext (COCO). Captions are provided for the training and validation data. We need to train the model and generate captions for the test data. The link to the code can be found [here](https://drive.google.com/file/d/1nxrJg6y0VLfozMFaGHDO5dlBwQGm6IYj/view?usp=sharing).
 
+&nbsp;
+
+For the preprocessing part I followed the code of teacher by watching the recording. In general, an json file contains all of the captions should be split and make up a dictionary. Each word should reference to an index in this dictionary to serve as input of deep neural network model. The image below is an example with its captions.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/image_captions.png " "){:width="100%"}
+
+&nbsp;
+
+Afterwards, all the images should be preprocessed to be able to fit into the model. We can use Keras's preprocessing API to achieve it. To define the model, we will use Transfer Learning method. It is a technique of using trained model to be the initial part of our model. **InceptionV3** will be used here.
+
+&nbsp;
+
+The next step is to implement the part of preparation of data. Normally, the input should be like this:
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/input_sample.png " "){:width="100%"}
+
+&nbsp;
+
+The label of current state should be the next word, and the features should be X1, the features of image, and X2, the index of words in captions.
+
+What I implemented is as below: the first function is to get the full path will filename. In the second function, the three list are created. Each time it will get the *n* words in caption, and put *n+1* word as label.
+
+&nbsp;
+
+```python
+# from filename to ID
+def filename_fullpath(name,subset):
+  tmp = name.replace('COCO_train2014_', '', 1)
+  id = int(tmp[:-4])
+  path = getPaths(id, subset)[0]
+  return path
+
+# get inputs X and labels Y
+def create_sequences(features, captions_full, subset):
+  X1, X2, y =[],[],[]
+
+  for key in features.keys():
+
+    
+    # path for an image in subset
+    path = filename_fullpath(key, subset)
+
+    # all the captions of this image
+    captions = captions_full[path]
+
+    # each caption of this image
+    for caption in captions:
+      clean = cleanCaption(caption)
+
+      # list of all the words in this sentence
+      words = clean.split(' ')
+      for i in range(len(words) - 1):
+        if words[i] in wordToIndexMapping:
+          tmp = []
+          for j in range(i):
+            #tmp.append(words[j])
+            if words[j] in wordToIndexMapping:
+              tmp.append(wordToIndexMapping[words[j]])
+          if len(tmp) != 0:
+            X2.append(tmp)
+            X1.append(features[key])
+            #y.append(words[i])
+            y.append(wordToIndexMapping[words[i]])
+
+  return X1, X2, y
+```
+
+&nbsp;
+
+This part work well, as you can see the log of first 20 items.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/log_inputs.png " "){:width="100%"}
+
+&nbsp;
+
+The next step it to feed the inputs into model. The part I fail after several times. I have problems on type of input and also in memory overflow. Even I try with small dataset it is the same. At last I stop at this step.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/crash.png " "){:width="100%"}
+
+&nbsp;
 
 # References
 
