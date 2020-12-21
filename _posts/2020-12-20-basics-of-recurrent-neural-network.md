@@ -237,7 +237,7 @@ def create_sequences(features, captions_full, subset):
 
 &nbsp;
 
-This part work well, as you can see the log of first 20 items.
+This part work well, as we see the log of first 20 items: each y is the next work of list X.
 
 &nbsp;
 
