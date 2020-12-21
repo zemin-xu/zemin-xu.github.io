@@ -264,6 +264,8 @@ print(len(x1))
 model.fit([x1, x2],y, epochs=20, verbose=2)
 ```
 
+&nbsp;
+
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/crash.png " "){:width="100%"}
 
 &nbsp;
