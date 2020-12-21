@@ -245,9 +245,24 @@ This part work well, as you can see the log of first 20 items.
 
 &nbsp;
 
-The next step it to feed the inputs into model. The part I fail after several times. I have problems on type of input and also in memory overflow. Even I try with small dataset it is the same. At last I stop at this step.
+The next step it to feed the inputs into model. The part I fail after several times. I have problems on type of input and also in memory overflow. Even I try with small dataset, changing the type as float, it is the same. At last I stop at this step.
 
 &nbsp;
+
+```python
+### Train the model on a small training dataset ###
+X1 = np.array(X1).astype('float32')
+X2 = np.array(X2).astype('int')
+
+y = np.array(y).astype('int')
+
+x1 = X1[:20]
+x2 = X2[:20]
+y_mini = y[:20]
+print(len(x1))
+
+model.fit([x1, x2],y, epochs=20, verbose=2)
+```
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rnn/crash.png " "){:width="100%"}
 
