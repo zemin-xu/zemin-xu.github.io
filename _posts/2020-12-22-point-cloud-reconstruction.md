@@ -7,7 +7,7 @@ demo: false
 
 # Point Cloud Reconstruction
 
-The goal of this lab is to gain practical experience of point cloud reconstruction. By choosing an meaningful object, we will takes several overlap photos and use C3DC application to reconstruct its point cloud model.
+The goal of this lab is to gain practical experience of point cloud reconstruction. By choosing a meaningful object, we will takes several overlap photos and use C3DC application to reconstruct its point cloud model.
 
 ## Object
 
@@ -15,7 +15,7 @@ The object I choose is a monochrome photography in my room, which should be a li
 
 &nbsp;
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pc/painting.jpg " "){:width="100%"}
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pc/painting.png " "){:width="100%"}
 
 &nbsp;
 
