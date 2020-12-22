@@ -49,6 +49,10 @@ Another issue is that the bottom part of painting lose lots of details. I think 
 
 &nbsp;
 
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pc/view_random_angle.png " "){:width="100%"}
+
+&nbsp;
+
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pc/view_front_close.png " "){:width="100%"}
 
 &nbsp;
