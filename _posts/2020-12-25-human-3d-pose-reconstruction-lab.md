@@ -25,6 +25,6 @@ Two type of data are important here: **2DTXT** file and **3DTXT** file. The 2DTX
 
 The whole lab is divided by 4 sub-tasks.
 
-## draw keypoints on original videos with 2DTXT file
+#### draw keypoints on original videos with 2DTXT file
 
 &nbsp;
