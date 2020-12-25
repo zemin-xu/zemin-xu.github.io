@@ -42,7 +42,7 @@ for i in range(nFrame):
 
 &nbsp;
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pose/relative_pose.gif " "){:width="100%"}
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pose/keypoints.gif " "){:width="100%"}
 ###### video with keypoints
 
 &nbsp;
@@ -50,5 +50,10 @@ for i in range(nFrame):
 ## Draw keypoints with relative pose data
 
 The second task is to project these coordinates on the frame of the different camera frame by using the **3DTXT** file and camera's intrinsic parameters. Precisely, the coordinates 3D has the reference on the first camera (camera 0th). By using the relative pose between cameras (pose_0_1.. etc) and camera's intrinsic parameters we can transform these 3D points onto 2D plane of another view. A sample code is provided by teacher. In this code the view is shifted by order, view1 to view2, and view2 to view3. If we want to shift directly, we can turn the shifting matrix into homogenous matrix by adding a row [0 0 0 1] at the bottom.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pose/relative_pose.gif " "){:width="100%"}
+###### video with relative pose 
 
 &nbsp;
