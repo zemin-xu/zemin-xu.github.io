@@ -96,7 +96,7 @@ The mechanics of the information dialog used the collier in Unity. It is only wh
 
 &nbsp;
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/moreinfo.png " "){:width="100%"}
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/more_info.png " "){:width="100%"}
 
 &nbsp;
 
