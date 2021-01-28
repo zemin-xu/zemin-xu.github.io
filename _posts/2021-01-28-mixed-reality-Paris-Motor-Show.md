@@ -7,7 +7,7 @@ demo: false
 
 # 
 
-The goal of this lab is to gain practical experience of point cloud reconstruction. By choosing a meaningful object, we will takes several overlap photos and use C3DC application to reconstruct its point cloud model.
+**Paris Motor Show** is a project using **MRTK** to build a demo app displaying motor in mixed reality, whose target platform is Hololens 2. In this post, I will describe briefly the steps. It used **Unity** engine, its XR package and mainly **MRTK**.
 
 ## Object
 
