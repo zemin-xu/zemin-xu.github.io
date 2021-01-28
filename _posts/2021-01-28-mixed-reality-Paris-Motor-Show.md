@@ -2,7 +2,8 @@
 layout: post
 author: zemin 
 category: MR 
-demo: paris_motor_show.mp4
+demo: true
+demo_link: paris_motor_show.mp4
 ---
 
 # Mixed Reality Paris Motor Show
