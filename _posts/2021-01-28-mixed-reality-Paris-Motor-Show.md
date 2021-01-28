@@ -2,7 +2,7 @@
 layout: post
 author: zemin 
 category: MR 
-demo: false 
+demo: paris_motor_show.mp4
 ---
 
 # Mixed Reality Paris Motor Show
@@ -19,11 +19,15 @@ demo: false
 
 The app starts with a welcome dialog. To do so, I used the dialog prefab from **MRTK** and put it inside the scene. The event system is like Unity's event system, which allows us to trigger a script of a gameobject selected.
 
+&nbsp;
+
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/dialog_prefab.png " "){:width="100%"}
 
 &nbsp;
 
 The buttons are set so that if we confirm it, we can access the second view.
+
+&nbsp;
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/dialog_first.png " "){:width="100%"}
 
@@ -31,45 +35,73 @@ The buttons are set so that if we confirm it, we can access the second view.
 
 ### preference dialog
 
-The user can choose among options a mark of car which interests me, this selection will allow him directly move to the place in front of a car of this mark.
+The user can choose among options a mark of car which interests me, this selection will allow him directly move to the place in front of a car of this mark. In real world, the position and rotation is controlled by headset. In this simulator, we can modify the properties of camera to make it move.
 
+&nbsp;
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/dialog_first.png " "){:width="100%"}
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/option_buttons.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/dialog_button_config.png " "){:width="100%"}
 
 &nbsp;
 
 
+### importation of car models
 
-## parameters
-
-As this is a plane object onto world, it should take **linear** as processing type.
-
-&nbsp;
-
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pc/parameters.png " "){:width="100%"}
+On **sketchfab.com**, I found some car models and imported into the project. I extracted an material to control the color of car body, so that I can change it later, by setting the properties of this material.
 
 &nbsp;
 
-## result
-
-The result is good enough, even though here are some points of my book shelf and the frame of painting is not complete. We can easily remove it within any point cloud editing tool like **MeshLab**.
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/models.png " "){:width="100%"}
 
 &nbsp;
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pc/view_front_raw.png " "){:width="100%"}
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/model_color.png " "){:width="100%"}
 
 &nbsp;
 
-As we see closer, we may find that there are some holes in the painting. We can also find some part is purple, that is because the light is yellow, and the tree is black.
+Sometimes the user will get lost in the scene. I put an indicator which will display the direction when the avatar is far from main scene. This is a prefab from MRTK.
 
-Another issue is that the bottom part of painting lose lots of details. I think the reason is that when I takes the photo, the camera is under the bottom line. In photos there are not details on this part.
+### color button
 
-&nbsp;
-
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pc/view_random_angle.png " "){:width="100%"}
+The physical button prefab of MRTK have a sound and touch feedback when we press it. By writing a custom script, the color changing function can be triggered once the button is pressed.
 
 &nbsp;
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pc/view_front_close.png " "){:width="100%"}
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/color_button.png " "){:width="100%"}
+
+&nbsp;
+
+### title and infomation
+
+In order to show the brief information and detail one, I used simple 3D text and tooltip of MRTK, as well as a dialog box when user is close and would like to know more. I put blue platforms for car, and put the 3D text onto them. When we gaze at a car, we can see the specific model of that car.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/platforms.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/titles.png " "){:width="100%"}
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/tooltip.png " "){:width="100%"}
+
+&nbsp;
+
+The mechanics of the information dialog used the collier in Unity. It is only when the user is close enough of the car, the info button will appear and charge in the corresponding information of car.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/moreinfo.png " "){:width="100%"}
+
+&nbsp;
+
+### rating
+
+At the end of this visit, the app will ask user for a rating. The source code can be found [here](). Below is a demo video.
 
 &nbsp;
