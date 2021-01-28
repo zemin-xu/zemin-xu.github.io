@@ -74,7 +74,7 @@ The physical button prefab of MRTK have a sound and touch feedback when we press
 
 &nbsp;
 
-### title and infomation
+### title and information
 
 In order to show the brief information and detail one, I used simple 3D text and tooltip of MRTK, as well as a dialog box when user is close and would like to know more. I put blue platforms for car, and put the 3D text onto them. When we gaze at a car, we can see the specific model of that car.
 
@@ -102,6 +102,6 @@ The mechanics of the information dialog used the collier in Unity. It is only wh
 
 ### rating
 
-At the end of this visit, the app will ask user for a rating. The source code can be found [here](). Below is a demo video.
+At the end of this visit, the app will ask user for a rating. The source code can be found [here](https://github.com/zemin-xu/ParisMotorShow). Below is a demo video.
 
 &nbsp;
