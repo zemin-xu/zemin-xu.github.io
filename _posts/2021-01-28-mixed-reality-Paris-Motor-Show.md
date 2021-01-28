@@ -5,23 +5,40 @@ category: MR
 demo: false 
 ---
 
-# 
+# Mixed Reality Paris Motor Show
 
-**Paris Motor Show** is a project using **MRTK** to build a demo app displaying motor in mixed reality, whose target platform is Hololens 2. In this post, I will describe briefly the steps. It used **Unity** engine, its XR package and mainly **MRTK**.
+## MRTK
 
-## Object
+**MRTK** is a toolkit developed by Microsoft in order to accelerate the development of Hololens app in Unity. In this toolkit, some pre-made UI tool provide a coherent visual effect as well as powerful functionalities. Besides, the profile in MRTK is used to configure the settings.
 
-The object I choose is a monochrome photography in my room, which should be a linear type in cloud reconstruction. I take photo under my room light, so that the lighting condition is good enough. The order of photos are important. We should not take from an arbitrary angle and continue with another one. The correct way is to choose a direction and vary a certain amount of angle. The image below shows the photos I take.
+## Project
+
+**Paris Motor Show** is a project using **MRTK** to build a demo app displaying motor in mixed reality(XR), whose target platform is Hololens 2. The goal is to experiment and get pratical development experience in XR.  In this post, I will describe briefly the steps. It used **Unity** engine, its XR package and mainly **MRTK**.
+
+### welcome dialog
+
+The app starts with a welcome dialog. To do so, I used the dialog prefab from **MRTK** and put it inside the scene. The event system is like Unity's event system, which allows us to trigger a script of a gameobject selected.
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/dialog_prefab.png " "){:width="100%"}
 
 &nbsp;
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pc/painting.png " "){:width="100%"}
+The buttons are set so that if we confirm it, we can access the second view.
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/dialog_first.png " "){:width="100%"}
 
 &nbsp;
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pc/painting_all_images.jpg " "){:width="100%"}
+### preference dialog
+
+The user can choose among options a mark of car which interests me, this selection will allow him directly move to the place in front of a car of this mark.
+
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pms/dialog_first.png " "){:width="100%"}
 
 &nbsp;
+
+
 
 ## parameters
 
