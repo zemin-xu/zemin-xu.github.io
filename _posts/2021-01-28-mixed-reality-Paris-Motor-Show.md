@@ -14,7 +14,7 @@ demo_link: paris_motor_show.mp4
 
 ## Project
 
-**Paris Motor Show** is a project using **MRTK** to build a demo app displaying motor in mixed reality(XR), whose target platform is Hololens 2. The goal is to experiment and get pratical development experience in XR.  In this post, I will describe briefly the steps. It used **Unity** engine, its XR package and mainly **MRTK**.
+**Paris Motor Show** is a project using **MRTK** to build a demo app displaying motor in mixed reality(XR), whose target platform is Hololens 2. The goal is to experiment and get practical development experience in XR.  In this post, I will describe briefly the steps. It used **Unity** engine, its XR package and mainly **MRTK**.
 
 ### welcome dialog
 
