@@ -43,6 +43,7 @@ for i in range(nFrame):
 &nbsp;
 
 ![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/pose/keypoints.gif " "){:width="100%"}
+
 ###### video with keypoints
 
 &nbsp;

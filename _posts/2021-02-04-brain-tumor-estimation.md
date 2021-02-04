@@ -59,7 +59,11 @@ There are two main toolkit providing frameworks for volume rendering, which are 
 
 1. VTK’s plugin named Activiz including complete features which can be found in Unity’s asset store is quite expensive. We cannot build a solution based on it.
 
-photo
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/brain_tumor/vtk_activiz.png " "){:width="100%"}
+
+&nbsp;
 
 2. Volume rendering is only a visualization. It is not easy to export like a model the rendering result into Unity. However, we need Unity to navigate and interact inside the volume rendering output.
 
@@ -68,7 +72,9 @@ photo
 We did some tests on another idea: transferring data as point cloud and importing it into Unity. We used vtk inside the Python environment to convert the data format, and successfully generated a point cloud file. However, the point cloud file only contains the surface of the brain data. In order words, we lose all the structure inside the brain. The image below is the point cloud file of our train data.
 
 &nbsp;
-photo
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/brain_tumor/brain_point_cloud.png " "){:width="100%"}
+
 &nbsp;
 
 Based on these constraints, we decided to use Unity as the visualization module, by searching for some other plugins that use Unity’s shader to implement the volume rendering.
@@ -77,6 +83,12 @@ Based on these constraints, we decided to use Unity as the visualization module,
 
 For the final solution, we use an implementation of volume rendering that can be found [here][4]. The renderer fulfills our requirements on adjustment on transparency of voxels. What we need to import in is the path to the dicom folder. As we can see below, the internal structure is visible by using this renderer.
 
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/brain_tumor/brain_volume_rendering.png " "){:width="100%"}
+
+&nbsp;
+
 ### k3d widget to visualize 3d data on webpage
 
 We did some other experiment to know whether it is possible to handle the visualization and interaction inside python. A discovery is K3D Jupyter widget, which is a Jupyter notebook extension for 3D visualization. We can make some basic interactions like rotation, and adjustment of scale.
@@ -84,6 +96,10 @@ We did some other experiment to know whether it is possible to handle the visual
 &nbsp;
 
 The image below shows the brain from training data. K3D Jupyter will colorize it automatically according to the value of the voxel. The red box indicates the position and size of the tumor. It is convenient to visualize it inside on a webpage, but the interaction choices are limited. Besides, it is hard to find a virtual reality package working in a python environment. We did not continue onto this path further.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/brain_tumor/k3d_jupyter.png " "){:width="100%"}
 
 &nbsp;
 
@@ -102,6 +118,10 @@ The first button is to import the brain data and make volume rendering onto it. 
 &nbsp;
 
 It is after importation that other options will be possible. We can continue to import the segmentation data on the same brain, which will render in red color the tumor, identified by doctors. Another option is to draw a bounding box, if the data has no segmentation part. The position and size of this bounding box is the result of the estimation using deep learning in python.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/brain_tumor/mrtk_menu.png " "){:width="100%"}
 
 &nbsp;
 
