@@ -8,8 +8,8 @@ demo_link: escape_game.mp4
 
 # An immersive visualization of a human brain from the MRI data to detect the possible tumor locations using U-Net in the Mixed Reality(MR) environment
 
-## Author: Mohamed ABDUL GAFOOR, Zemin XU
-## Supervisor: Marius PREDA
+##### Author: Mohamed ABDUL GAFOOR, Zemin XU
+##### Supervisor: Marius PREDA
 
 ## Introduction to the topic
 
