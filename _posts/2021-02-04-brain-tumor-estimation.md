@@ -1,14 +1,15 @@
 ---
 layout: post
 author: zemin, mohamed
-category: MR 
+category: MR DL 
 demo: true
-demo_link: escape_game.mp4
+demo_link: brain_tumor.mp4
 ---
 
 # An immersive visualization of a human brain from the MRI data to detect the possible tumor locations using U-Net in the Mixed Reality(MR) environment
 
 ##### Author: Mohamed ABDUL GAFOOR, Zemin XU
+
 ##### Supervisor: Marius PREDA
 
 ## Introduction to the topic
@@ -25,14 +26,22 @@ The aim of this research work is to develop a tool for an immersive visualizatio
 
 1. Analyze MRI data using a 3D-point-cloud-generation.
 
+&nbsp;
+
 2. Integrate a state of the art Deep Learning framework, known as U-Net with the MR application in order to detect the potential brain tumor location => A well-trained DL model, the nature of malignancy (Benign/Malignant) & location of the tumor (Vector 3).
 
+&nbsp;
+
 3. Building an MR tool for brain surgeons in order to have an immersive visualization before participating in a real surgical environment => .exe application.
+
+&nbsp;
 
 ## Dataset
 
 Data Description (difficulties & importance for such a project)
 We have studied many datasets for the purpose of this project. For example, RIDER Neuro MRI contains imaging data that we have obtained from The Cancer Imaging Archive (TCIA) [1]. However, the dataset is not good for the immersive visualization or it does not contain annotated information. This is an issue we faced at the start of this project, because choosing a correct dataset is very important for the success of this project. Hence, we have decided to go to Multimodal Brain Tumor Segmentation Challenge 2020 data. This data contains a train & validation set. All the scans are available as NIfTI files (.nii.gz) and describe as native (T1), post-contrast T1-weighted (T1Gd), T2-weighted (T2), T2 Fluid Attenuated Inversion Recovery (T2-FLAIR) volumes and were acquired with different clinical protocols and various scanners from multiple (n=19) institutions, mentioned as data contributors here [2]. All the dataset have been segmented manually, by 1 to 4 raters using a standard protocol and it was then validated by experienced neuro-radiologists.
+
+&nbsp;
 
 The following figure is a typical folder structure, where you can see the segmentation data, which is our label data.
 
@@ -42,7 +51,11 @@ The following figure is a typical folder structure, where you can see the segmen
 
 According to the research, the volume rendering will be the most suitable solution for visualization. By definition, volume rendering is a set of techniques used to display a 2D projection of a 3D discretely sampled data set. A typical 3D data set is a group of 2D slice images acquired by a CT, MRI scanner.[1] Imagine each slice of the brain as a plane, and the task of volume rendering will be putting the planes side by side. In this case, each pixel onto a plane will have a 3d coordinate and will be rendered according to the gray value of it.
 
+&nbsp;
+
 There are two main toolkit providing frameworks for volume rendering, which are OpenGL and VTK separately. We found some tutorials on volume rendering within python. However, we have some constraints:
+
+&nbsp;
 
 1. VTK’s plugin named Activiz including complete features which can be found in Unity’s asset store is quite expensive. We cannot build a solution based on it.
 
@@ -50,18 +63,29 @@ photo
 
 2. Volume rendering is only a visualization. It is not easy to export like a model the rendering result into Unity. However, we need Unity to navigate and interact inside the volume rendering output.
 
+&nbsp;
+
 We did some tests on another idea: transferring data as point cloud and importing it into Unity. We used vtk inside the Python environment to convert the data format, and successfully generated a point cloud file. However, the point cloud file only contains the surface of the brain data. In order words, we lose all the structure inside the brain. The image below is the point cloud file of our train data.
 
+&nbsp;
 photo
+&nbsp;
 
 Based on these constraints, we decided to use Unity as the visualization module, by searching for some other plugins that use Unity’s shader to implement the volume rendering.
+
+&nbsp;
+
 For the final solution, we use an implementation of volume rendering that can be found [here][4]. The renderer fulfills our requirements on adjustment on transparency of voxels. What we need to import in is the path to the dicom folder. As we can see below, the internal structure is visible by using this renderer.
 
 ### k3d widget to visualize 3d data on webpage
 
 We did some other experiment to know whether it is possible to handle the visualization and interaction inside python. A discovery is K3D Jupyter widget, which is a Jupyter notebook extension for 3D visualization. We can make some basic interactions like rotation, and adjustment of scale.
 
+&nbsp;
+
 The image below shows the brain from training data. K3D Jupyter will colorize it automatically according to the value of the voxel. The red box indicates the position and size of the tumor. It is convenient to visualize it inside on a webpage, but the interaction choices are limited. Besides, it is hard to find a virtual reality package working in a python environment. We did not continue onto this path further.
+
+&nbsp;
 
 ### MRTK in Unity to support different devices including VR & AR
 
@@ -69,12 +93,20 @@ The image below shows the brain from training data. K3D Jupyter will colorize it
 
 MRTK already provides an input system for the simulator on PC and for Hololens 2. On the simulator, we can use the classical WASDQE keys to make movement of 6 degrees, like controlling a plane. We can press the right click button and drag the pointer to rotate. In order to click onto a button, we should rotate so that the central point is pointing at the button. After that, pressing the right click button of the pointer will trigger the actions set onto this virtual button.
 
+&nbsp;
+
 #### interactions
 
 The first button is to import the brain data and make volume rendering onto it. We also created a Near-Hand Menu so that we can access the options no matter where we are in the scene. Each time before running, we will set the path to the directory of data. By pressing the button, the volume rendering plugin will work.
 
+&nbsp;
+
 It is after importation that other options will be possible. We can continue to import the segmentation data on the same brain, which will render in red color the tumor, identified by doctors. Another option is to draw a bounding box, if the data has no segmentation part. The position and size of this bounding box is the result of the estimation using deep learning in python.
+
+&nbsp;
 
 ### Data exchange between python and unity
 
-In order to communicate between the deep learning result and Unity, we used JSON format. By definition, JSON is an open standard file format, and data interchange format, that uses human-readable text to store and transmit data objects. Here, we would like to pass the coordinates and size data of estimation. 
+In order to communicate between the deep learning result and Unity, we used JSON format. By definition, JSON is an open standard file format, and data interchange format, that uses human-readable text to store and transmit data objects. Here, we would like to pass the coordinates and size data of estimation.
+
+&nbsp;
