@@ -16,13 +16,13 @@ demo_link: brain_tumor.mp4
 
 ### Problematic
 
-The recent advancement in processing power of computers have enabled tremendous opportunities for the increased use of virtual reality (VR) and augmented reality (AR) technology in medicine and surgery. The visualization of human organs in the 3D environment takes a central role in the procedure of diagnosis and the follow up treatment of any disease. An automated immersive visualization of a human brain from a sequence of 2D MRI images in the MR environment is necessary not only to detect and classify the nature of tumors but also it helps surgeons to approach the tumor from a virtual perspective and to plan a possible surgery ahead of time. In this work, we adapt an approach for a possible immersive visualization of the human brain in the VR environment and consequently propose the best two possible tumor locations using U-Net deep learning framework.  
+The recent advancement in processing power of computers have enabled tremendous opportunities for the increased use of virtual reality (VR) and augmented reality (AR) technology in medicine and surgery. The visualization of human organs in the 3D environment takes a central role in the procedure of diagnosis and the follow up treatment of any disease. An automated immersive visualization of a human brain from a sequence of 2D MRI images in the MR environment is necessary not only to detect and classify the nature of tumors but also it helps surgeons to approach the tumor from a virtual perspective and to plan a possible surgery ahead of time. In this work, we adapt an approach for a possible immersive visualization of the human brain in the VR environment and consequently propose the best two possible tumor locations using U-Net deep learning framework.
 
 ### Research aim
 
 The aim of this research work is to develop a tool for an immersive visualization of human brain tumors in the MR environment in order to facilitate the surgical procedures.
 
-### Research objective
+### Research objectives
 
 1. Analyze MRI data using a 3D-point-cloud-generation.
 
@@ -44,6 +44,50 @@ We have studied many datasets for the purpose of this project. For example, RIDE
 &nbsp;
 
 The following figure is a typical folder structure, where you can see the segmentation data, which is our label data.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/brain_tumor/dataset.png " "){:width="100%"}
+
+&nbsp;
+
+However, segmentation information is not available in the validation dataset. But we have to predict the possible tumor location.
+
+&nbsp;
+
+### Data format
+
+All the images are in NIfTI files (.nii.gz). If we want to visualize these in the Unity environment, we have to convert it to DICOM format. So we have used a 3D slicer tool to convert all the .nii files to DICOM format that are ready to upload in the Unity.
+
+## Deep learning
+
+In this project we use a state of the art architecture for biomedical segmentation known as U-Net. It was developed at the Computer Science Department of the University of Freiburg, Germany.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/brain_tumor/unet.png " "){:width="100%"}
+
+&nbsp;
+
+U-net architecture (example for 32x32 pixels in the lowest resolution). Each blue box corresponds to a multi-channel feature map. The number of channels is denoted on top of the box. The x-y-size is provided at the lower left edge of the box. White boxes represent copied feature maps. The arrows denote the different operations [3].
+
+&nbsp;
+
+Before feeding into the network, we must make sure the data is in an appropriate shape and format. We wrote a function that takes the data and separates the training_masks and training_images. We resize all the images to 256x256.
+
+&nbsp;
+
+All the data that we have prepared have been saved in .npy file format. Because we don't have to re-run the function again to prepare the train data and the mask data. The following is a screen-shot of a training image and the corresponding tumor location.
+
+&nbsp;
+
+![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/brain_tumor/imshow.png " "){:width="100%"}
+
+&nbsp;
+
+As a backbone of the model we use resnet34. And  set the input_shape to (256, 256, 1).`
+
+&nbsp;
 
 ## Visualization
 
@@ -130,3 +174,15 @@ It is after importation that other options will be possible. We can continue to 
 In order to communicate between the deep learning result and Unity, we used JSON format. By definition, JSON is an open standard file format, and data interchange format, that uses human-readable text to store and transmit data objects. Here, we would like to pass the coordinates and size data of estimation.
 
 &nbsp;
+
+## Conclusion
+
+The source code with dataset can be found [here](https://github.com/zemin-xu/BrainTumorEstimation).
+
+## References
+
+[definition of volume rendering](https://en.wikipedia.org/wiki/Volume_rendering#:~:text=In%20scientific%20visualization%20and%20computer,%2C%20MRI%2C%20or%20MicroCT%20scanner)
+[point cloud importer for unity] (https://github.com/keijiro/Pcx)
+[k3d jupyter] (https://github.com/K3D-tools/K3D-jupyter)
+[volume rendering in unity](https://github.com/mlavik1/UnityVolumeRendering)
+[definition of JSON format](https://en.wikipedia.org/wiki/JSON)
