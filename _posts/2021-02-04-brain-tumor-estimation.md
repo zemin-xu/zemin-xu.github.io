@@ -179,6 +179,8 @@ In order to communicate between the deep learning result and Unity, we used JSON
 
 The source code with dataset can be found [here](https://github.com/zemin-xu/BrainTumorEstimation).
 
+&nbsp;
+
 ## References
 
 [definition of volume rendering](https://en.wikipedia.org/wiki/Volume_rendering#:~:text=In%20scientific%20visualization%20and%20computer,%2C%20MRI%2C%20or%20MicroCT%20scanner)
@@ -186,3 +188,5 @@ The source code with dataset can be found [here](https://github.com/zemin-xu/Bra
 [k3d jupyter] (https://github.com/K3D-tools/K3D-jupyter)
 [volume rendering in unity](https://github.com/mlavik1/UnityVolumeRendering)
 [definition of JSON format](https://en.wikipedia.org/wiki/JSON)
+
+&nbsp;
