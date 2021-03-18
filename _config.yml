@@ -74,3 +74,6 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 
 # Color scheme supports "light" (default) and "dark"
 color_scheme: dark 
+
+plugins:
+  - jekyll-seo-tag
