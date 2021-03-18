@@ -1,7 +1,7 @@
 ---
-layout: post
-author: zemin 
-category: AI
+layout: default 
+title: Basics of Reinforcement Learning
+parent: Machine Learning
 demo: false 
 ---
 
