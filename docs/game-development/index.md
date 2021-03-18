@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Computer Vision
+title: Game Dev 
 has_children: true
-parent: Others 
+nav_order: 5
 ---

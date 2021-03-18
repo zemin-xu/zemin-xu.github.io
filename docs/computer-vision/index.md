@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Others
-nav_order: 3
+title: Computer Vision
 has_children: true
+nav_order: 4
 ---

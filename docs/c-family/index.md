@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Game Dev 
+title: C, C++, C# 
+nav_order: 3
 has_children: true
-parent: Others 
 ---
