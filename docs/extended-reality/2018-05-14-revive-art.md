@@ -1,10 +1,6 @@
 ---
-author: zemin 
-category: VR
-
 layout: default 
 parent: Extended Reality
-
 title: Revive Art -- Virtual Reality
 demo: true
 demo_link: revive_art.mp4

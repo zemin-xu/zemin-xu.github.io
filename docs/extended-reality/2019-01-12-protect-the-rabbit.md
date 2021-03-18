@@ -1,7 +1,7 @@
 ---
-layout: post
-author: zemin 
-category: VR
+layout: default 
+parent: Extended Reality
+title: Protect the Rabbit -- Virtual Reality
 demo: true
 demo_link: protect_the_rabbit.mp4
 ---

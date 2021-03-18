@@ -1,9 +1,7 @@
 ---
 layout: default 
-category: MR 
 parent: Extended Reality
 title: Paris Motor Show -- Mixed Reality
-
 demo: true
 demo_link: paris_motor_show.mp4
 ---

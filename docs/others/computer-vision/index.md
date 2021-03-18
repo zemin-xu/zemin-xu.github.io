@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Extended Reality 
-nav_order: 1
+title: Computer Vision
 has_children: true
 ---

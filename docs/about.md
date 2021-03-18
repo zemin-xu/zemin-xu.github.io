@@ -4,7 +4,7 @@ layout: default
 permalink: /about.html
 ---
 
-#### About me
+# About me
 
 I am fascinated by interactive experience and computer science. For me, augmented reality is the support combining my interests and what I have been engrossed in till now.
 
@@ -12,7 +12,7 @@ You can reach me out by [email](mailto:zemin.xu@yahoo.com) or know more about me
 
 &nbsp;
 
-#### Education
+# Education
 
 ##### [Virtual & Augmented Reality](https://artsetmetiers.fr/fr/node/871)
 
@@ -32,7 +32,7 @@ You can reach me out by [email](mailto:zemin.xu@yahoo.com) or know more about me
 
 &nbsp;
 
-#### Skills
+# Skills
 
 ##### C#
 

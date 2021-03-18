@@ -1,7 +1,7 @@
 ---
-layout: post
-author: zemin, mohamed
-category: MR DL 
+layout: default 
+parent: Extended Reality
+title: Brain Tumor Estimation -- Mixed Reality
 demo: true
 demo_link: brain_tumor.mp4
 ---

@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Extended Reality 
-nav_order: 1
+title: Game Dev 
 has_children: true
 ---

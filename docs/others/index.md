@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Extended Reality 
-nav_order: 1
+title: Others
+nav_order: 3
 has_children: true
 ---

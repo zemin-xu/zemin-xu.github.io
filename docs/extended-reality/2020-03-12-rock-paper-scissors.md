@@ -1,7 +1,7 @@
 ---
-layout: post
-author: zemin 
-category: AR
+layout: default 
+parent: Extended Reality
+title: Rock Paper Scissors -- Augmented Reality
 demo: true
 demo_link: rock_paper_scissors.mp4
 ---
