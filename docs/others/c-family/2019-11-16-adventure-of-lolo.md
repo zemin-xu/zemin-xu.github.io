@@ -1,7 +1,7 @@
 ---
-layout: post
-author: zemin 
-category: C++ 
+layout: default 
+title: Intro to C++ 
+parent: C, C++, C# 
 demo: true
 demo_link: adventure_of_lolo.mp4
 ---

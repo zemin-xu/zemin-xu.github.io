@@ -1,7 +1,7 @@
 ---
-layout: post
-author: zemin 
-category: CV
+layout: default 
+title: Point Cloud reconstruction
+parent: Computer Vision
 demo: false 
 ---
 

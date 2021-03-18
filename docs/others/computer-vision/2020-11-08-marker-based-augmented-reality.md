@@ -1,7 +1,7 @@
 ---
-layout: post
-author: zemin 
-category: CV
+layout: default 
+title: Marker based AR model 
+parent: Computer Vision
 demo: true 
 demo_link: BRISK_final.mp4 
 ---

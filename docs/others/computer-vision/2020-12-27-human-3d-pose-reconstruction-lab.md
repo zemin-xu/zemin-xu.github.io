@@ -1,7 +1,7 @@
 ---
-layout: post
-author: zemin 
-category: CV
+layout: default 
+title: Human Pose Reconstruction
+parent: Computer Vision
 demo: false 
 ---
 

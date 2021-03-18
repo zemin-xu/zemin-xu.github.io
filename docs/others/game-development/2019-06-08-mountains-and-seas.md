@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: default 
 title: Mountains & Seas
-nav_order: 5
+parent: Game Dev
 ---
 
 # Mountains & seas
