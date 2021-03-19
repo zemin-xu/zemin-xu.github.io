@@ -1,19 +1,12 @@
 <script>
 
-	function modeSwitcher() {
-		let currentMode = document.documentElement.getAttribute('data-theme');
-		if (currentMode === "dark") {
-			document.documentElement.setAttribute('data-theme', 'light');
-			window.localStorage.setItem('theme', 'light');
-			document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-    		jtd.setTheme('light');
-		} else {
-			document.documentElement.setAttribute('data-theme', 'dark');
-			window.localStorage.setItem('theme', 'dark');
-			document.getElementById("theme-toggle").innerHTML = "Light Mode";
-    		jtd.setTheme('dark');
-		}
+    const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+    	jtd.setTheme('dark');
+		document.documentElement.setAttribute('data-theme', 'dark');
 	}
-
-
+	else {
+    	jtd.setTheme('light');
+		document.documentElement.setAttribute('data-theme', 'light');
+	}
 </script>
