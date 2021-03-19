@@ -1,12 +1,10 @@
 ---
 layout: default 
-title: Intro to C++ 
+title: My First Class of C++
 parent: C, C++, C# 
 demo: true
 demo_link: adventure_of_lolo.mp4
 ---
-
-# Introduction to C++
 
 [*Adventure of Lolo*](https://en.wikipedia.org/wiki/Adventures_of_Lolo) is a puzzle video game released in 1989. In the course *Introduction to C++*, I need to reproduce a video game with the same gameplay. This one-month project aims at practising C++. In this project, I used the sprite of my favorite [bomberman game](https://www.youtube.com/watch?v=WXATi38zgYE) in Childhood as texture. You can find the source code [here](https://github.com/zemin-xu/SFML).
 
