@@ -17,10 +17,7 @@ Hello, my name’s Zemin. I am a Master graduate from IP-Paris in program Virtua
 Among extended reality technology, I am particularly interested in Mixed Reality, which embed the artificial infomation onto real world seamlessly. The machine learning empowers its real-time application, since many of them are in the field of vision and text intepretion. State-of-the-art algorithm in object recognition, natural language processing use machine learning. That's why you will find some of my posts in this domain.
 
 
-<video id="player" playsinline controls data-poster="https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/revive_art.jpg">
+<video id="player" playsinline controls >
 <source src= "https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/videos/revive_art.mp4" type="video/mp4" />
 </video>
-
-<video id="player" playsinline controls data-poster="https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/revive_art.jpg" style="width: 100%">
-<source src= "https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/videos/revive_art.mp4" type="video/mp4" />
-</video>
+{: img }
