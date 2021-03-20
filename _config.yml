@@ -110,9 +110,9 @@ search:
 #  "About Me":
 #    - "//zeminxu.me/about.html"
 
-aux_links:
-  '<button id="theme-toggle"></button>':
-    - '#"onclick="modeSwitcher()"'
+#aux_links:
+#  '<button id="theme-toggle"></button>':
+#    - '#"onclick="modeSwitcher()"'
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false

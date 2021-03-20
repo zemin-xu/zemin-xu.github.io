@@ -1,8 +1,15 @@
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+<button class="btn js-toggle-dark-mode"></button>
 <script>
     const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
+      if (jtd.getTheme() === 'dark'){
+        toggleDarkMode.textContent = 'Light Mode';
+      }
+      else{
+        toggleDarkMode.textContent = 'Dark Mode';
+      }
     jtd.addEvent(toggleDarkMode, 'click', function(){
+      /*
       if (jtd.getTheme() === 'dark') {
         jtd.setTheme('light');
         toggleDarkMode.textContent = 'Preview dark color scheme';
@@ -10,5 +17,19 @@
         jtd.setTheme('dark');
         toggleDarkMode.textContent = 'Return to the light side';
       }
+      */
+    let currentMode = document.documentElement.getAttribute('data-theme');
+  	if (currentMode === "dark") {
+      jtd.setTheme('light');
+  		document.documentElement.setAttribute('data-theme', 'light');
+  		window.localStorage.setItem('theme', 'light');
+      toggleDarkMode.textContent = 'Dark Mode';
+  	} else {
+      jtd.setTheme('dark');
+  		document.documentElement.setAttribute('data-theme', 'dark');
+  		window.localStorage.setItem('theme', 'dark');
+        toggleDarkMode.textContent = 'Light Mode';
+  	}
+
     });
 </script>
