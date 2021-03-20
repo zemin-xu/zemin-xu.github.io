@@ -20,3 +20,7 @@ Among extended reality technology, I am particularly interested in Mixed Reality
 <video id="player" playsinline controls data-poster="https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/revive_art.jpg">
 <source src= "https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/videos/revive_art.mp4" type="video/mp4" />
 </video>
+
+<video id="player" playsinline controls data-poster="https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/revive_art.jpg" style="width: 100%">
+<source src= "https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/videos/revive_art.mp4" type="video/mp4" />
+</video>
