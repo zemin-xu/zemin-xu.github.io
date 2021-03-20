@@ -58,7 +58,7 @@ plugins:
 # just-the-docs related config
 search_enabled: true
 
-footer_content: "Zemin XU. This website is under construction. </a>"
+footer_content: "Copyright © 2016-2021 Zemin XU.</a>"
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
