@@ -40,7 +40,7 @@ The following figure is a typical folder structure, where you can see the segmen
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/dataset.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/dataset.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -58,7 +58,7 @@ In this project we use a state of the art architecture for biomedical segmentati
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/unet.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/unet.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -74,7 +74,7 @@ All the data that we have prepared have been saved in .npy file format. Because 
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/imshow.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/imshow.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -98,7 +98,7 @@ There are two main toolkit providing frameworks for volume rendering, which are 
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/vtk_activiz.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/vtk_activiz.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -110,7 +110,7 @@ We did some tests on another idea: transferring data as point cloud and importin
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/brain_point_cloud.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/brain_point_cloud.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -122,7 +122,7 @@ For the final solution, we use an implementation of volume rendering that can be
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/brain_volume_rendering.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/brain_volume_rendering.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -136,7 +136,7 @@ The image below shows the brain from training data. K3D Jupyter will colorize it
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/k3d_jupyter.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/k3d_jupyter.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -158,7 +158,7 @@ It is after importation that other options will be possible. We can continue to 
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/mrtk_menu.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/mrtk_menu.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -172,7 +172,7 @@ In order to communicate between the deep learning result and Unity, we used JSON
 
 The source code with dataset can be found [here](https://github.com/zemin-xu/BrainTumorEstimation).
 
-<video id="player" playsinline controls style="width: 100%">
+<video id="player" playsinline controlsstyle="width: 100%">{: .px-8 }
 <source src= "{{ site.url_videos }}/brain_tumor.mp4" type="video/mp4" />
 </video>
 

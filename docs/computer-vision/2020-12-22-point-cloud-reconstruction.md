@@ -15,11 +15,11 @@ The object I choose is a monochrome photography in my room, which should be a li
 
 
 
-<img src="{{ site.url_imgs }}/pc/painting.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/pc/painting.png " style="width: 100%">{: .px-8 }
 
 
 
-<img src="{{ site.url_imgs }}/pc/painting_all_images.jpg " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/pc/painting_all_images.jpg " style="width: 100%">{: .px-8 }
 
 
 
@@ -29,7 +29,7 @@ As this is a plane object onto world, it should take **linear** as processing ty
 
 
 
-<img src="{{ site.url_imgs }}/pc/parameters.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/pc/parameters.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -39,7 +39,7 @@ The result is good enough, even though here are some points of my book shelf and
 
 
 
-<img src="{{ site.url_imgs }}/pc/view_front_raw.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/pc/view_front_raw.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -49,9 +49,9 @@ Another issue is that the bottom part of painting lose lots of details. I think 
 
 
 
-<img src="{{ site.url_imgs }}/pc/view_random_angle.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/pc/view_random_angle.png " style="width: 100%">{: .px-8 }
 
 
 
-<img src="{{ site.url_imgs }}/pc/view_front_close.png " class=".px-8" style="width: 100%">
+<img src="{{ site.url_imgs }}/pc/view_front_close.png " style="width: 100%">{: .px-8 }
 
