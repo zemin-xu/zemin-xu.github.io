@@ -9,8 +9,14 @@ title: Revive Art -- Virtual Reality
 Collaborator: [H.Guibert](https://www.linkedin.com/in/hélènedeguibert/)
 
 **Revive art** is our first virtual reality project lasting 4 months, whose subject is "the promotion of [indie game](https://en.wikipedia.org/wiki/Indie_game)". We would like to do it as a form of installation art in museum where we might reach more potential players, as indie games are more artistic compared to AAA video games, generally speaking.
+{: .fs-6 .fw-300 }
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/revive_art.jpg "poster")
+---
+
+![]("{{ site.url_imgs }}/revive_art.jpg")
+![]("{{ site.url_imgs }}/brain_tumor/dataset.png")
+
+![](https://guides.github.com/activities/hello-world/branching.png)
 
 ## Concept
 
