@@ -13,7 +13,7 @@ Collaborator: [H.Guibert](https://www.linkedin.com/in/hélènedeguibert/)
 
 ---
 
-<img src="{{ site.url_imgs }}/revive_art.jpg" class=".mx-auto" style="width: 60%">
+<img src="{{ site.url_imgs }}/revive_art.jpg" " class=".mx-auto" style="width: 60%">
 
 ## Concept
 

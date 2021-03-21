@@ -40,7 +40,7 @@ The following figure is a typical folder structure, where you can see the segmen
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/dataset.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/dataset.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -58,7 +58,7 @@ In this project we use a state of the art architecture for biomedical segmentati
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/unet.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/unet.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -74,7 +74,7 @@ All the data that we have prepared have been saved in .npy file format. Because 
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/imshow.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/imshow.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -98,7 +98,7 @@ There are two main toolkit providing frameworks for volume rendering, which are 
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/vtk_activiz.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/vtk_activiz.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -110,7 +110,7 @@ We did some tests on another idea: transferring data as point cloud and importin
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/brain_point_cloud.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/brain_point_cloud.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -122,7 +122,7 @@ For the final solution, we use an implementation of volume rendering that can be
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/brain_volume_rendering.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/brain_volume_rendering.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -136,7 +136,7 @@ The image below shows the brain from training data. K3D Jupyter will colorize it
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/k3d_jupyter.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/k3d_jupyter.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -158,7 +158,7 @@ It is after importation that other options will be possible. We can continue to 
 
 
 
-<img src="{{ site.url_imgs }}/brain_tumor/mrtk_menu.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/brain_tumor/mrtk_menu.png " class=".mx-auto" style="width: 100%">
 
 
 

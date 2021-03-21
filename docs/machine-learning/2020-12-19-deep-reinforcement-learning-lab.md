@@ -22,7 +22,7 @@ For this lab, we use the **Cart Pole** problem as demonstration. The black part 
 
 
 
-<img src="{{ site.url_imgs }}/rl/cart_pole.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rl/cart_pole.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -183,28 +183,28 @@ The first thing I do is try to make the epsilon lower platform value to be 0.3, 
 
 
 
-<img src="{{ site.url_imgs }}/rl/epsilon_03.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rl/epsilon_03.png " class=".mx-auto" style="width: 100%">
 ###### epsilon at 0.3
 
 
 
-<img src="{{ site.url_imgs }}/rl/epsilon_005.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rl/epsilon_005.png " class=".mx-auto" style="width: 100%">
 ###### epsilon at 0.05
 
 
 This give me an inspiration to do a high epsilon for the beginning and let cache memorize them by using the relevant sorting and weighted batches. So I set for the first 10,000 iteration a epsilon as 0.5, and after that change it to 0.1. The result is encouraging because the highest score can be 45, with other parameters as default.
 
 
-<img src="{{ site.url_imgs }}/rl/epsilon_03_01_true_true.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rl/epsilon_03_01_true_true.png " class=".mx-auto" style="width: 100%">
 ###### q-Learning, epsilon at 0.5 and later 0.1, with relevanceSorting and weightedBatches true
 
 
 The next experiment is to add the size so that the complexity of network and buffer size is enough, even it takes longer.
 
 
-<img src="{{ site.url_imgs }}/rl/epsilon_05_01_true_true_4096_1024_128.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rl/epsilon_05_01_true_true_4096_1024_128.png " class=".mx-auto" style="width: 100%">
 
-<img src="{{ site.url_imgs }}/rl/epsilon_05_01_true_true_4096_1024_128_second.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rl/epsilon_05_01_true_true_4096_1024_128_second.png " class=".mx-auto" style="width: 100%">
 ###### q-Learning, epsilon at 0.5 and later 0.1, with relevanceSorting and weightedBatches true, bufferSize=4096, batchSize=1024, width = 128
 
 
@@ -215,28 +215,28 @@ The first part with high epsilon rate results in around 25 as score after 10,000
 The next thing I examine is the gamma, the discounted factor. I change it to be 0.8. The reward gets higher but the scores remain the same, under 20.
 
 
-<img src="{{ site.url_imgs }}/rl/gamma_08.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rl/gamma_08.png " class=".mx-auto" style="width: 100%">
 ###### gamma at 0.8
 
 
 Another test is trying to make the size of buffer and width of network. But the result does not improve too much.
 
 
-<img src="{{ site.url_imgs }}/rl/big_buffer_size_width.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rl/big_buffer_size_width.png " class=".mx-auto" style="width: 100%">
 ###### big size in width and bufferSize
 
 
 The next experiment is to activate four ERs so that each kind of experience will be tested at the same time. The result is at 20 in average.
 
 
-<img src="{{ site.url_imgs }}/rl/er_4.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rl/er_4.png " class=".mx-auto" style="width: 100%">
 ###### four experience replays
 
 
 The last experiment is to change the update rate for frozen network, so that a target will change not frequently. From the graph below, it do improve a bit, ranges at 10 to 30.
 
 
-<img src="{{ site.url_imgs }}/rl/frozen_network_bigsize.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rl/frozen_network_bigsize.png " class=".mx-auto" style="width: 100%">
 ###### frozen network update after 1000 iteractions, big size of width and buffer size
 
 

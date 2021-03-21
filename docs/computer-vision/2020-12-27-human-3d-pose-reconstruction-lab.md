@@ -42,7 +42,7 @@ for i in range(nFrame):
 
 
 
-<img src="{{ site.url_imgs }}/pose/keypoints.gif class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pose/keypoints.gif " class=".mx-auto" style="width: 100%">
 
 ###### video with keypoints
 
@@ -54,7 +54,7 @@ The second task is to project these coordinates on the frame of the different ca
 
 
 
-<img src="{{ site.url_imgs }}/pose/relative_pose.gif class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pose/relative_pose.gif " class=".mx-auto" style="width: 100%">
 ###### video with relative pose 
 
 
@@ -70,7 +70,7 @@ The next step is to construct the two camera calibration matrix. We can use the 
 
 
 
-<img src="{{ site.url_imgs }}/pose/camera_matrix.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pose/camera_matrix.png " class=".mx-auto" style="width: 100%">
 ###### camera matrix
 
 
@@ -94,7 +94,7 @@ Normally at this step, we can get the 3d coordinates of all the keypoints in wor
 
 
 
-<img src="{{ site.url_imgs }}/pose/log.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pose/log.png " class=".mx-auto" style="width: 100%">
 ###### camera matrix
 
 

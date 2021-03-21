@@ -46,14 +46,14 @@ Even though we take a several-words size window, we will lose the generalization
 In real life we will meet some other modeling problem which are more difficult for FFNN. We can conclude them as four types with the graph below, according to the variables of input and output. For each of the models, we can find a corresponding case in real life. For example, **image captioning** is the case for **one-to-many** model. 
 
 
-<img src="{{ site.url_imgs }}/rnn/different_types.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rnn/different_types.png " class=".mx-auto" style="width: 100%">
 ###### [different types of problems](https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recurrent-neural-network/recurrent_neural_networks#:~:text=Recurrent%20neural%20network%20is%20a,vanilla%20feed%2Dforward%20neural%20networks.)
 
 
 ## Vanilla Recurrent Neural Network
 
 
-<img src="{{ site.url_imgs }}/rnn/rnn_graph.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rnn/rnn_graph.png " class=".mx-auto" style="width: 100%">
 ###### [vanilla RNN](https://towardsdatascience.com/introduction-to-recurrent-neural-network-27202c3945f3)
 
 
@@ -61,7 +61,7 @@ The graph above is an abstract representation of vanilla RNN. The formula is as 
 
 
 
-<img src="{{ site.url_imgs }}/rnn/rnn_formula.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rnn/rnn_formula.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -77,7 +77,7 @@ We can view its unfolded presentation in which the function is tanh, to better u
 
 
 
-<img src="{{ site.url_imgs }}/rnn/rnn_unfolded.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rnn/rnn_unfolded.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -93,7 +93,7 @@ As we know, the way in CNN to update the weights is back propagation. Back propa
 
 
 
-<img src="{{ site.url_imgs }}/rnn/lstm_structure.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rnn/lstm_structure.png " class=".mx-auto" style="width: 100%">
 ###### [LSTM structure](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 
@@ -122,7 +122,7 @@ to control the Output to cell state
 
 
 
-<img src="{{ site.url_imgs }}/rnn/lstm_cell.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rnn/lstm_cell.png " class=".mx-auto" style="width: 100%">
 ###### [LSTM structure](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 
@@ -153,7 +153,7 @@ However, we need to model an attention mechanism that is more close to human's a
 
 
 
-<img src="{{ site.url_imgs }}/rnn/attention_model.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rnn/attention_model.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -165,7 +165,7 @@ Attention mechanism can be applied in many field including images and language p
 
 
 
-<img src="{{ site.url_imgs }}/rnn/attention_application.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rnn/attention_application.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -179,7 +179,7 @@ For the preprocessing part I followed the code of teacher by watching the record
 
 
 
-<img src="{{ site.url_imgs }}/rnn/image_captions.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rnn/image_captions.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -191,7 +191,7 @@ The next step is to implement the part of preparation of data. Normally, the inp
 
 
 
-<img src="{{ site.url_imgs }}/rnn/input_sample.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rnn/input_sample.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -250,7 +250,7 @@ This part work well, as we see the log of first 20 items: each y is the next wor
 
 
 
-<img src="{{ site.url_imgs }}/rnn/log_inputs.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rnn/log_inputs.png " class=".mx-auto" style="width: 100%">
 
 
 
@@ -275,7 +275,7 @@ model.fit([x1, x2],y, epochs=20, verbose=2)
 
 
 
-<img src="{{ site.url_imgs }}/rnn/crash.png class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rnn/crash.png " class=".mx-auto" style="width: 100%">
 
 
 
