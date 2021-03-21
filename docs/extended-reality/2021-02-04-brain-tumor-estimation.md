@@ -2,39 +2,32 @@
 layout: default 
 parent: Extended Reality
 title: Brain Tumor Estimation -- Mixed Reality
-demo: true
-demo_link: brain_tumor.mp4
 ---
 
-# An immersive visualization of a human brain from the MRI data to detect the possible tumor locations using U-Net in the Mixed Reality(MR) environment
+# Brain Tumor Estimation -- Mixed Reality
 
-##### Author: Mohamed ABDUL GAFOOR, Zemin XU
+Collaborator: [Mohamed ABDUL GAFOOR](https://mohamedabdulgafoor.wixsite.com/website/blog)
 
-##### Supervisor: Marius PREDA
+Supervisor: [Marius PREDA](https://scholar.google.com/citations?user=Dx9C-0sAAAAJ)
 
-## Introduction to the topic
+An immersive visualization of a human brain from the MRI data to detect the possible tumor locations using U-Net in the Mixed Reality(MR) environment.
+{: .fs-6 .fw-300 }
 
-### Problematic
+---
+
+## Problematic
 
 The recent advancement in processing power of computers have enabled tremendous opportunities for the increased use of virtual reality (VR) and augmented reality (AR) technology in medicine and surgery. The visualization of human organs in the 3D environment takes a central role in the procedure of diagnosis and the follow up treatment of any disease. An automated immersive visualization of a human brain from a sequence of 2D MRI images in the MR environment is necessary not only to detect and classify the nature of tumors but also it helps surgeons to approach the tumor from a virtual perspective and to plan a possible surgery ahead of time. In this work, we adapt an approach for a possible immersive visualization of the human brain in the VR environment and consequently propose the best two possible tumor locations using U-Net deep learning framework.
 
-### Research aim
+## Research aim
 
 The aim of this research work is to develop a tool for an immersive visualization of human brain tumors in the MR environment in order to facilitate the surgical procedures.
 
-### Research objectives
-
 1. Analyze MRI data using a 3D-point-cloud-generation.
-
-&nbsp;
 
 2. Integrate a state of the art Deep Learning framework, known as U-Net with the MR application in order to detect the potential brain tumor location => A well-trained DL model, the nature of malignancy (Benign/Malignant) & location of the tumor (Vector 3).
 
-&nbsp;
-
 3. Building an MR tool for brain surgeons in order to have an immersive visualization before participating in a real surgical environment => .exe application.
-
-&nbsp;
 
 ## Dataset
 
@@ -179,7 +172,9 @@ In order to communicate between the deep learning result and Unity, we used JSON
 
 The source code with dataset can be found [here](https://github.com/zemin-xu/BrainTumorEstimation).
 
-&nbsp;
+<video id="player" playsinline controls style="width: 100%">
+<source src= "{{ site.url_videos }}/brain_tumor.mp4" type="video/mp4" />
+</video>
 
 ## References
 
@@ -189,4 +184,3 @@ The source code with dataset can be found [here](https://github.com/zemin-xu/Bra
 [volume rendering in unity](https://github.com/mlavik1/UnityVolumeRendering)
 [definition of JSON format](https://en.wikipedia.org/wiki/JSON)
 
-&nbsp;
