@@ -11,15 +11,15 @@ demo_link: adventure_of_lolo.mp4
 ## Structure
 
 I used [SFML](https://www.sfml-dev.org) as the framework, which provides basic interfaces for developing multimedia app. Before programming, I designed the structure carefully so as to use the advantage of object-oriented programming.
-&nbsp;
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/adventure_of_lolo_uml.png "UML of program"){:width="100%"}
+
+<img src="{{ site.url_imgs }}/adventure_of_lolo_uml.png "UML of program"){:width="100%"}
 
 ## Problematic
 
 ### Collision
 
 One of the difficulty comes from the collision, especially that between the movable box with other objects. To solve it, I used a ghost which is a bit smaller than its form. The ghost will move firstly and return the info whether it can move or not.
-&nbsp;
+
 
 ``` C++
     // The concept of shape and real is important

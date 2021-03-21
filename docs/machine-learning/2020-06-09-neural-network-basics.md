@@ -15,10 +15,10 @@ This post is my notes of series released by [3Blue1Brown](https://www.3blue1brow
 
 The *neuron* is the smallest element and that the value in a neuron is called its *activation*. Activation of a neuron in different layer can have different meanings. For example, in the first layer, the activation means the graysacle of where the neuron is. In the last layer, it means the probalibity of a certain digit, for this exercise.
 
-&nbsp;
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/neuron_network_activation_first_layer.png "neuron at first layer"){:width="100%"}
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/neuron_network_activation_last_layer.png "neuron at last layer"){:width="100%"}
+
+<img src="{{ site.url_imgs }}/neuron_network_activation_first_layer.png "neuron at first layer"){:width="100%"}
+<img src="{{ site.url_imgs }}/neuron_network_activation_last_layer.png "neuron at last layer"){:width="100%"}
 
 ### Perceptron
 
@@ -36,7 +36,7 @@ A perceptron takes several binary inputs and produces a single binary output. Th
 
 *Sigmoid neuron* takes the float value from 0 and 1. When changing weight of some neuron, the effect will be continuous rather than be sharp with perceptron. In the video, the model uses sigmoid neuron. The word *sigmoid* here represents *sigmoid function*, which will convert any value to a range from 0 to 1.
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/neuron_network_sigmoid_function.png "sigmoid function"){:width="100%"}
+<img src="{{ site.url_imgs }}/neuron_network_sigmoid_function.png "sigmoid function"){:width="100%"}
 
 ### difference between them
 
@@ -57,7 +57,7 @@ The sum of the product of *activation* with its respective *weight*, will be adj
 ## Cost
 
 The sum of squares of difference of the activation of an neuron and the result it should be. When computer behaves well, the cost should be quite small.
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/neuron_network_activation_cost.png "a pretty correct training cost"){:width="100%"}
+<img src="{{ site.url_imgs }}/neuron_network_activation_cost.png "a pretty correct training cost"){:width="100%"}
 
 ## Neural Network models
 

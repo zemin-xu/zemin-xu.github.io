@@ -9,8 +9,8 @@ demo_link: rock_paper_scissors.mp4
 # Rock Paper Scissors Game in workshop AR
 
 *Rock Paper Scissors* is an one-week project realized by me with three classmates. The purpose of this workshop is to develop an app emphasizing augmented reality technology, using *Unity* and *Vuforia* framework.
-&nbsp;
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rock_paper_scissors_hand.jpg "tattoo on back of a hand"){:width="100%"}
+
+<img src="{{ site.url_imgs }}/rock_paper_scissors_hand.jpg "tattoo on back of a hand"){:width="100%"}
 
 ## Concept
 
@@ -23,14 +23,14 @@ A player will have a main marker on the back of his hand as well as two secondar
 ## Experiments
 
 The first problem we encountered was that the recognition of tattoo on skin was not as good as we imagined.
-&nbsp;
+
 At that moment, we used illustrations on cartons as an alternative way. At the same time, we did furthur experiments on recogition of tattoo. We firstly tested tattoo on forearm because the skin there is flatter.
-&nbsp;
+
 We applied the technique of stencil as well. The pattern on stencil was successfully recognized, but the tattoo itself was not. After that, we captured a photo of an existant tattoo and uploaded it into database of *Vuforia*. The problem existed. Therefore, we drew a conclusion that *Vuforia* is suitable for markers on plane.
-&nbsp;
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rock_paper_scissors_forearm_stencil.jpg "tattoo on back of a hand"){:width="100%"}
-&nbsp;
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rock_paper_scissors_forearm.jpg "tattoo on back of a hand"){:width="100%"}
-&nbsp;
+
+<img src="{{ site.url_imgs }}/rock_paper_scissors_forearm_stencil.jpg "tattoo on back of a hand"){:width="100%"}
+
+<img src="{{ site.url_imgs }}/rock_paper_scissors_forearm.jpg "tattoo on back of a hand"){:width="100%"}
+
 Partners: [E.Meurice](https://www.linkedin.com/in/eva-meurice/), [A.Mougin](https://www.linkedin.com/in/arthur-mougin/), [J.Pigrée](https://www.linkedin.com/in/jean-baptiste-pigrée-876087110/)
-&nbsp;
+

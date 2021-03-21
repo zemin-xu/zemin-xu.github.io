@@ -10,7 +10,7 @@ I am fascinated by interactive experience and computer science. For me, augmente
 
 You can reach me out by [email](mailto:zemin.xu@yahoo.com) or know more about me with [CV](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/cv_XU_Zemin.pdf).
 
-&nbsp;
+
 
 # Education
 
@@ -30,7 +30,7 @@ You can reach me out by [email](mailto:zemin.xu@yahoo.com) or know more about me
 
 ###### *L’École de Design Nantes Atlantique*　　09/2016 – 06/2019　　Nantes, France
 
-&nbsp;
+
 
 # Skills
 

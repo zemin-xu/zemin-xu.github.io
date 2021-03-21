@@ -33,7 +33,7 @@ Action is the behavior of agent in the environment.
 
 Imagine that at the beginning of an experience, we(the trainer) have a goal for the agent to achieve. In order to communicate this goal to agent, we use a **reward**. Normally by maximizing the reward, the agent can get closer to the goal.
 
-&nbsp;
+
 
 ## Markov Decision Process
 
@@ -49,9 +49,9 @@ In this context, if we go from transition *i* to transition *j*, we can have a r
 
 At this stage, we may think about how to express the influence of an action at a certain state for the whole system. We may doubt: perhaps what we behave at the beginning will not influence the result. It is reasonable. We need to find a way to differ the weights of each transition. So we have the **discounted rate** denoted as *γ*. As in this post[2] said, "the discount represent the **foresightedness** of the agent.
 
-&nbsp;
 
-![Alt text](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/rl/cumulative_reward_equation.png " "){:width="100%"}
+
+<img src="{{ site.url_imgs }}/rl/cumulative_reward_equation.png class=".mx-auto" style="width: 100%">
 
 ## Policy
 
