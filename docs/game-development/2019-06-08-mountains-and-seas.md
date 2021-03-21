@@ -4,21 +4,24 @@ title: Mountains & Seas
 parent: Game Dev
 ---
 
-# Mountains & seas
+# {{ page.title }}
 
-/ Game Design / Development / Modeling
-«Mountains and Seas» is my eight-month graduation project in which we should developed in spare time and have three classes to discuss it with tutor. In this project, I started with a topic that I was interested in, found out some limitations of this theme in today's society through investigation, and put forward an idea related to game design. Finally, I completed the implementation of the core gameplay in the prototype stage.
+**Mountains and Seas** is my six-month graduation project in which I should developed in spare time and have three classes to discuss it with tutor. In this project, I started with a topic that I was interested in, found out some limitations of this theme in today's society through investigation, and put forward an idea related to game design. Finally, I completed the implementation of the core gameplay in the prototype stage.
+{: .fs-6 .fw-300 }
 
-Introduction
+---
+
+# Introduction
+
 «The classic of mountains and seas» is an ancient Chinese book that records the stories of different creatures out of imagination. This book is merely forgotten by this generation, given that the digital entertainment consumes most of their spare time. In this project, I tried to express the unique point in the book -- more than 300 creatures with different looks, stories and special skills, so as to attract people's attention to it.
 
-Researches
+# Researches
 
 There are two researches that are helpful to the development of the project.The first is the theory of Dynamic Difficulty Adjustment proposed by Jenova Chen, so as to achieve the high concentration and satisfaction experience of the state of 'flow' in psychology. 
 
 The other one is the re-design of the Celestial Brush in the game «Okami», which concentrates on the special powers of the Celestial Brush. In Japanese mythology, the Celestial Brush has 13 forms and skills, and developers have added them as the core gameplay to okami to impress players. For example, by switching the weapon to the Celestial Brush who controls the moon and drawing circles in the sky, the scene can be turned into night.
 
-Gameplay
+# Gameplay
 
 Mountains and seas is an open sandbox game which starts with a tutorial of teaching basic operations. It refers to the theory of dynamic difficulty adjustment, and creates the puzzles of the same difficulty level arranged in concentric circles.
 

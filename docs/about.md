@@ -4,13 +4,13 @@ layout: default
 permalink: /about.html
 ---
 
-# About me
+# {{ page.title }}
 
 I am fascinated by interactive experience and computer science. For me, augmented reality is the support combining my interests and what I have been engrossed in till now.
 
 You can reach me out by [email](mailto:zemin.xu@yahoo.com) or know more about me with [CV](https://raw.githubusercontent.com/zemin-xu/zemin-xu.github.io/master/assets/images/cv_XU_Zemin.pdf).
 
-
+---
 
 # Education
 

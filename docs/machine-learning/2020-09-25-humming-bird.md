@@ -1,12 +1,24 @@
 ---
 layout: default 
-title: ML Agent in Unity
+title: Exploration of Unity's ML-Agents
 parent: Machine Learning
-demo: true
-demo_link: hummingbird.mp4
 ---
 
-# Lab C D E F : Learn Unity's ML-Agents package by following tutorial
+# {{ page.title }}
+
+In this lab I will learn how to use Unity's ML-Agents package and touch some concepts of Reinforcement Learning by following tutorial of training an AI in Unity.
+{: .fs-6 .fw-300 }
+
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ## Tranditional way vs Machine Learning
 
@@ -19,14 +31,11 @@ Traditional AI is implemented by programmers by setting specific rules and state
 The Unity Machine Learning Agents Toolkit [ML-Agents](https://github.com/Unity-Technologies/ml-agents) is an open-source project that enables games and simulations to serve as environments for training intelligent agents. Agents can be trained using reinforcement learning, imitation learning, neuroevolution, or other machine learning methods through a simple-to-use Python API.
 
 
-
 ## Hummingbirds
 
 In this lab we will follow a tutorial on Unity Learn platform called [HummingBirds](https://learn.unity.com/course/ml-agents-hummingbirds). The instuctor is Adam Kelly. According to him:
 
 > We will learn how to create intelligent flying hummingbirds that can navigate to flowers, dip their beaks in, and drink nectar. These hummingbirds have six degrees of freedom, meaning they can fly and turn in any direction to find targets. They have more complicated controls and their flight paths cannot be solved with traditional navigation systems. We will learn how to craft a training environment and train neural networks to perform this challenging task.
-
-
 
 In this lab, I will also provide the solutions for potential issues, since the tools like numpy and ML-Agents have upgraded and there will be a little bit of change to make onto the project. 
 
@@ -40,23 +49,16 @@ Step 1: Choose Universal Render Pipeline template and create a new project.
 Step 2: Install the lastest version of *ML Agents* in *Package Manager* panel.
 
 
-
-<img src="{{ site.url_imgs }}/hci_lab2/install_ml_agents.png "install ML Agents package"){:width="100%"}
-
-
+<img src="{{ site.url_imgs }}/hci_lab2/install_ml_agents.png " style="width: 100%">{: .px-8 }
 
 Step 3: Import the [assets](https://connect-prd-cdn.unity.com/20200528/36d7a87b-2adb-4dfe-81eb-0444c5ab6e59/HummingbirdScene_1.0.zip?_ga=2.236592129.1011110539.1601564062-1920467459.1600701103) provided by instructor with simple drag & drop into *project* panel, in *Assets* directory. 
 
-<img src="{{ site.url_imgs }}/hci_lab2/import_assets.png "import assets of projects made by instructor"){:width="100%"}
-
-
+<img src="{{ site.url_imgs }}/hci_lab2/import_assets.png " style="width: 100%">{: .px-8 }
 
 Step 4: In the imported directory called *Hummingbirds*, we can find a *Training* scene in *Scenes* sub-directory, double click to open it.
 Step 5: Open *Project Settings* panel and enter *Physics* option, and set the *Default Contact Offset* to 0.001. That's because the hummingbird's beck is so small that we have to adjust this variable. 
 
-
-
-<img src="{{ site.url_imgs }}/hci_lab2/change_contact_offset.png "change contact offset"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/chage_contact_offset.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -64,7 +66,7 @@ Step 6: Choose the *Main Camera* and modify its transform's parameters as follow
 
 
 
-<img src="{{ site.url_imgs }}/hci_lab2/main_camera_parameters.png "main camera's transform values"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/main_camera_parameters.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -79,17 +81,14 @@ We will create three scripts which will be attached to some gameobjects in Unity
 We will implement firstly a **Flower** script by creating a **Scripts** folder and create it there. After that, we will open **FlowerBud** prefab by double clicking on it, and add this script as a component onto the **Flower** gameobject.
 
 
-
-<img src="{{ site.url_imgs }}/hci_lab2/flower_components.png "flower's components"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/flower_components.png " style="width: 100%">{: .px-8 }
 
 
 
 There is already a collider attached to the buds so that the hummingbirds could not put their becks from the sides or from underneath of the buds. We will also find a inner collider which is a trigger inside it which is called **FlowerNectarCollider**. Whenever a hummingbird's beck succeeds in touching this collider, the nectar will be consumed in a few seconds and the bud will turn purple.
 
 
-
-<img src="{{ site.url_imgs }}/hci_lab2/flower_bud_collider.png "flower bud's collider"){:width="100%"}
-
+<img src="{{ site.url_imgs }}/hci_lab2/flower_bud_collider.png " style="width: 100%">{: .px-8 }
 
 
 #### FlowerArea Script
@@ -102,7 +101,7 @@ We have seen **FlowerBud** prefab. When discovering **FlowerPlant** prefab, we w
 
 
 
-<img src="{{ site.url_imgs }}/hci_lab2/floating_island_components.png "floating island's components"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/floating_island_components.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -112,7 +111,7 @@ The last script named **HummingbirdAgent** will be attached onto the **HummingBi
 
 
 
-<img src="{{ site.url_imgs }}/hci_lab2/hummingbird_components.png "floating island's components"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/hummingbird_components.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -169,8 +168,7 @@ We need to add some other components onto *Hummingbird* prefab in order to make 
 
 
 
-<img src="{{ site.url_imgs }}/hci_lab2/hummingbird_components.png "additional components on hummingbird prefab"){:width="100%"}
-
+<img src="{{ site.url_imgs }}/hci_lab2/hummingbird_components.png " style="width: 100%">{: .px-8 }
 
 
 #### Tags
@@ -179,7 +177,7 @@ We need to attach three tags, **FlowerPlant**, **Boundary** and **Nectar** in Un
 
 
 
-<img src="{{ site.url_imgs }}/hci_lab2/tag_flower_plant.png "flowerplant tag"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/tag_flower_plant.png " style="width: 100%">{: .px-8 }
 
 
 
@@ -187,10 +185,11 @@ Then, we attach **Boundary** to **IslandBoundaries** gameobject in **FloatingIsl
 
 
 
-<img src="{{ site.url_imgs }}/hci_lab2/tag_boundary.png "boundary tag"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/tag_boundary.png " style="width: 100%">{: .px-8 }
 
 Finally, we attach **Nectar** to **FlowerNectarCollider** gameobject in **FlowerBud** prefab.
 
+<img src="{{ site.url_imgs }}/hci_lab2/tag_nectar.png " style="width: 100%">{: .px-8 }
 
 <img src="{{ site.url_imgs }}/hci_lab2/tag_nectar.png "nectar tag"){:width="100%"}
 
@@ -202,21 +201,21 @@ We need to add some additional components for *Hummingbird* prefab. Add a camera
 
 
 
-<img src="{{ site.url_imgs }}/hci_lab2/hummingbird_camera.png "camera values"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/hummingbird_camera.png " style="width: 100%">{: .px-8 }
 
 
 
 After that, we will create three empty gameobject and name it **RaysForward**, **RaysDown** and **RaysUp** respectively. We will add the same component **RayPerceptionSensor3D** onto them.
 
-<img src="{{ site.url_imgs }}/hci_lab2/hummingbird_rays_down.png "rays_down"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/hummingbird_rays_down.png " style="width: 100%">{: .px-8 }
 
 
 
-<img src="{{ site.url_imgs }}/hci_lab2/hummingbird_rays_up.png "rays_up"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/hummingbird_rays_up.png " style="width: 100%">{: .px-8 }
 
 
+<img src="{{ site.url_imgs }}/hci_lab2/hummingbird_rays_forward.png " style="width: 100%">{: .px-8 }
 
-<img src="{{ site.url_imgs }}/hci_lab2/hummingbird_rays_forward.png "rays_forward"){:width="100%"}
 
 Finally, we duplicate seven times the *FloatingIsland* gameobject to speed up the training.
 
@@ -231,8 +230,7 @@ In order to use *ML-Agents* to train our birds, we need to set up the *Python* e
 We will go [here](https://www.anaconda.com/products/individual) to download the *Anaconda* and follow the installation to the end.
 
 
-
-<img src="{{ site.url_imgs }}/hci_lab2/anaconda_installers.png "anaconda_installers"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/anaconda_installers.png " style="width: 100%">{: .px-8 }
 
 After running this application, we create a environment named **ml-agents-1.0** by typing:
 
@@ -295,15 +293,13 @@ If the training starts successfully, we can see a some output like below. As wel
 
 
 
-<img src="{{ site.url_imgs }}/hci_lab2/training_output_begining.png "beginning output"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/training_output_begining.png " style="width: 100%">{: .px-8 }
+
+<img src="{{ site.url_imgs }}/hci_lab2/not_in_flower_not_trained.gif" style="width: 100%">{: .px-8 }
 
 
 
-<img src="{{ site.url_imgs }}/hci_lab2/not_in_flower_not_trained.gif "beginning behaviour"){:width="100%"}
-
-
-
-<img src="{{ site.url_imgs }}/hci_lab2/in_flower_not_trained.gif "beginning behaviour"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/in_flower_not_trained.gif" style="width: 100%">{: .px-8 }
 
 
 
@@ -311,11 +307,10 @@ We can find that at the beginning, the mean of reward is either negative or zero
 
 
 
-<img src="{{ site.url_imgs }}/hci_lab2/training_output_mid.png "mid-stage output"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/training_output_mid.gif" style="width: 100%">{: .px-8 }
 
 
-
-<img src="{{ site.url_imgs }}/hci_lab2/intermediaire_trained.gif "intermidiaire hbehaviour"){:width="100%"}
+<img src="{{ site.url_imgs }}/hci_lab2/intermediaire_trained.gif" style="width: 100%">{: .px-8 }
 
 ## Conclusion
 
@@ -325,7 +320,9 @@ This tutorial give me the opportunity of going through the process of training t
 
 You can find my source code of this project [here](https://github.com/zemin-xu/Hummingbirds) in which you will know how it is organized. You will also find a fully-trained hummingbird in the video below.
 
-
+<video id="player" playsinline controls style="width: 100%">
+<source src= "{{ site.url_videos }}/humming_bird.mp4" type="video/mp4" />
+</video>
 
 ## References
 

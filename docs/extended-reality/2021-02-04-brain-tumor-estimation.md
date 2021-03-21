@@ -4,6 +4,7 @@ parent: Extended Reality
 title: Brain Tumor Estimation -- Mixed Reality
 ---
 
+# {{ page.title }}
 # Brain Tumor Estimation -- Mixed Reality
 
 Collaborator: [Mohamed ABDUL GAFOOR](https://mohamedabdulgafoor.wixsite.com/website/blog)

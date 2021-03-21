@@ -1,12 +1,26 @@
 ---
 layout: default 
-title: Marker based AR model 
+title: Marker-based Augmented Reality Webcam Model 
 parent: Computer Vision
 demo: true 
 demo_link: BRISK_final.mp4 
 ---
 
-# Marker-based Augmented Reality model report
+# {{ page.title }}
+
+In this project, I need to design and implement a solution using OpenCV. It relies on keypoint-based image descriptor to match between the image of a structured planar marker and its instance in webcam stream. This post also contains a detailed report of experiments.
+{: .fs-6 .fw-300 }
+
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ## How to run the project
 
@@ -17,8 +31,6 @@ An optimal solution executable is ready, in order to run it:
 1. go to the **Release** folder: cd MarkerBasedAugmentedReality/x64/Release
 2. put into this folder the sample image and target image
 3. run with following syntax: ./MarkerBasedAugmentedReality.exe -i [sample_image_name] -i [target_image_name]
-
-
 
 There are several trackbars for the optimal solution:
 
@@ -31,17 +43,13 @@ There are several trackbars for the optimal solution:
 7. **Ratio**: ratio for matching filter
 8. **Opacity**: augmentation effect's opacity
 
-
-
 <img src="{{ site.url_imgs }}/mbar/trackbars.png " style="width: 100%">{: .px-8 }
-
-
 
 If you want to build the solution with full parameters with possibility of changing the feature descriptor with trackbars, you need to switch on the **TEST_MODE** in code and build it. In this case, the program may crash down because some descriptors are not working with some matchers.
 
 ## Problem statement
 
-In this project, I need to design and implement an OpenCV solution. The solution relies on keypoint-based image descriptor to match between the image of a structured planar marker and its instance in webcam stream. In order to have a optimal solution under webcam stream utilization, there are several factors to consider about.
+The problem statement is briefly introduced at the beginning. In order to have a optimal solution under webcam stream utilization, there are several factors to consider about.
 
 1. **Computation Time**
 This factor is the most important one because in the solution, the detection and matching task should be finished less than 1 frame.
@@ -457,6 +465,11 @@ The second limitation is that, the computation time will vary according to sampl
 ## Conclusion
 
 After doing this project, I have gained a better understanding on state-of-the-art descriptors theoretically and practically. I also learned a basic way to carry out a scientific and quantitative way to do benchmark test of algorithms and the way to document it. Finally, I learned how to evaluate a solution's performance.
+
+
+<video id="player" playsinline controls style="width: 100%">
+<source src= "{{ site.url_videos }}/BRISK_final.mp4" type="video/mp4" />
+</video>
 
 ## References
 

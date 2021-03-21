@@ -1,24 +1,23 @@
 ---
-layout: post
-author: zemin 
-category: Deep Learning
-demo: false 
+layout: default 
+title: First Class on Deep Learning
+parent: Machine Learning
 ---
 
-Under construction.
-
-# Introduction
+# {{ page.title }}
 
 This post is my notes of series released by [3Blue1Brown](https://www.3blue1brown.com) on neural network and machine learning. In this series, he used an example of how computer recognizes hand written digits from 0 to 9 by constructing its own neural network. This example is firstly described in [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com) by Michael Nielsen.
+{: .fs-6 .fw-300 }
+
+---
 
 ## Neuron model
 
 The *neuron* is the smallest element and that the value in a neuron is called its *activation*. Activation of a neuron in different layer can have different meanings. For example, in the first layer, the activation means the graysacle of where the neuron is. In the last layer, it means the probalibity of a certain digit, for this exercise.
 
+<img src="{{ site.url_imgs }}/neuron_network_activation_first_layer.png" style="width: 100%">{: .px-8 }
 
-
-<img src="{{ site.url_imgs }}/neuron_network_activation_first_layer.png "neuron at first layer"){:width="100%"}
-<img src="{{ site.url_imgs }}/neuron_network_activation_last_layer.png "neuron at last layer"){:width="100%"}
+<img src="{{ site.url_imgs }}/neuron_network_activation_last_layer.png" style="width: 100%">{: .px-8 }
 
 ### Perceptron
 
@@ -36,7 +35,7 @@ A perceptron takes several binary inputs and produces a single binary output. Th
 
 *Sigmoid neuron* takes the float value from 0 and 1. When changing weight of some neuron, the effect will be continuous rather than be sharp with perceptron. In the video, the model uses sigmoid neuron. The word *sigmoid* here represents *sigmoid function*, which will convert any value to a range from 0 to 1.
 
-<img src="{{ site.url_imgs }}/neuron_network_sigmoid_function.png "sigmoid function"){:width="100%"}
+<img src="{{ site.url_imgs }}/neuron_network_sigmoid_function.png" style="width: 100%">{: .px-8 }
 
 ### difference between them
 
@@ -57,7 +56,8 @@ The sum of the product of *activation* with its respective *weight*, will be adj
 ## Cost
 
 The sum of squares of difference of the activation of an neuron and the result it should be. When computer behaves well, the cost should be quite small.
-<img src="{{ site.url_imgs }}/neuron_network_activation_cost.png "a pretty correct training cost"){:width="100%"}
+
+<img src="{{ site.url_imgs }}/neuron_network_activation_cost.png" style="width: 100%">{: .px-8 }
 
 ## Neural Network models
 

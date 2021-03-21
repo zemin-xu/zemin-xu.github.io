@@ -2,15 +2,25 @@
 layout: default 
 title: Deep Reinforcement Learning Lab
 parent: Machine Learning
-demo: false 
 ---
-# Deep Reinforcement Learning Lab
+# {{ page.title }}
 
 This lab is about using DRL to solve the CartPole problem (continuous input, discrete actions) using methods inspired by DQN. By running it and changing parameters, we can learn more about the meaning of the key parameters and DRL. This lab is my note after course given by Nicolas HOFFMANN in Telecom-SudParis, at ARTEMIS research group. The implementation code is provided by him.
-
-
+{: .fs-6 .fw-300 }
 
 Before doing this lab, I make an [introductory post](https://zeminxu.me/ai/2020/12/18/basics-of-reinforcement-learning.html) on the keywords related to **Reinforcement Learning**.
+{: .fs-6 .fw-300 }
+
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ## Deep Network
 

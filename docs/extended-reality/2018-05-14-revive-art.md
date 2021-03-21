@@ -4,7 +4,7 @@ parent: Extended Reality
 title: Revive Art -- Virtual Reality
 ---
 
-# Revive Art -- Virtual Reality
+# {{ page.title }}
 
 Collaborator: [H.Guibert](https://www.linkedin.com/in/hélènedeguibert/)
 
@@ -19,6 +19,6 @@ Collaborator: [H.Guibert](https://www.linkedin.com/in/hélènedeguibert/)
 
 Concretely, the idea is to choose an indie game and note down its artistic inspirations by interviewing the creators. After that, an exhibition hall will be well-prepared, where participants are shown paintings or origins of the inspirations. The game requires two people to cooperate. One player wearing VR glasses will find that different paintings placing on the ground in the virtual scene. He needs to ask his partner in the real world the details, such as the creation date of certain painting. After replacing all the paintings in order, he will explore the scene created with the assets of this indie game as a reward. At the same time, his partner in the real world can find the console unlocked so he can test the indie game there. In this project, we used the indie game [*Samourai Riot*](https://store.steampowered.com/app/658790/Samurai_Riot/) as the example, with creator's consent.
 
-<video id="player" playsinline controlsstyle="width: 100%">{: .px-8 }
+<video id="player" playsinline controls style="width: 100%">
 <source src= "{{ site.url_videos }}/revive_art.mp4" type="video/mp4" />
 </video>

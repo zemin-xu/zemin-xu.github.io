@@ -1,18 +1,21 @@
 ---
 layout: default 
-title: My First Class of C++
+title: Reimplementation of Adventure of Lolo using C++
 parent: C, C++, C# 
-demo: true
-demo_link: adventure_of_lolo.mp4
 ---
 
+# {{ page.title }}
+
 [*Adventure of Lolo*](https://en.wikipedia.org/wiki/Adventures_of_Lolo) is a puzzle video game released in 1989. In the course *Introduction to C++*, I need to reproduce a video game with the same gameplay. This one-month project aims at practising C++. In this project, I used the sprite of my favorite [bomberman game](https://www.youtube.com/watch?v=WXATi38zgYE) in Childhood as texture. You can find the source code [here](https://github.com/zemin-xu/SFML).
+{: .fs-6 .fw-300 }
+
+---
 
 ## Structure
 
 I used [SFML](https://www.sfml-dev.org) as the framework, which provides basic interfaces for developing multimedia app. Before programming, I designed the structure carefully so as to use the advantage of object-oriented programming.
 
-<img src="{{ site.url_imgs }}/adventure_of_lolo_uml.png "UML of program"){:width="100%"}
+<img src="{{ site.url_imgs }}/adventure_of_lolo_uml.png" style="width=100%">{: .px-8 }
 
 ## Problematic
 
@@ -44,3 +47,7 @@ By the way, I used this [method](http://jeffreythompson.org/collision-detection/
 ### AI behaviour
 
 under construction.
+
+<video id="player" playsinline controls style="width: 100%">
+<source src= "{{ site.url_videos }}/adventure_of_lolo.mp4" type="video/mp4" />
+</video>

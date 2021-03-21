@@ -2,10 +2,14 @@
 layout: default 
 title: Basics of RNN
 parent: Machine Learning
-demo: false 
 ---
 
-# Basics of Recurrent Neural Network
+# {{ page.title }}
+
+Recurrent neural network is a type of network architecture that accepts variable inputs and variable outputs[1].
+{: .fs-6 .fw-300 }
+
+---
 
 <details open markdown="block">
   <summary>
@@ -16,7 +20,6 @@ demo: false
 {:toc}
 </details>
 
-Recurrent neural network is a type of network architecture that accepts variable inputs and variable outputs[1].
 In this post I will talk about the fundamental concepts of RNN and its variations like LSTM. This post is my note after course given by Hugo DURCHON in Telecom-SudParis, at ARTEMIS research group. Some of the graphs in this post are from his presentation.
 
 ## Sequence

@@ -1,27 +1,23 @@
 ---
 layout: default 
-title: Human Pose Reconstruction
+title: Human 3D Pose Reconstruction
 parent: Computer Vision
-demo: false 
 ---
 
-# Human 3D Pose Reconstruction Lab
+# {{ page.title }}
 
 The purpose of the lab is to implement the 3D reconstruction from multi-views of human pose on a calibrated system. The course and lab is provided by Tan-Khoa MAI in Telecom-SudParis, at ARTEMIS research group. The dataset and part of code are provided by him. The repository can be found [here](https://github.com/zemin-xu/human_pose_reconstruction) with [implementation code](https://github.com/zemin-xu/human_pose_reconstruction/blob/master/reconstruction.py).
+{: .fs-6 .fw-300 }
 
+---
 
+## Dataset
 
 Generally speaking, the dataset is composed of original videos from cameras of different views and text data about camera parameters and coordinates output of joints.
 
-
-
 Videos are different sportive activities recorded by different people(subject).
 
-
-
 Two type of data are important here: **2DTXT** file and **3DTXT** file. The 2DTXT contains arrays of 2D coordinates for each joint at each frame. The 3DTXT contains one more dimension coordinate information.
-
-
 
 ## Draw keypoints on original videos with 2DTXT file
 
@@ -44,9 +40,6 @@ for i in range(nFrame):
 
 <img src="{{ site.url_imgs }}/pose/keypoints.gif " style="width: 100%">{: .px-8 }
 
-###### video with keypoints
-
-
 
 ## Draw keypoints with relative pose data
 
@@ -55,9 +48,6 @@ The second task is to project these coordinates on the frame of the different ca
 
 
 <img src="{{ site.url_imgs }}/pose/relative_pose.gif " style="width: 100%">{: .px-8 }
-###### video with relative pose 
-
-
 
 ## Triangulation
 
@@ -68,12 +58,7 @@ The third task is to do triangulation of keypoints, by using the 3d data. To do 
 
 The next step is to construct the two camera calibration matrix. We can use the data in *lst_f* and *lst_c* to make it.
 
-
-
 <img src="{{ site.url_imgs }}/pose/camera_matrix.png " style="width: 100%">{: .px-8 }
-###### camera matrix
-
-
 
 With two camera matrix representing two views and Fundamental matrix, we can get the Essential Matrix and afterwards the Rotation and Translation from the first view to second view. We don't need it here because we can use two projection matrix to calculate triangulation points.
 
@@ -92,12 +77,7 @@ With two camera matrix representing two views and Fundamental matrix, we can get
 
 Normally at this step, we can get the 3d coordinates of all the keypoints in world coordinate system of one frame. I try to plot it but all the points collapse into one place that I cannot find out the reason. I finally stop here. The graph below shows the value of points in one frame.
 
-
-
 <img src="{{ site.url_imgs }}/pose/log.png " style="width: 100%">{: .px-8 }
-###### camera matrix
-
-
 
 ## References
 [1]. [What do I do with the fundamental matrix?](https://stackoverflow.com/questions/59014376/what-do-i-do-with-the-fundamental-matrix)

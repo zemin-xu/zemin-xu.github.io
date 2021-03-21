@@ -6,9 +6,12 @@ demo: true
 demo_link: rock_paper_scissors.mp4
 ---
 
-# Rock Paper Scissors Game in workshop AR
+# {{ page.title }}
 
 *Rock Paper Scissors* is an one-week project realized by me with three classmates. The purpose of this workshop is to develop an app emphasizing augmented reality technology, using *Unity* and *Vuforia* framework.
+{: .fs-6 .fw-300 }
+
+---
 
 <img src="{{ site.url_imgs }}/rock_paper_scissors_hand.jpg"){:width="100%"}
 

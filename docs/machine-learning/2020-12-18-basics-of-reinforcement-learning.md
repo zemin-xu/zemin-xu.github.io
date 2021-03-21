@@ -2,12 +2,23 @@
 layout: default 
 title: Basics of Reinforcement Learning
 parent: Machine Learning
-demo: false 
 ---
 
-# Basics of Reinforcement Learning
+# {{ page.title }}
 
 Compared to supervised learning with features and label, reinforcement learning is an approach unsupervised based on that it does not rely on a set of labelled training data. However, we still want to guide the model by maximizing the reward. In this sense, it is not exactly unsupervised. It is the way resembling how human learns things. For example, when touching the fire, the hurt (negative reward) will make us learn not touch fire. In this post I will explain some fundamental concepts of reinforcement learning. This post is my note after course given by Nicolas HOFFMANN in Telecom-SudParis, at ARTEMIS research group.
+{: .fs-6 .fw-300 }
+
+---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ##### Environment
 
