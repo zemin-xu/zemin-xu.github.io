@@ -19,14 +19,14 @@ title: Paris Motor Show -- Mixed Reality
 
 The app starts with a welcome dialog. To do so, I used the dialog prefab from **MRTK** and put it inside the scene. The event system is like Unity's event system, which allows us to trigger a script of a gameobject selected.
 
-<img src="{{ site.url_imgs }}/pms/dialog_prefab.png " class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pms/dialog_prefab.png " class=".px-8" style="width: 100%">
 
 
 
 The buttons are set so that if we confirm it, we can access the second view.
 
 
-<img src="{{ site.url_imgs }}/pms/dialog_first.png " class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pms/dialog_first.png " class=".px-8" style="width: 100%">
 
 
 
@@ -36,11 +36,11 @@ The user can choose among options a mark of car which interests me, this selecti
 
 
 
-<img src="{{ site.url_imgs }}/pms/option_buttons.png " class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pms/option_buttons.png " class=".px-8" style="width: 100%">
 
 
 
-<img src="{{ site.url_imgs }}/pms/dialog_button_config.png " class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pms/dialog_button_config.png " class=".px-8" style="width: 100%">
 
 
 
@@ -51,11 +51,11 @@ On **sketchfab.com**, I found some car models and imported into the project. I e
 
 
 
-<img src="{{ site.url_imgs }}/pms/models.png " class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pms/models.png " class=".px-8" style="width: 100%">
 
 
 
-<img src="{{ site.url_imgs }}/pms/model_color.png " class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pms/model_color.png " class=".px-8" style="width: 100%">
 
 
 
@@ -67,7 +67,7 @@ The physical button prefab of MRTK have a sound and touch feedback when we press
 
 
 
-<img src="{{ site.url_imgs }}/pms/color_button.png " class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pms/color_button.png " class=".px-8" style="width: 100%">
 
 
 
@@ -77,15 +77,15 @@ In order to show the brief information and detail one, I used simple 3D text and
 
 
 
-<img src="{{ site.url_imgs }}/pms/platforms.png " class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pms/platforms.png " class=".px-8" style="width: 100%">
 
 
 
-<img src="{{ site.url_imgs }}/pms/titles.png " class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pms/titles.png " class=".px-8" style="width: 100%">
 
 
 
-<img src="{{ site.url_imgs }}/pms/tooltip.png " class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pms/tooltip.png " class=".px-8" style="width: 100%">
 
 
 
@@ -93,7 +93,7 @@ The mechanics of the information dialog used the collier in Unity. It is only wh
 
 
 
-<img src="{{ site.url_imgs }}/pms/more_info.png " class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/pms/more_info.png " class=".px-8" style="width: 100%">
 
 
 

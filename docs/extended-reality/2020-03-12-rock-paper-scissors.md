@@ -10,7 +10,7 @@ demo_link: rock_paper_scissors.mp4
 
 *Rock Paper Scissors* is an one-week project realized by me with three classmates. The purpose of this workshop is to develop an app emphasizing augmented reality technology, using *Unity* and *Vuforia* framework.
 
-<img src="{{ site.url_imgs }}/rock_paper_scissors_hand.jpg "tattoo on back of a hand"){:width="100%"}
+<img src="{{ site.url_imgs }}/rock_paper_scissors_hand.jpg"){:width="100%"}
 
 ## Concept
 

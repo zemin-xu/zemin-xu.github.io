@@ -51,7 +51,7 @@ At this stage, we may think about how to express the influence of an action at a
 
 
 
-<img src="{{ site.url_imgs }}/rl/cumulative_reward_equation.png " class=".mx-auto" style="width: 100%">
+<img src="{{ site.url_imgs }}/rl/cumulative_reward_equation.png " class=".px-8" style="width: 100%">
 
 ## Policy
 
