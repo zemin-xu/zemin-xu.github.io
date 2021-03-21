@@ -13,10 +13,7 @@ Collaborator: [H.Guibert](https://www.linkedin.com/in/hélènedeguibert/)
 
 ---
 
-![]("{{ site.url_imgs }}/revive_art.jpg")
-![]("{{ site.url_imgs }}/brain_tumor/dataset.png")
-
-![](https://guides.github.com/activities/hello-world/branching.png)
+<img src="{{ site.url_imgs }}/revive_art.jpg">
 
 ## Concept
 
