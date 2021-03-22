@@ -2,6 +2,7 @@
 layout: default 
 title: Unity's Tower Defense Template Gameplay Adaptation
 parent: Game Dev
+date: 2020-01-18
 ---
 
 # {{ page.title }}

@@ -2,6 +2,7 @@
 layout: default 
 title: Human 3D Pose Reconstruction
 parent: Computer Vision
+date: 2020-12-27
 ---
 
 # {{ page.title }}

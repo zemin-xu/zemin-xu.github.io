@@ -2,6 +2,7 @@
 layout: default 
 title: Reimplementation of Adventure of Lolo using C++
 parent: C, C++, C# 
+date: 2019-11-16
 ---
 
 # {{ page.title }}

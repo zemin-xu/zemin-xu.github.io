@@ -2,6 +2,7 @@
 layout: default 
 title: First Class on Deep Learning
 parent: Machine Learning
+date: 2020-06-09
 ---
 
 # {{ page.title }}

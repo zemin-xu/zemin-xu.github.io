@@ -2,8 +2,7 @@
 layout: default 
 title: Marker-based Augmented Reality Webcam Model 
 parent: Computer Vision
-demo: true 
-demo_link: BRISK_final.mp4 
+date: 2020-11-08
 ---
 
 # {{ page.title }}

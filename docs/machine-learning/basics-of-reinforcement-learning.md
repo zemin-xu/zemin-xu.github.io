@@ -2,6 +2,7 @@
 layout: default 
 title: Basics of Reinforcement Learning
 parent: Machine Learning
+date: 2020-12-18
 ---
 
 # {{ page.title }}

@@ -2,6 +2,7 @@
 layout: default 
 title: Mountains & Seas
 parent: Game Dev
+date: 2019-06-08
 ---
 
 # {{ page.title }}

@@ -2,19 +2,28 @@
 layout: default 
 parent: Extended Reality
 title: Brain Tumor Estimation -- Mixed Reality
+date: 2021-02-04
 ---
 
 # {{ page.title }}
-# Brain Tumor Estimation -- Mixed Reality
 
-Collaborator: [Mohamed ABDUL GAFOOR](https://mohamedabdulgafoor.wixsite.com/website/blog)
+Collaborator: [M. ABDUL GAFOOR](https://mohamedabdulgafoor.wixsite.com/website/blog)
 
-Supervisor: [Marius PREDA](https://scholar.google.com/citations?user=Dx9C-0sAAAAJ)
+Supervisor: [M. PREDA](https://scholar.google.com/citations?user=Dx9C-0sAAAAJ)
 
 An immersive visualization of a human brain from the MRI data to detect the possible tumor locations using U-Net in the Mixed Reality(MR) environment.
 {: .fs-6 .fw-300 }
 
 ---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ## Problematic
 
@@ -38,8 +47,6 @@ We have studied many datasets for the purpose of this project. For example, RIDE
 
 
 The following figure is a typical folder structure, where you can see the segmentation data, which is our label data.
-
-
 
 <img src="{{ site.url_imgs }}/brain_tumor/dataset.png " style="width: 100%">{: .px-8 }
 

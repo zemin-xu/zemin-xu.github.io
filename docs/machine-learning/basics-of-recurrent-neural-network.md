@@ -2,6 +2,7 @@
 layout: default 
 title: Basics of RNN
 parent: Machine Learning
+date: 2020-12-21
 ---
 
 # {{ page.title }}

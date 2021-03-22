@@ -2,7 +2,7 @@
 layout: default 
 parent: Extended Reality
 title: Rock Paper Scissors -- Augmented Reality
-demo: true
+date: 2020-03-12
 ---
 
 # {{ page.title }}

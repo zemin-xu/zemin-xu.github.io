@@ -2,6 +2,7 @@
 layout: default 
 title: Exploration of Unity's ML-Agents
 parent: Machine Learning
+date: 2020-09-25
 ---
 
 # {{ page.title }}

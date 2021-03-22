@@ -2,6 +2,7 @@
 layout: default 
 parent: Extended Reality
 title: Revive Art -- Virtual Reality
+date: 2018-05-14
 ---
 
 # {{ page.title }}

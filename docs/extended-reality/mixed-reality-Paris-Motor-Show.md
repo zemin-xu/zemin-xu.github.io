@@ -2,6 +2,7 @@
 layout: default 
 parent: Extended Reality
 title: Paris Motor Show -- Mixed Reality
+date: 2021-01-28
 ---
 
 # {{ page.title }}

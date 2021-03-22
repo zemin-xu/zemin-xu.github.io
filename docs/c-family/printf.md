@@ -2,6 +2,7 @@
 layout: default 
 title: printf
 parent: C, C++, C# 
+date: 2020-02-20
 ---
 
 # {{ page.title }}

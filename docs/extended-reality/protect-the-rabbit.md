@@ -2,6 +2,7 @@
 layout: default 
 parent: Extended Reality
 title: Protect the Rabbit -- Virtual Reality
+date: 2019-01-12
 ---
 
 # {{ page.title }}
