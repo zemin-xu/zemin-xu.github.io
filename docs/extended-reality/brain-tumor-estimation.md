@@ -11,7 +11,7 @@ Collaborator: [M. ABDUL GAFOOR](https://mohamedabdulgafoor.wixsite.com/website/b
 
 Supervisor: [M. PREDA](https://scholar.google.com/citations?user=Dx9C-0sAAAAJ)
 
-An immersive visualization of a human brain from the MRI data to detect the possible tumor locations using U-Net in the Mixed Reality(MR) environment.
+A pipeline composed of tumor detection in human brain using deep learning and visualization using Mixed Reality(MR) technology.
 {: .fs-6 .fw-300 }
 
 ---

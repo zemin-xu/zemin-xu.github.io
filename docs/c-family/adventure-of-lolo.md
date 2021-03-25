@@ -14,7 +14,7 @@ date: 2019-11-16
 
 ## Structure
 
-I used [SFML](https://www.sfml-dev.org) as the framework, which provides basic interfaces for developing multimedia app. Before programming, I designed the structure carefully so as to use the advantage of object-oriented programming.
+I used [SFML](https://www.sfml-dev.org) as the framework, which provides basic interface for developing multimedia app. Before programming, I designed the structure carefully so as to use the advantage of object-oriented programming.
 
 <img src="{{ site.url_imgs }}/adventure_of_lolo_uml.png" style="width=100%">{: .px-8 }
 

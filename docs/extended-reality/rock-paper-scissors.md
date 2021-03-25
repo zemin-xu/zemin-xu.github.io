@@ -14,12 +14,11 @@ Collaborators: [E.Meurice](https://www.linkedin.com/in/eva-meurice/), [A.Mougin]
 
 ---
 
-
 ## Concept
 
 The idea is simple: augmented reality with tattoo as marker. Here, tattoo serves as the marker. The concept is afterwards developed by combining with the [Rock Paper Scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors).
 
-<img src="{{ site.url_imgs }}/rock_paper_scissors_hand.jpg " style="width: 100%">{: .px-8 }
+<img src="{{ site.url_imgs }}/rock_paper_scissors_hand.jpg " style="width: 100%">{: .px-12 }
 
 ## Gameplay
 
