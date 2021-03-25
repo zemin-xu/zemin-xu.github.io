@@ -102,6 +102,6 @@ The mechanics of the information dialog used the collier in Unity. It is only wh
 
 At the end of this visit, the app will ask user for a rating. The source code can be found [here](https://github.com/zemin-xu/ParisMotorShow). Below is a demo video.
 
-<video id="player" playsinline controlsstyle="width: 100%">{: .px-8 }
+<video id="player" playsinline controls style="width: 100%">{: .px-8 }
 <source src= "{{ site.url_videos }}/paris_motor_show.mp4" type="video/mp4" />
 </video>

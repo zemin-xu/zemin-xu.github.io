@@ -180,7 +180,7 @@ In order to communicate between the deep learning result and Unity, we used JSON
 
 The source code with dataset can be found [here](https://github.com/zemin-xu/BrainTumorEstimation).
 
-<video id="player" playsinline controlsstyle="width: 100%">{: .px-8 }
+<video id="player" playsinline controls style="width: 100%">{: .px-8 }
 <source src= "{{ site.url_videos }}/brain_tumor.mp4" type="video/mp4" />
 </video>
 
