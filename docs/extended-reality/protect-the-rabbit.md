@@ -9,14 +9,14 @@ date: 2019-01-12
 
 Collaborator: [H.Guibert](https://www.linkedin.com/in/hélènedeguibert/), [B.Guerin](https://www.linkedin.com/in/baptiste-guérin-2021b9187/), Y.Makhzoumi, [B.Trichereau](https://www.linkedin.com/in/bastien-trichereau-98437814b/)
 
-*Protect the Rabbit* is an one-week project realized by me with four classmates. The purpose of this workshop is to develop a video game emphasizing virtual reality technology. The greatest difference is that VR provides a better experience of immersion, and that the input can be our motion rather than input from gaming controller and keyboard.
+A Virtual Reality(VR) game of one-week development, in which the player acts like a giant and protects a rabbit from traps and hunters.
 {: .fs-6 .fw-300 }
 
 ---
 
 ## Concept
 
-At the end of first day, we came up with an idea that using the movement of both hands. In this game, we play the role of a god like a giant, protecting a rabbit and helping it return to the hole. There will be different hunters and traps along the way. So the left hand represents protection and can stop the rabbit; The right hand represents discipline and is used to remove hunters and traps from the path.
+**Protect the Rabbit** is the output of VR workshop of school. We did brainstorming of game ideas using one day. At the end of first day, we came up with an idea that using the movement of both hands. In this game, we play the role of a god like a giant, protecting a rabbit and helping it return to the hole. There will be different hunters and traps along the way. So the left hand represents protection and can stop the rabbit; The right hand represents discipline and is used to remove hunters and traps from the path.
 
 <img src="{{ site.url_imgs }}/save-rabbit-hands.gif " style="width: 100%">{: .px-8 }
 
