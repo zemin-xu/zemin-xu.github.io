@@ -143,7 +143,9 @@ For now, the components of virtual mask will not move. We wish that we can anima
 
 The facial expression detection is a classical machine learning [challenge](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/overview). The main job is to accept an image as input, preprocess it as a 48*48 pixel grayscale image and classify it as one of the seven emotions.
 
-## Conclusion
+This app will not create and train a model from zero. Instead, it will use a pre-trained one and integrate it into iOS development environment. In order to do so, we need firstly **coremltools** which is a python package that can convert third-party model into .mlmodel file. With this file, we will use **Core ML** to integrate it into the app. **Core ML** is Apple's native Machine Learning framework that use **request** object to handle input and **observations** to include the output.
+
+---
 
 <video id="player" playsinline controls style="width: 100%">
 <source src= "{{ site.url_videos }}/intelligent_mask.mp4" type="video/mp4" />
