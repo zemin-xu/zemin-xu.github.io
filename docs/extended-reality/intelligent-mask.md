@@ -65,7 +65,7 @@ func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: AR
 
 A low-poly mask can be easily made inside Xcode Editor by following the tutorial in the book [**ARKit by Tutorials**](https://store.raywenderlich.com/products/arkit-by-tutorials), on chapter 16. The main task is to make the components of face as child node inside a parent node. This structure will be useful to animate face later.
 
-<img src="{{ site.url_imgs }}/rabbit.png" style="width: 100%">{: .px-8 }
+<img src="{{ site.url_imgs }}/mask_rabbit.png" style="width: 100%">{: .px-8 }
 
 We will define an **Animal** class to handle geometry creation task. An SCNNode representing the mask will be initialized in the constructor. At this step, the **init** function will ask a name for this animal so that it will retrieve the correponding one.
 
@@ -106,7 +106,7 @@ func createFaceGeometry()
 
 Normally at this stage, the face can be detected successfully.
 
-<img src="{{ site.url_imgs }}/mask_without_detection.jpg" style="width: 100%">{: .px-8 }
+<img src="{{ site.url_imgs }}/mask_without_detection.jpg" style="width: 100%">{: .px-12 }
 
 ### Blend Shapes
 
@@ -141,8 +141,10 @@ For now, the components of virtual mask will not move. We wish that we can anima
 
 ## Machine Learning Model Conversion
 
+The facial expression detection is a classical machine learning [challenge](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/overview). The main job is to accept an image as input, preprocess it as a 48*48 pixel grayscale image and classify it as one of the seven emotions.
+
 ## Conclusion
 
 <video id="player" playsinline controls style="width: 100%">
 <source src= "{{ site.url_videos }}/intelligent_mask.mp4" type="video/mp4" />
-</video>
+</video>{: .px-12 }
