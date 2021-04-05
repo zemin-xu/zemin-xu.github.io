@@ -12,3 +12,8 @@ Hello, my name’s Zemin. I am a Master graduate from IP-Paris in program Virtua
 {: .fs-6 .fw-300 }
 
 Among extended reality technology, I am particularly interested in Mixed Reality, which embed the artificial infomation onto real world seamlessly. The machine learning empowers its real-time application, since many of them are in the field of vision and text intepretion. State-of-the-art algorithm in object recognition, natural language processing use machine learning. That's why you will find some of my posts in this domain.
+
+## Highlight Projects
+[ARMask]()
+
+[Brain Tumor Estimation](docs/extended-reality/brain-tumor-estimation.html)
