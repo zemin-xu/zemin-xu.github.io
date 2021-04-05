@@ -65,6 +65,8 @@ func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: AR
 
 A low-poly mask can be easily made inside Xcode Editor by following the tutorial in the book [**ARKit by Tutorials**](https://store.raywenderlich.com/products/arkit-by-tutorials), on chapter 16. The main task is to make the components of face as child node inside a parent node. This structure will be useful to animate face later.
 
+<img src="{{ site.url_imgs }}/rabbit.png" style="width: 100%">{: .px-8 }
+
 We will define an **Animal** class to handle geometry creation task. An SCNNode representing the mask will be initialized in the constructor. At this step, the **init** function will ask a name for this animal so that it will retrieve the correponding one.
 
 ```swift
@@ -104,6 +106,8 @@ func createFaceGeometry()
 
 Normally at this stage, the face can be detected successfully.
 
+<img src="{{ site.url_imgs }}/mask_without_detection.jpg" style="width: 100%">{: .px-8 }
+
 ### Blend Shapes
 
 For now, the components of virtual mask will not move. We wish that we can animate the virtual components like that of our actual parts. For example, if we open the mouth, the corresponding part will become bigger. To do so, we need to use [**Blend Shapes**](https://developer.apple.com/documentation/arkit/arfaceanchor/2928251-blendshapes) feature. This feature describes the change of components like the eye blinking. What we need is to convert these data as the change onto virtual geometry. The code below is an example for mouth.
@@ -138,3 +142,7 @@ For now, the components of virtual mask will not move. We wish that we can anima
 ## Machine Learning Model Conversion
 
 ## Conclusion
+
+<video id="player" playsinline controls style="width: 100%">
+<source src= "{{ site.url_videos }}/intelligent_mask.mp4" type="video/mp4" />
+</video>
