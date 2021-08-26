@@ -7,14 +7,14 @@ date: 2020-03-12
 
 # {{ page.title }}
 
-<video id="player" playsinline controls style="width: 100%">
-<source src= "{{ site.url_videos }}/rock_paper_scissors.mp4" type="video/mp4" />
-</video>
-
 Collaborators: [E.Meurice](https://www.linkedin.com/in/eva-meurice/), [A.Mougin](https://www.linkedin.com/in/arthur-mougin/), [J.Pigrée](https://www.linkedin.com/in/jean-baptiste-pigrée-876087110/)
 
 *Rock Paper Scissors* is an one-week project realized by me with three classmates. The purpose of this workshop is to develop an app emphasizing augmented reality technology, using *Unity* and *Vuforia* framework.
 {: .fs-6 .fw-300 }
+
+<video id="player" playsinline controls style="width: 100%">
+<source src= "{{ site.url_videos }}/rock_paper_scissors.mp4" type="video/mp4" />
+</video>
 
 ---
 
