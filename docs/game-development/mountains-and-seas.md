@@ -14,7 +14,7 @@ date: 2019-06-08
 
 # Introduction
 
-«The classic of mountains and seas» is an ancient Chinese book that records the stories of different creatures out of imagination. This book is merely forgotten by this generation, given that the digital entertainment consumes most of their spare time. In this project, I tried to express the unique point in the book -- more than 300 creatures with different looks, stories and special skills, so as to attract people's attention to it.
+«The classic of mountains and seas» is an ancient Chinese book that records the stories of different creatures out of imagination. This book is merely forgotten by this generation, because the digital entertainment consumes more and more of their spare time. In this project, I tried to express the unique point in the book -- more than 300 creatures with different looks, stories and special skills, so as to attract people's attention to it.
 
 # Researches
 
@@ -28,4 +28,4 @@ Mountains and seas is an open sandbox game which starts with a tutorial of teach
 
 Concretely, the gameplay of each creature is specific, designed by its special abilities described in the book. For example, according to the legend, the bird Biyi always come in pairs and only a pair of lovebirds can fly together. Thus, the gameplay here is that players will firstly collect the pieces of them, place them in the right place and rotate them like solving a 3d puzzle. Once finished, the status will recover and carry the player to the mainland of mountains and seas.
 
-More interesting, in the legend, the candle dragon opens its eyes which comes the day and closes its eyes which comes the night. So the gameplay here is coherent: in the boundless darkness, the player needs to find the candle dragon's eyes through the clue, and wakes it up and the world turns back to the day. As players arrive at each new mission, there will be a sign about this creature, and as they approach, there is an audio description of its history and its special ability, which serves to convey the contents of the mountains and seas and enhance a sense of immersion.
+More interesting, in the legend, the candle dragon opens its eyes which brings the day and closes its eyes which brings the night. So the gameplay here is coherent: in the boundless darkness, the player needs to find the candle dragon's eyes through the clue, and wakes it up and the world turns back to the day. As players arrive at each new mission, there will be a sign about this creature, and as they approach, there is an audio description of its history and its special ability, which serves to convey the contents of the mountains and seas and enhance a sense of immersion.
