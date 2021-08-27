@@ -7,7 +7,7 @@ date: 2020-01-18
 
 # {{ page.title }}
 
-Tower Defense is my two-month Unity course assignment, which aims to improve my game design ability and development ability by adapting a classic tower defense gameplay and implementing the adaptation.
+Tower Defense is my two-month Unity course assignment, which aims to improve my game design ability and development ability by adapting a classic tower defense gameplay and implementing the adaptation. The source code can be found [here](https://github.com/zemin-xu/TowerDefenseBachelor).
 {: .fs-6 .fw-300 }
 
 <iframe src="https://player.vimeo.com/video/329988982" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
