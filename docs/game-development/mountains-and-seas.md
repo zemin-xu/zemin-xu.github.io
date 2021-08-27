@@ -1,7 +1,7 @@
 ---
 layout: default 
 title: Mountains & Seas
-parent: Game Dev
+parent: Game Development
 date: 2019-06-08
 ---
 
@@ -9,6 +9,8 @@ date: 2019-06-08
 
 **Mountains and Seas** is my six-month graduation project in which I should developed in spare time and have three classes to discuss it with tutor. In this project, I started with a topic that I was interested in, found out some limitations of this theme in today's society through investigation, and put forward an idea related to game design. Finally, I completed the implementation of the core gameplay in the prototype stage.
 {: .fs-6 .fw-300 }
+
+<iframe src="https://player.vimeo.com/video/339840925" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ---
 

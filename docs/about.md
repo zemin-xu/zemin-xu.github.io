@@ -6,10 +6,6 @@ permalink: /about.html
 
 # {{ page.title }}
 
-I am fascinated by interactive experience and computer science. For me, augmented reality is the support combining my interests and what I have been engrossed in till now.
-
-You can reach me out by [email](mailto:zemin.xu@yahoo.com) or know more about me with [CV]()
-
 ---
 
 # Professional Experiences
